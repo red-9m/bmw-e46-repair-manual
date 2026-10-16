@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>Instrument Cluster</h1>
+<blockquote>
+<p>Source: Bentley <em>BMW 3 Series (E46) 1999–2005 (M3) Repair Manual</em>, section 620-2 (PDF pages 1072–1080 of 1252).</p>
+</blockquote>
+<p>The dashboard mounted instrument cluster is the control and information center of the E46 cars. It is connected to most of the systems and sensors in the car through the use of &quot;bus&quot; networks:</p>
+<ul>
+<li>K-bus connects to Central Body Electronics (ZKE V) functions, heating/A/C (IHKA), rain sensor system, exterior and interior lights, Multiple Restraint System (MRS III), and Driveway Protection (EWS III).</li>
+<li>CAN-bus connects to engine management (DME), transmission control (AGS) and traction/stability control (ASC/DSC).</li>
+<li>D-bus connects to 20-pin Diagnostic Link Connector (DLC) and/or 16-pin OBD II diagnostic connector.</li>
+</ul>
+<p>The instrument cluster stores and communicates Diagnostic Trouble Codes (DTCs) via the D-bus diagnostic link.</p>
+<p>If the vehicle is equipped with On-Board Computer, pushing the button at the end of the directional stalk switch brings up on the cluster information of interest to the driver:</p>
+<ul>
+<li>Time</li>
+<li>Outside temperature</li>
+<li>Average fuel consumption</li>
+<li>Cruising range</li>
+<li>Average vehicle speed</li>
+</ul>
+<p>These functions are more fully explained in the Owner's Manual.</p>
+<p>The cluster also stores important vehicle memory functions such as total mileage and service interval data. Instrument cluster replacement must be followed by special procedures, using BMW scan tools DIS or MoDiC or equivalent, to synchronize vehicle memory and mileage with the new cluster unit.</p>
+<p><strong>Note:</strong></p>
+<p><em>Specific vehicle information is stored redundantly in the instrument cluster and the light control module. This information includes: Vehicle identification number (VIN), Total vehicle mileage, and Service interval data.</em></p>
+<h2>Instrument cluster layout</h2>
+<p>The instrument cluster uses stepper motor driven analog gauges for display of engine and road speed, engine temperature, fuel level and economy.</p>
+<p><img src="e46_620-2_fig01.jpg" alt="Instrument cluster face with numbered callouts 1–18 identifying gauges, warning lights and LCD blocks. Illustration ID: 0021019" /></p>
+<p>1 - Fuel Gauge
+2 - Left directional
+3 - Tachometer
+4 - Alternator warning light
+5 - High beam warning
+6 - Oil warning light
+7 - Speedometer
+8 - Right directional
+9 - Temperature gauge
+10 - Warning lights (Check Engine, etc.)
+11 - Left reset button (odometer/service interval)
+12 - Check Control LCD
+13 - Odometer/On-Board Computer LCD
+14 - ASC/DSC warning light
+15 - Fuel economy gauge
+16 - Transmission range/ program LCD (includes transmission fault indicator)
+17 - Right reset button (clock)
+18 - Warning lights (brakes, etc.)</p>
+<p>In addition, three LCD blocks display:</p>
+<ul>
+<li>Check Control pictographs</li>
+<li>Service interval and mileage (On-Board Computer)</li>
+<li>Automatic transmission range/program and failure display</li>
+</ul>
+<p>Warning indicators and lamps are arranged to the right and left of the LCD blocks. The ASC/DSC light, charge indicator, high beam and oil pressure lamps are located between the speedometer and tachometer.</p>
+<p>The instrument cluster is a sealed unit and contains no serviceable components.</p>
+<p><strong>E46 instrument cluster</strong></p>
+<p><img src="e46_620-2_fig02.jpg" alt="E46 instrument cluster inputs/outputs diagram — top part of a figure split across a page break: key (KL R, KL 15, KL 50), fuel level sensors, engine coolant temp, ambient air temp, S.I. reset, instrument panel button, photo transistor signal, BC stalk control, light switch module KL 58g, ECM CAN-bus, brake pad wear sensors, vehicle speed signal via ABS, airbag (MRS II), charging, engine oil pressure inputs; K-bus, ECM low fuel, speed signal &quot;A&quot;, gong, DLC/OBD II outputs. Continues in next image." /></p>
+<p><img src="e46_620-2_fig03.jpg" alt="E46 instrument cluster diagram — bottom part: engine oil pressure, GR II (cruise control) on, parking brake on and brake fluid level inputs; OBD II output. Illustration ID: 0021451" /></p>
+<h2>Instrument cluster, self-testing</h2>
+<p>In addition to the storing diagnostic trouble codes (DTCs) and communicating through the diagnostic link, the instrument cluster is programmed with a series of test menus that can be accessed to check various functions and values. The odometer/On-Board Computer LCD block is used to display the test menus and results. There are a total of 21 test menus.</p>
+<p><img src="e46_620-2_fig04.jpg" alt="Odometer/On-Board Computer LCD block displaying a test menu: &quot;010203 1.3&quot; in the upper LCD and &quot;+88.8 F&quot; in the lower LCD. Illustration ID: 0021452" /></p>
+<p>[Table a] lists instrument cluster test menus and submenus.</p>
+<p>To scroll through numbered test menus:</p>
+<ul>
+<li>Make sure ignition switch is OFF.</li>
+<li>Press and hold left cluster button.</li>
+<li>Turn ignition switch to &quot;radio&quot;. Test 1 main menu will be displayed.</li>
+<li>Do nothing and display will automatically scroll through Test 1 submenus.</li>
+<li>Tap or press instrument cluster left button. This signals cluster to display submenus or continue on to next main test menu.</li>
+</ul>
+<p><strong>Note:</strong></p>
+<ul>
+<li><em>Tests 1 and 2 are always unlocked.</em></li>
+<li><em>Tests 3 - 21 are only accessible after unlocking the test function.</em></li>
+<li><em>Test 19 is the unlock function for accessing the displays.</em></li>
+<li><em>If adjustment is necessary, enter into Test 20 using the cluster button. The correction factor number is changed by using the sub-menus for the 1s, 10s and 100s of the factor number. The digits will automatically scroll through 0 - 9 within each group (1s, 10s, 100s).</em></li>
+</ul>
+<p>Table a. Instrument cluster test functions</p>
+<table>
+<thead>
+<tr>
+<th>Menu</th>
+<th>Submenu</th>
+<th>Sample output</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Test 1: Vehicle specific data (see Note below)</td>
+<td>1.0</td>
+<td>12345</td>
+<td>Vehicle identification number (VIN)</td>
+</tr>
+<tr>
+<td>Test 1: Vehicle specific data (see Note below)</td>
+<td>1.1</td>
+<td>4812</td>
+<td>Body number</td>
+</tr>
+<tr>
+<td>Test 1: Vehicle specific data (see Note below)</td>
+<td>6_1.2</td>
+<td>834762</td>
+<td>Part number of cluster</td>
+</tr>
+<tr>
+<td>Test 1: Vehicle specific data (see Note below)</td>
+<td>1.3</td>
+<td>010203</td>
+<td>Coding/diagnosis/bus index</td>
+</tr>
+<tr>
+<td>Test 1: Vehicle specific data (see Note below)</td>
+<td>1.4</td>
+<td>3499</td>
+<td>Manufacturing date (calendar week/year)</td>
+</tr>
+<tr>
+<td>Test 1: Vehicle specific data (see Note below)</td>
+<td>1.5</td>
+<td>04_600</td>
+<td>Hardware/software version of cluster (hardware = 04, software = 6.00)</td>
+</tr>
+<tr>
+<td>Test 1: Vehicle specific data (see Note below)</td>
+<td>3_1.6</td>
+<td>415_06</td>
+<td>Injection status, number of cylinders, engine factor</td>
+</tr>
+<tr>
+<td>Test 1: Vehicle specific data (see Note below)</td>
+<td>1.7</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Test 2: Cluster system test - activates gauge drivers, indicators and LEDs to confirm function (see Note)</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Test 3: SI data</td>
+<td>3.0</td>
+<td>1500</td>
+<td>Liters</td>
+</tr>
+<tr>
+<td>Test 3: SI data</td>
+<td>3.1</td>
+<td>0</td>
+<td>Periodic inspection days (not applicable for US)</td>
+</tr>
+<tr>
+<td>Test 4: Fuel consumption data (current)</td>
+<td>4.0</td>
+<td>0267</td>
+<td>26.7 liters/1000km</td>
+</tr>
+<tr>
+<td>Test 4: Fuel consumption data (current)</td>
+<td>4.1</td>
+<td>0073</td>
+<td>7.3 liters/hour</td>
+</tr>
+<tr>
+<td>Test 5: Fuel consumed/distance traveled</td>
+<td>5.0</td>
+<td>0195</td>
+<td>9.5 liters/100 km</td>
+</tr>
+<tr>
+<td>Test 5: Fuel consumed/distance traveled</td>
+<td>5.1</td>
+<td>226</td>
+<td>Distance left to go (226 km)</td>
+</tr>
+<tr>
+<td>Test 6: Fuel level sensor input in liters</td>
+<td>6.0</td>
+<td>237415</td>
+<td>Fuel level averaged<br>◆ Left side fuel sensor input = 23.7 liters<br>◆ Right side fuel sensor input = 41.5 liters</td>
+</tr>
+<tr>
+<td>Test 6: Fuel level sensor input in liters</td>
+<td>6.1</td>
+<td>0652</td>
+<td>Total tank level averaged = 65.2 liters</td>
+</tr>
+<tr>
+<td>Test 6: Fuel level sensor input in liters</td>
+<td>1_6.2</td>
+<td>0667</td>
+<td>Indicated value and tank phase<br>◆ 1 = Both sensors OK<br>◆ 2 = One sensor faulty<br>◆ 3 = Implausible input</td>
+</tr>
+<tr>
+<td>Test 7: Temperature and speed</td>
+<td>7.0</td>
+<td>032</td>
+<td>Coolant temperature input = 32°C</td>
+</tr>
+<tr>
+<td>Test 7: Temperature and speed</td>
+<td>7.1</td>
+<td>245</td>
+<td>Outside temperature input = 24.5°C</td>
+</tr>
+<tr>
+<td>Test 7: Temperature and speed</td>
+<td>7.2</td>
+<td>5283</td>
+<td>Engine speed = 5,283 RPM</td>
+</tr>
+<tr>
+<td>Test 7: Temperature and speed</td>
+<td>7.3</td>
+<td>058</td>
+<td>Vehicle speed = 58 km/h</td>
+</tr>
+<tr>
+<td>Test 8: Input values in HEX code</td>
+<td>8.0 - 8.3</td>
+<td>XXX</td>
+<td>HEX code, instrument cluster inputs</td>
+</tr>
+<tr>
+<td>Test 9: Battery voltage</td>
+<td>9.0</td>
+<td>125</td>
+<td>12.5 volts</td>
+</tr>
+<tr>
+<td>Test 10: Country coding</td>
+<td>10.0</td>
+<td>02</td>
+<td>US (= 02)</td>
+</tr>
+<tr>
+<td>Test 11: Cluster code</td>
+<td>11.0</td>
+<td>000003</td>
+<td>Cluster code</td>
+</tr>
+<tr>
+<td><strong>Test 12: Not used</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Test 13: Gong test</td>
+<td>13.0</td>
+<td>&quot;Gong&quot;</td>
+<td>Activate gong by pressing button (gong response is delayed).</td>
+</tr>
+<tr>
+<td><strong>Test 14: Fault memory (not for diagnosis)</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Tests 15 - 18: Not used</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Test 19: Lock/unlock (see Note)</td>
+<td></td>
+<td>L-ON</td>
+<td>Display changes from L-ON to L-OFF every second. To unlock test functions, press cluster button immediately when it changes to L-OFF. Tests are automatically locked when exiting test functions.</td>
+</tr>
+<tr>
+<td>Test 19: Lock/unlock (see Note)</td>
+<td>19.0</td>
+<td>L-OFF</td>
+<td>Display changes from L-ON to L-OFF every second. To unlock test functions, press cluster button immediately when it changes to L-OFF. Tests are automatically locked when exiting test functions.</td>
+</tr>
+<tr>
+<td>Test 20: Average fuel consumption correction factor (see Note)</td>
+<td>20.0</td>
+<td>XXX9</td>
+<td>Press button when correct 1s position is attained.</td>
+</tr>
+<tr>
+<td>Test 20: Average fuel consumption correction factor (see Note)</td>
+<td>20.1</td>
+<td>XX5X</td>
+<td>Press button when correct 10s position is attained.</td>
+</tr>
+<tr>
+<td>Test 20: Average fuel consumption correction factor (see Note)</td>
+<td>20.2</td>
+<td>12XX</td>
+<td>Press button when correct 100s position is attained.</td>
+</tr>
+<tr>
+<td>Test 21: Software reset</td>
+<td>21.0</td>
+<td>reset</td>
+<td>Reset software</td>
+</tr>
+</tbody>
+</table>
+<p>Note: Menu cells and the Test 19 meaning cell span multiple rows in print (merged cells); values are repeated here. Table splits across pages 1077–1079 with repeated headers — merged.</p>
+<h2>Instrument cluster, removing and installing</h2>
+<ul>
+<li>Remove instrument cluster retaining screws (arrows).</li>
+</ul>
+<p><img src="e46_620-2_fig05.jpg" alt="Instrument cluster retaining screws (black arrows) at the top of the cluster, viewed over the steering wheel. Illustration ID: not legible in print" /></p>
+<p><img src="e46_620-2_fig06.jpg" alt="Instrument cluster pulled forward out of the dash panel, viewed from the driver's seat with the gauges visible. Illustration ID: 0022387" /></p>
+<p>Place a towel over steering column. Carefully tilt top of cluster out of dash panel. Unlock and disconnect harness connectors (arrows) from back of cluster.</p>
+<p><strong>Note:</strong></p>
+<p><em>Steering wheel does not need to be removed to remove instrument cluster.</em></p>
+<p><img src="e46_620-2_fig07.jpg" alt="Top of instrument cluster tilted out of the dash panel with a towel over the steering column; harness connectors (white arrows) at the back of the cluster. Illustration ID: 0022386" /></p>
+<p>If it is necessary to replace cluster, detach trim by unlocking plastic clips (arrows) and pushing through slots.</p>
+<p><img src="e46_620-2_fig08.jpg" alt="Back of instrument cluster trim: plastic clips (white arrows) being unlocked and pushed through slots. Illustration ID: 0021488" /></p>
+<ul>
+<li>Installation is reverse of removal, noting the following:
+<ul>
+<li>Instrument cluster harness connector locking levers must be in up position before installing connector.</li>
+<li>Recode new or replacement cluster using BMW scan tools DISplus, MoDiC or equivalent.</li>
+</ul>
+</li>
+</ul>
+</article></body></html>

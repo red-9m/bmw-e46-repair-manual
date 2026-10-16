@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>General</h1>
+<blockquote>
+<p>Source: BMW 3 Series (E46) Repair Manual, section 020-1, Maintenance chapter (PDF pages 28–40 of 1252).</p>
+</blockquote>
+<p>The information given in this repair group includes the routine checks and maintenance steps that are both required by BMW under the terms of the vehicle warranty protection and recommended by BMW to ensure long and reliable vehicle operation.</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Aside from keeping your car in the best possible condition, proper maintenance plays a role in maintaining full protection under BMW's new-car warranty coverage. If in doubt about the terms and conditions of your car's warranty, an authorized BMW dealer should be able to explain them.</li>
+</ul>
+</blockquote>
+<h2>Service Interval Indicator (SII)</h2>
+<p>For the 1999 and later 3 Series (E46), BMW introduced an extended oil change interval of approximately 15,000 miles depending on engine operating conditions. The introduction of BMW High Performance Synthetic Oil has made this longer interval possible.</p>
+<p><strong>1999 to 6/2000 models.</strong> BMW uses a unique system to determine maintenance intervals. BMW's Service Interval Indicator (SII), calculates maintenance intervals based not only on elapsed mileage, but also on such inputs as engine speed, engine temperature, number of starts, length of trips, and the amount of fuel used. At the appropriate time, the system indicates, through lights in the instrument cluster, when the next routine maintenance is due.</p>
+<p><strong>6/2000 and later models.</strong> For the mid-2000 models BMW introduced new service interval software which calculates service based on the amount of fuel used. When SII detects total fuel consumption that equals the preset limits (in gallons), the instrument cluster indicates that service is required.</p>
+<p>Using a 328i as an example:</p>
+<ul>
+<li>Standard transmission model: SII illuminates after consumption of 601 gallons of fuel.</li>
+<li>Automatic transmission model: SII illuminates after consumption of 667 gallons.</li>
+</ul>
+<p>After the service is performed the SII can be reset to zero.</p>
+<p>The SII displays the mileage remaining before service is due. The type of service (OIL SERVICE or INSPECTION) is also illuminated in the display.</p>
+<p><img src="e46_020-1_fig1.jpg" alt="Instrument cluster with the Service Interval Indicator display showing &quot;OIL SERVICE 14950 MILES&quot; and &quot;INSPECTION&quot;. Illustration ID: 0021019" /></p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>An OIL SERVICE interval will always be followed by an INSPECTION interval, which will then be followed by an OIL SERVICE interval, and so on.</li>
+</ul>
+</blockquote>
+<p>When the ignition is turned on, the service recommendation and miles remaining are displayed for a few seconds. A flashing message and a negative (-) symbol in front of the number indicate that the service interval has been exceeded by the distance displayed.</p>
+<p>The On-Board Computer uses the rate of fuel consumption in the period immediately preceding to calculate the mileage before the next service is due.</p>
+<h2>Service Interval Indicator (SII), resetting</h2>
+<p>The SII signals the need for basic routine maintenance:</p>
+<ul>
+<li>Engine oil and oil filter change, after the engine has been warmed up.</li>
+<li>BMW-recommended additional maintenance as listed in [Table a].</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>For reference, the BMW oil service requirements are approximately equivalent to the maintenance that other European manufacturers specify at intervals with a maximum of every 15,000 miles or 12 months.</li>
+</ul>
+</blockquote>
+<p>When the specified maintenance has been carried out, the SII memory should be reset.</p>
+<h3>1999 to 6/2000 models</h3>
+<p>In vehicles equipped with the DLC in the right side engine compartment, the SII may be reset using BMW service and scan tool DIS or MoDiC, or a specialty tool from another manufacturer. Plug the tool (arrow) into the DLC.</p>
+<p><img src="e46_020-1_fig2.jpg" alt="Engine compartment with arrow pointing to the data link connector (DLC) cap. Illustration ID: 0021958" /></p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Follow the manufacturer's directions when resetting the SII. If the reset procedures are done incorrectly, the reset tool or the electronic Service Interval Indicator may be damaged.</li>
+</ul>
+</blockquote>
+<p>Aftermarket reset tools that can reset all models with the DLC can be purchased from one of the following suppliers:</p>
+<ul>
+<li>Assenmacher Specialty Tools — 6440 Odell Place, Boulder, CO 80301, 303-530-2424, <a href="http://www.asttool.com">http://www.asttool.com</a></li>
+<li>Baum Tools Unlimited, Inc. — P.O. Box 5867, Sarasota, FL 34277-5867, 800-848-6657, <a href="http://www.baumtools.com">http://www.baumtools.com</a></li>
+<li>Peake Research, Automotive Products Division — P.O. Box 28776, San Jose, CA 95159, 408-369-0406, <a href="http://www.peakeresearch.com">http://www.peakeresearch.com</a></li>
+</ul>
+<h3>6/2000 and later models</h3>
+<p>On vehicles without the data link connector (DLC) in the engine compartment the reset tool can no longer be used. Instead, the SII can be reset with the trip odometer reset button in the instrument cluster: The ignition key must be in OFF position.</p>
+<ul>
+<li>Press and hold trip odometer button in instrument cluster, and turn ignition key to ACCESSORY position.</li>
+<li>Keep button pressed for approx. 5 more seconds until any of the following appear in the display: &quot;Oil Service&quot; or &quot;Inspection&quot;, with &quot;Reset&quot; or &quot;Re&quot;.</li>
+<li>Press button again and hold for approx. 5 seconds until &quot;Reset&quot; or &quot;Re&quot; flash.</li>
+<li>While display is flashing, press button briefly to reset SII.</li>
+<li>After display has shown new interval, the following will appear in display for approx. 2 seconds: &quot;End SIA&quot;.</li>
+</ul>
+<p>The system can only be reset again after the vehicle has been driven approx. 50 to 75 miles (consumes at least 2.5 gal. fuel). If the display shows &quot;Reset&quot; or &quot;Re&quot; when resetting, the minimum driving distance has been fulfilled and the system can be reset again. It is possible to interrupt and end the reset procedure by changing the position of the ignition key.</p>
+<h2>Inspection I and Inspection II</h2>
+<p>The Service Interval Indicator signals the need for more comprehensive maintenance and inspection. There are two sets of inspection requirements. These inspections alternate throughout a car's maintenance history. If the last inspection interval was Inspection I, the next inspection interval (following an oil service) will be Inspection II, the next after that will be Inspection I, and so on.</p>
+<p>Inspection I tasks are listed in [Table b]. Inspection II includes most of the tasks from Inspection I with additional Inspection II tasks. A complete listing of Inspection II tasks is in [Table c].</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>For reference, the BMW Inspection I and Inspection II requirements are approximately equivalent to the maintenance requirements that other European manufacturers specify. Inspection I is normally due at intervals with a maximum of 30,000 miles or 24 months. Inspection II is normally due at intervals with a maximum of 60,000 miles or 48 months.</li>
+</ul>
+</blockquote>
+<h2>Maintenance Tables</h2>
+<p>The intervals for most tasks listed in the maintenance table below are determined by the SII. Except where noted, the maintenance items listed apply to all models and model years covered by this manual. The columns on the right side of each table give quick-reference information about the job. The text in the &quot;additional repair information&quot; column refers to repair groups.</p>
+<p>Table a. Oil service</p>
+<table>
+<thead>
+<tr>
+<th>Maintenance item</th>
+<th align="center">Tools required</th>
+<th align="center">New parts required</th>
+<th align="center">Warm engine required</th>
+<th align="center">Dealer service recommended</th>
+<th align="center">Additional repair information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Engine compartment maintenance</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Change oil and oil filter</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center">✓</td>
+<td align="center">[020]</td>
+</tr>
+<tr>
+<td>Reset Service Interval Indicator (SII).</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[020]</td>
+</tr>
+<tr>
+<td>Replace interior ventilation microfilter.</td>
+<td align="center"></td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[020]</td>
+</tr>
+<tr>
+<td><strong>Under car maintenance</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Check overall thickness of front and rear brake pads. If replacement is necessary: Examine brake disc surfaces. Clean brake pad contact points in calipers. Grease wheel centering hubs (alloy wheels only). Check thickness of parking brake linings only when replacing rear brake pads. Check operation of parking brake and adjust as necessary.</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">✓</td>
+<td align="center">[340]</td>
+</tr>
+<tr>
+<td>Check and adjust tire pressures, including spare</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[020]</td>
+</tr>
+</tbody>
+</table>
+<p>Table b. Inspection I service</p>
+<table>
+<thead>
+<tr>
+<th>Maintenance item</th>
+<th align="center">Tools required</th>
+<th align="center">New parts required</th>
+<th align="center">Warm engine required</th>
+<th align="center">Dealer service recommended</th>
+<th align="center">Additional repair information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Under car maintenance</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Change engine oil and filter.</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center">✓</td>
+<td align="center">[020]</td>
+</tr>
+<tr>
+<td>Check transmission and differential(s) for external leaks.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[230], [240]</td>
+</tr>
+<tr>
+<td>Check CV joint boots for damage or leaks.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[311], [331]</td>
+</tr>
+<tr>
+<td>Visually check fuel tank, fuel lines and connections for leaks.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[160]</td>
+</tr>
+<tr>
+<td>Check condition, positioning, and mounting of exhaust system. Visually check for leaks.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[180]</td>
+</tr>
+<tr>
+<td>Check power steering system for leaks. Check power steering fluid level and adjust if necessary.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[320]</td>
+</tr>
+<tr>
+<td>Check steering rack and tie rods for tightness. Check condition of front axle joints, steering linkage and steering shaft joints.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[320]</td>
+</tr>
+<tr>
+<td>Check overall thickness of front and rear brake pads using special BMW tool. If replacement is necessary: Examine brake disc surfaces. Clean brake pad contact points in calipers. Grease wheel centering hubs (alloy wheels only). Check thickness of parking brake linings only when replacing rear brake pads. Check operation of parking brake and adjust as necessary.</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[340]</td>
+</tr>
+<tr>
+<td>Check front control arm bushings for damage or wear.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[310]</td>
+</tr>
+<tr>
+<td>Check brake system connections and lines for leaks, damage and incorrect positioning.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[340]</td>
+</tr>
+<tr>
+<td>Check parking brake actuator. Adjust if necessary.</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[340]</td>
+</tr>
+<tr>
+<td>Check all tire pressures (including spare) and correct if necessary. Check condition of tires (outer tread surfaces), tread wear pattern; in case of uneven tread wear, perform a wheel alignment if requested.</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[020]</td>
+</tr>
+<tr>
+<td>Inspect entire body according to terms of rust perforation limited warranty. (Must be performed at least every two years.)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><strong>Engine compartment maintenance</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Read out on-board diagnostic (OBD II) system.</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[100], [130]</td>
+</tr>
+<tr>
+<td>Check engine coolant system/heater hose connections for leaks. Check coolant level and antifreeze protection level. Add coolant as necessary.</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[170]</td>
+</tr>
+<tr>
+<td>Check windshield washer fluid level and antifreeze protection. Add washer fluid as necessary.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[611]</td>
+</tr>
+<tr>
+<td>Replace ventilation microfilter. (Note: reduce replacement intervals in dusty operating conditions).</td>
+<td align="center"></td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[020]</td>
+</tr>
+<tr>
+<td>Reset service interval indicator.</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[020]</td>
+</tr>
+<tr>
+<td><strong>Body/electrical</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Check operation of air conditioner.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[640]</td>
+</tr>
+<tr>
+<td>Check operation of headlights, parking lights, back-up lights, license plate lights, interior lights, glove box light, engine compartment light, trunk light, turn signals, emergency flashers, stop lights, horns, headlight flasher and dimmer switch</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[630]</td>
+</tr>
+<tr>
+<td>Check instrument panel and dashboard lights.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[620]</td>
+</tr>
+<tr>
+<td>Check wipers and windshield washer system. Check aim of washer jets and adjust if necessary.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[611]</td>
+</tr>
+<tr>
+<td>Check condition and function of seat belts.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[720]</td>
+</tr>
+<tr>
+<td>Visually examine all airbag units for torn covers, obvious damage or attachment of decals, decorations or accessories.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[721]</td>
+</tr>
+<tr>
+<td>Check central locking system and double lock.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[515]</td>
+</tr>
+<tr>
+<td>Replace batteries for alarm remote controls in all master keys.</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[515]</td>
+</tr>
+<tr>
+<td>Check operation and condition of all door, hood and trunk latches.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[410], [515]</td>
+</tr>
+<tr>
+<td>Check heater, air conditioner blower, and rear window defogger operation.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[640]</td>
+</tr>
+<tr>
+<td>Convertible models: Activate automatic roll-over protection system via diagnostic link. Note: first remove hardtop or lower convertible top.</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">✓</td>
+<td align="center">[541]</td>
+</tr>
+<tr>
+<td>Check all warning/indicator lights, check control.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[620]</td>
+</tr>
+<tr>
+<td>Check operation of rear view mirrors.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><strong>Road test</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Check braking performance, steering, heating, air conditioner operation. Check manual transmission and clutch operation or automatic transmission operation.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p>Table c. Inspection II service</p>
+<table>
+<thead>
+<tr>
+<th>Maintenance item</th>
+<th align="center">Tools required</th>
+<th align="center">New parts required</th>
+<th align="center">Warm engine required</th>
+<th align="center">Dealer service recommended</th>
+<th align="center">Additional repair information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Engine compartment maintenance</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Replace air filter element. (Note: reduce replacement intervals in dusty operating conditions).</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[020]</td>
+</tr>
+<tr>
+<td><strong>Brake system service</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Replace brake fluid every 2 years (time interval begins from vehicle production date).</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center">✓</td>
+<td align="center">[340]</td>
+</tr>
+<tr>
+<td><strong>Cooling system service</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Replace coolant every 4 years (time interval begins from vehicle production date).</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[170]</td>
+</tr>
+<tr>
+<td><strong>Oxygen sensor service</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Replace oxygen sensor every 100,000 miles.</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[180]</td>
+</tr>
+<tr>
+<td><strong>Spark plug service</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Replace spark plugs every 100,000 miles.</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">[020]</td>
+</tr>
+</tbody>
+</table>
+</article></body></html>

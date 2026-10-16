@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>On-Board Diagnostics (OBD II)</h1>
+<blockquote>
+<p>Source: Bentley BMW 3 Series (E46) 1999–2005 (M3) Repair Manual, section OBD-2 (PDF pages 1222–1232 of 1252). Second copy of the OBD-2 topic — see also on-board-diagnostics.md (pp. 78–88).</p>
+</blockquote>
+<p>OBD II is an acronym for On-Board Diagnostics II, the second generation of on-board self-diagnostic equipment requirements. These standards were originally mandated for California vehicles. Since 1996 they have been applied to all passenger vehicles sold in the United States.</p>
+<p>On-board diagnostic capabilities are incorporated into the hardware and software of the engine control module (ECM) to monitor virtually every component that can affect vehicle emissions. OBD II works to ensure that the vehicles remain as clean as possible over their entire life.</p>
+<p>Each emission-influencing component is checked by a diagnostic routine to verify that it is functioning properly. If a problem or malfunction is detected, the OBD II system illuminates a warning light on the instrument panel to alert the driver. This malfunction indicator light (MIL) will display the phrase &quot;Check Engine&quot; or &quot;Service Engine Soon.&quot;</p>
+<p>The OBD II system also stores important information about the detected malfunction so that a repair technician can accurately find and fix the problem.</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Specialized OBD II scan tool equipment is needed to access the fault memory and OBD II data. The OBD II fault memory (including the MIL) can only be reset using the special scan tool. Removing the connector from the ECM or disconnecting the battery will not erase the fault memory.</li>
+</ul>
+</blockquote>
+<p>The extra hardware needed to operate the OBD II system consists mainly of the following:</p>
+<ul>
+<li>Additional oxygen sensors downstream of the catalytic converters</li>
+<li>Fuel tank pressure sensor and device to pressurize fuel storage system</li>
+<li>Several engine and performance monitoring devices</li>
+<li>Standardized 16-pin OBD II connector under the dash</li>
+<li>Upgraded components for the federally required 100,000 mile or 10 year reliability mandate</li>
+</ul>
+<h2>Malfunction Indicator Light (MIL)</h2>
+<p>The OBD II system is designed to illuminate the Malfunction Indicator Light (MIL) when emission levels exceed 1.5 times the Federal standards.</p>
+<p><img src="e46_OBD-2-1222_fig1.jpg" alt="Instrument cluster with MIL label pointing to the warning lamp at the lower left of the cluster. Illustration ID: 0021019" /></p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>On model year 1999 and 2000 cars, the MIL is labeled Check Engine. On model year 2001 cars, the MIL is labeled Service Engine Soon.</li>
+</ul>
+</blockquote>
+<p>The MIL will come on under the following conditions.</p>
+<ul>
+<li>An engine management system fault is detected for two consecutive OBD II drive cycles.</li>
+<li>A catalyst damaging fault.</li>
+<li>A component malfunction (such as catalyst deterioration) causes emissions to exceed 1.5 times OBD II standards.</li>
+<li>Manufacturer-defined specifications are exceeded.</li>
+<li>An implausible input signal is generated.</li>
+<li>Misfire faults occur.</li>
+<li>A leak is detected in evaporative system.</li>
+<li>The oxygen sensors observe no purge flow from purge valve/evaporative system.</li>
+<li>The engine control module (ECM) fails to enter closed-loop operation within specified time.</li>
+<li>The engine control module (ECM) or automatic transmission control module (TCM) enters &quot;limp home&quot; operation mode.</li>
+<li>Key is in &quot;ignition on&quot; position before cranking (bulb check function).</li>
+</ul>
+<p>Additional information, MIL:</p>
+<ul>
+<li>A fault code is stored within the ECM upon the first occurrence of a fault in the system being checked.</li>
+<li>Two complete consecutive drive cycles with the fault present illuminate the MIL. The exception to the two-fault requirement is a catalyst damaging fault, which will turn the light on immediately.</li>
+<li>If the second drive cycle was not complete and the specific function was not checked as shown in the example, the ECM counts the third drive cycle as the next consecutive drive cycle. The MIL is illuminated if the function is checked and the fault is still present.</li>
+<li>Once the MIL is illuminated it will remain illuminated unless the specific function has been checked without fault through three complete consecutive drive cycles.</li>
+<li>The fault code will be cleared from memory automatically if the specific function is checked through 40 consecutive drive cycles without the fault being detected.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>In order to automatically clear a catalyst damaging fault from memory, the condition under which the fault occurred must be evaluated for 80 consecutive drive cycles without the fault reoccurring.</li>
+</ul>
+</blockquote>
+<p>With the use of a universal or 'generic' scan tool connected to the DLC (Diagnostic Link Connector), diagnostic trouble codes (DTCs) can be obtained, along with the conditions associated with the illumination of the engine service light. Using a more advanced or BMW-dedicated scan tool, additional 'proprietary' information is normally available.</p>
+<h2>Scan tool and scan tool display</h2>
+<p>Owing to the advanced nature of OBD II adaptive strategies, all diagnostics need to start with a scan tool. The aftermarket scan tools can be connected to either the 16-pin OBD II Data Link Connector (DLC) or the BMW 20-pin DLC in the engine compartment. Data from the OBD II DLC may be limited, depending on scan tool and vehicle.</p>
+<p>OBD II standards mandate that the 16-pin DLC must be located within three (3) feet of the driver and must not require any tools to be exposed. The communication protocol used by BMW is ISO 9141.</p>
+<p>Starting with June 2000 production, the 20-pin BMW diagnostic port (<strong>Data Link Connector or DLC</strong>) which was previously located in the engine compartment has been deleted. All diagnostic, coding and programming functions are incorporated into the <strong>OBD II</strong> diagnostic port, located under left side of dashboard.</p>
+<p><img src="e46_OBD-2-1222_fig2.jpg" alt="BMW 20-pin DLC connector (round, left) and 16-pin OBD II connector (rectangular, right) side by side. Illustration ID: 0021780" /></p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>On cars built up 06-2000: when accessing emissions related DTCs through the 16-pin OBD II DLC, the BMW 20-pin DLC cap must be installed.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Professional diagnostic scan tools available at the time of this printing include the BMW factory tools (DISplus and MoDiC) and a small number of aftermarket BMW-specific tools. The CS2000 from Baum Tools Unlimited, the Retriever from Assenmacher Specialty Tools, and the MT2500 from Snap-On Tools are examples of quality OBD scan tools.</li>
+<li>In addition to the professional line of scan tools, inexpensive 'generic' OBD II scan tool software programs and handheld units are readily available. These tools do have limited capabilities, but they are nonetheless powerful diagnostic tools. These tools read live data streams and freeze frame data as well as a host of other valuable diagnostic data.</li>
+<li>For the do-it-yourself owner, simple aftermarket DTC readers are also available. These inexpensive BMW-only tools are capable of checking for DTCs as well as turning off the illuminated MIL and resetting the service indicator lights.</li>
+</ul>
+<h2>Diagnostic monitors</h2>
+<p>A diagnostic monitor is an operating strategy that runs internal tests and checks a specific system, component or function. This is similar to computer self tests.</p>
+<p>Completion of a drive cycle ensures that all monitors have completed their required tests. The ECM must recognize the loss or impairment of the signal or component and determine if a signal or sensor is faulty based on 3 conditions:</p>
+<ul>
+<li>Signal or component shorted to ground</li>
+<li>Signal or component shorted to B+</li>
+<li>Signal or component missing (open circuit)</li>
+</ul>
+<p>The OBD II system must monitor all emission control systems that are on-board. Not all vehicles have a full complement of emission control systems. For example, a vehicle may not be equipped with secondary air injection, so naturally no secondary air readiness/function code would be present.</p>
+<p>OBD II requires monitoring of the following:</p>
+<ul>
+<li>Oxygen sensor monitoring</li>
+<li>Catalyst monitoring</li>
+<li>Misfire monitoring</li>
+<li>Evaporative system monitoring</li>
+<li>Secondary air monitoring</li>
+<li>Fuel system monitoring</li>
+</ul>
+<p>Monitoring these emissions related functions is done using DME input sensors and output actuators based on preprogrammed data sets. If the ECM cannot determine the environment or engine operating conditions due to missing or faulty signals it will set a fault code and, depending on conditions, illuminate the MIL.</p>
+<p><strong>Oxygen sensor monitoring:</strong> When drive conditions allow, response rate and switching time of each oxygen sensor is monitored. In addition, the heater function is also monitored. The OBD II &quot;diagnostic executive&quot; knows the difference between upstream and downstream oxygen sensors and reads each one individually.</p>
+<p>All oxygen sensors are monitored separately. In order for the oxygen sensor to be effectively monitored, the system must be in closed loop operation.</p>
+<p><strong>Catalyst monitoring:</strong> This strategy monitors the two heated oxygen sensors per bank of cylinders. It compares the oxygen content going into the catalytic converter to the oxygen leaving the converter.</p>
+<p>The diagnostic executive knows that most of the oxygen should be used up during the oxidation phase and if it sees higher than programmed values, a fault will be set and the MIL will illuminate.</p>
+<p><strong>Misfire detection:</strong> This strategy monitors crankshaft speed fluctuations and determines if a misfire occurs by variations in speed between each crankshaft sensor trigger point. This strategy is so finely tuned that it can even determine the severity of the misfire.</p>
+<p>The diagnostic executive must determine if misfire is occurring, as well as other pertinent misfire information.</p>
+<ul>
+<li>Specific cylinder(s)</li>
+<li>Severity of the misfire event</li>
+<li>Emissions relevant or catalyst damaging</li>
+</ul>
+<p>Misfire detection is an on-going monitoring process that is only disabled under certain limited conditions.</p>
+<p><strong>Secondary air injection monitoring:</strong> Secondary air injection is used to reduce HC and CO emissions during engine warm up. Immediately following a cold engine start (-10 to 40°C), fresh air/oxygen is pumped directly into the exhaust manifold. By injecting oxygen into the exhaust manifold, catalyst warm-up time is reduced.</p>
+<p>System components:</p>
+<ul>
+<li>Electric air injection motor/pump</li>
+<li>Electric motor/pump relay</li>
+<li>Non-return valve</li>
+<li>Vacuum/vent valve</li>
+<li>Stainless steel air injection pipes</li>
+<li>Vacuum reservoir</li>
+</ul>
+<p>The secondary air system is monitored via the use of the pre-catalyst oxygen sensors. Once the air pump is active and air is injected into the system, the signal at the oxygen sensor will reflect a lean condition. If the oxygen sensor signal does not change, a fault will be set and identify the faulty bank(s). If after completing the next cold start a fault is again present, the MIL will be illuminated.</p>
+<p><strong>Fuel system monitoring:</strong> This monitor receives high priority. It looks at the fuel delivery needed (long/short term fuel trim) for proper engine operation based on programmed data. If too much or not enough fuel is delivered over a predetermined time, a DTC is set and the MIL is turned on.</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Fuel trim refers to adjustments to base fuel schedule. Long-term fuel trim refers to gradual adjustments to the fuel calibration adjustment as compared to short term fuel trim. Long term fuel trim adjustments compensate for gradual changes that occur over time.</li>
+</ul>
+</blockquote>
+<p>Fuel system monitoring monitors the calculated injection time (ti) in relation to engine speed, load, and the pre-catalytic converter oxygen sensor(s) signals as a result of residual oxygen in the exhaust stream.</p>
+<p>The diagnostic executive uses the precatalyst oxygen sensor signal as a correction factor for adjusting and optimizing the mixture pilot control under all engine operating conditions.</p>
+<p><strong>Evaporative system monitoring:</strong> This monitor checks the sealed integrity of the fuel storage system and related fuel lines.</p>
+<p>This monitor has the ability to detect very small leaks anywhere in the system. A pressure test is performed on the EVAP system on a continuous basis as the drive cycle allows.</p>
+<p>On MS 42.0 cars, a leak detection pump (LDP) is used to pressurize and check system integrity. On MS 43.0 cars, a more sophisticated DMTL (Diagnostic Module - Leak Detection) pump is used.</p>
+<h2>Drive cycle</h2>
+<p>The OBD II drive cycle is an important concept in understanding OBD II requirements. The purpose of the drive cycle is to run all of the emission-related on-board diagnostics over a broad range of driving conditions.</p>
+<p>The drive cycle is considered completed when all of the diagnostic monitors have run their tests without interruption. For a drive cycle to be initiated, the vehicle must be started cold and brought up to 160°F and at least 40°F above its original starting temperature.</p>
+<p>Once the drive cycle is completed, the system status or inspection/maintenance (I/M) readiness codes are set to &quot;Yes.&quot;</p>
+<p>System status codes will be set to &quot;No&quot; in the following cases:</p>
+<ul>
+<li>The battery or ECM is disconnected.</li>
+<li>The ECM's DTCs have been erased after completion of repairs and a drive cycle has not been completed.</li>
+</ul>
+<p>A scan tool can be used to determine if on-board diagnosis is complete as well as the status of the I/M codes. All required tests must be completed before the I/M readiness codes will be set to &quot;Yes&quot;.</p>
+<h2>Readiness codes</h2>
+<p>[The source PDF ends this section with the &quot;Readiness codes&quot; heading only; no content follows it — the next page starts section OBD-3.]</p>
+</article></body></html>

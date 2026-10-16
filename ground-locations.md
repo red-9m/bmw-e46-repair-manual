@@ -1,0 +1,66 @@
+# Ground Locations
+
+> Source: Bentley *BMW 3 Series (E46) 1999–2005 (M3) Repair Manual*, section 610-3 (PDF pages 983–985 of 1252).
+
+Grounds are widely distributed throughout the vehicle body. Several are found under the interior carpets. Lugs and connectors attached to ground are susceptible to damage and corrosion. Clean or renew them as necessary.
+
+![E46 ground locations overview diagram: X165, X166, X490, X494, X498, X6454, X173, X1108, X13016. Illustration ID: 0021256](e46_610-3_fig01.jpg)
+
+Fig. 5 Left front engine compartment, behind left headlight
+
+1 - Ground X165
+
+![Left front engine compartment, behind left headlight: ground X165 (1). Illustration ID: 0021558](e46_610-3_fig02.jpg)
+
+Fig. 6 Right front engine compartment, behind right headlight
+
+1 - Ground X166
+
+![Right front engine compartment, behind right headlight: ground X166 (1). Illustration ID: 0021559](e46_610-3_fig03.jpg)
+
+Fig. 7 On bulkhead behind E-box
+
+1 - Ground X6454
+
+![Bulkhead behind E-box, top part: ground stud (1).](e46_610-3_fig04.jpg)
+
+![Bulkhead behind E-box, bottom part: ground X6454 (1) at washer filler neck. Illustration ID: 0021782](e46_610-3_fig05.jpg)
+
+Fig. 8 Under left front carpet on door sill
+
+1 - Ground connector X173
+
+![Under left front carpet on door sill: ground connector X173 (1) at left front seat mounting stud. Illustration ID: 0021800](e46_610-3_fig06.jpg)
+
+Fig. 9 On door sill, under driver seat carpet
+
+1 - Ground connector X1108
+2 - Side impact airbag crash sensor
+
+![On door sill under driver seat carpet: ground connector X1108 (1), side impact airbag crash sensor (2). Illustration ID: 0022548](e46_610-3_fig07.jpg)
+
+Fig. 10 Under right front carpet on door sill
+
+1 - Ground connector X490
+
+![Under right front carpet on door sill: ground connector X490 (1) at right front seat mounting stud. Illustration ID: 0022207](e46_610-3_fig08.jpg)
+
+Fig. 11 Behind right rear seat backrest
+
+1 - Ground X494
+
+![Behind right rear seat backrest, top part: connector module above wheel arch.](e46_610-3_fig09.jpg)
+
+![Behind right rear seat backrest, bottom part: ground X494 (1). Illustration ID: 0021788](e46_610-3_fig10.jpg)
+
+Fig. 12 Right side trunk, behind trim
+
+1 - Ground X498
+
+![Right side trunk, behind trim: ground X498 (1) ahead of battery and fuel vapor canister. Illustration ID: 0021353b](e46_610-3_fig11.jpg)
+
+Fig. 13 Left side trunk, behind trim
+
+1 - Ground X13016
+
+![Left side trunk, behind trim: ground X13016 (1). Illustration ID: 0021354a](e46_610-3_fig12.jpg)

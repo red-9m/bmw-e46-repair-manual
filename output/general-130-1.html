@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>General (Fuel Injection)</h1>
+<blockquote>
+<p>Source: BMW 3 Series (E46) Repair Manual, section 130-1, Fuel Injection chapter (PDF pages 318–325 of 1252).</p>
+</blockquote>
+<p>This repair group covers service and repair for the Siemens engine management systems used on the E46 models covered by this manual. Additional engine management information may also be found in the following repair groups:</p>
+<ul>
+<li>[100 Engine–General]</li>
+<li>[120 Ignition System]</li>
+<li>[160 Fuel Tank and Fuel Pump]</li>
+<li>[Electrical Wiring Diagrams]</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Fuel pressure testing and fuel pump repair information is covered in [160 Fuel Tank and Fuel Pump].</li>
+</ul>
+</blockquote>
+<p>Table a. Engine management systems</p>
+<table>
+<thead>
+<tr>
+<th>Model Year: Engine code</th>
+<th>DME system</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1999 - 2000: M52 TU B25, M52 TU B28</td>
+<td>Siemens MS 42.0</td>
+</tr>
+<tr>
+<td>2001: M54 B25, M54 B30</td>
+<td>Siemens MS 43.0</td>
+</tr>
+</tbody>
+</table>
+<p>The Siemens systems are sophisticated self-diagnosing OBD II systems. These systems continuously monitor components and record and store valuable diagnostic information. When faults arise, or if the MIL (malfunction indicator lamp) in the instrument cluster is illuminated, begin troubleshooting by hooking up a BMW-compatible scan tool. The rich diagnostic capabilities of these systems have the potential to save hours of diagnostic time, incorrect component replacement and possible damage to system components. See [OBD On Board Diagnostics] at the back of this manual.</p>
+<h2>Tools and test equipment</h2>
+<p>If the equipment required to do the job is unavailable, it is recommended that these repairs be left to an authorized BMW dealer or other qualified BMW repair facility.</p>
+<p><img src="e46_130-1_fig01.jpg" alt="Fuel pressure gauge Baum 1318 (tool A)." /></p>
+<ul>
+<li>Fuel pressure gauge Baum 1318 (Source: Baum Tools Unlimited)</li>
+</ul>
+<p><img src="e46_130-1_fig02.jpg" alt="Automotive digital multimeter Fluke 87 (tool B)." /></p>
+<ul>
+<li>Automotive digital multimeter Fluke 87</li>
+</ul>
+<p><img src="e46_130-1_fig03.jpg" alt="Low current test light &quot;noid&quot; Baum 1115a (tool C)." /></p>
+<ul>
+<li>Low current test light (&quot;noid&quot;) Baum 1115a (Source: Baum Tools Unlimited)</li>
+</ul>
+<p><img src="e46_130-1_fig04.jpg" alt="Top half of photo: factory DTC scan tool BMW DIS/MoDiC (tool D). Split across PDF pages 319–320." /></p>
+<p><img src="e46_130-1_fig05.jpg" alt="Bottom half of the same photo: DIS/MoDiC scan tool on rolling stand with diagnostic adapter." /></p>
+<ul>
+<li>Factory DTC scan tool BMW DIS/MoDiC</li>
+</ul>
+<p><img src="e46_130-1_fig06.jpg" alt="Fuel line plugs BMW 13 5 281 / 13 5 282 (tool E)." /></p>
+<ul>
+<li>Fuel line plugs BMW 13 5 281 / 13 5 282</li>
+</ul>
+<p><img src="e46_130-1_fig07.jpg" alt="Aftermarket DTC scan tool Baum CS2000 (tool F)." /></p>
+<ul>
+<li>Aftermarket DTC scan tool Baum CS2000 (Source: Baum Tools Unlimited)</li>
+</ul>
+<p><img src="e46_130-1_fig08.jpg" alt="Fuel line clamp BMW 13 3 010 clamped on fuel line (tool G)." /></p>
+<ul>
+<li>Fuel line clamp BMW 13 3 010</li>
+</ul>
+<p><img src="e46_130-1_fig09.jpg" alt="Fuel rail to pressure gauge fitting BMW 13 5 220 (tool H)." /></p>
+<ul>
+<li>Fuel rail to pressure gauge fitting BMW 13 5 220</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Professional diagnostic scan tools available at the time of this printing include the BMW factory tools (DISplus and MoDiC) and a small number of aftermarket BMW-specific tools. The <code>CS2000' from Baum Tools Unlimited, the </code>Retriever' from Assenmacher Specialty Tools, and the MT2500 from Snap-on are three examples of quality OBD scan tools.</li>
+<li>In addition to the BMW professional line of scan tools, there are many inexpensive `generic' OBD II scan tool software programs and handheld units available. Although these tools have limited capabilities as compared to the dedicated tools, they are powerful diagnostic tools. These tools read live data streams, freeze frame information for DTCs (diagnostic trouble codes) and impending DTCs, as well as a host of other valuable diagnostic data.</li>
+<li>For the DIY owner, simple aftermarket DTC readers are also available. These inexpensive BMW-only tools are capable of checking for DTCs as well as turning off the illuminated MIL, and resetting the service indicator lights.</li>
+<li>See [020 Maintenance] for specialty tool manufacturer contact information.</li>
+</ul>
+</blockquote>
+<h2>Principle of operation</h2>
+<p>The DME fuel injection system is completely electronic in operation. Intake air, engine coolant temperature, crank and camshaft positions, engine speed and many other engine operating parameters are measured electronically and the information is supplied to the engine control module (ECM).</p>
+<p>Based on input information, the ECM controls the ignition coils, fuel injectors, motor driven throttle valve, double VANOS system, radiator cooling fan, electrically heated thermostat, as well as other outputs.</p>
+<p>The illustration on the following page shows the MS 42.0 ECM inputs and outputs. The MS 43.0 system is similar in operation, with the main difference being the fully electronic `drive-by-wire' throttle valve. Additional system operational information can be found in [100 Engine–General].</p>
+<p>DME MS 42.0</p>
+<p><img src="e46_130-1_fig10.jpg" alt="Top of diagram: DME MS 42.0 ECM inputs and outputs, including power supplies, temperature and position sensors, knock sensors, MFL button pad, MAF signal, ignition, injectors, VANOS solenoids, oxygen sensor heating, cooling fan, purge valve and CAN bus. Split across PDF pages 322–323." /></p>
+<p><img src="e46_130-1_fig11.jpg" alt="Bottom of the same diagram: vehicle speed input, EWS III, LDP, oxygen sensor monitoring, motor driven throttle valve, MAP-controlled heated thermostat and OBD II diagnostic link connector. Illustration ID: 0021013" /></p>
+<h2>Warnings and cautions</h2>
+<p>For personal safety, as well as the protection of sensitive electronic components, adhere to the warnings and cautions on the following pages.</p>
+<blockquote>
+<p><strong>WARNING!</strong></p>
+<ul>
+<li>Gasoline is highly flammable and its vapors are explosive. Do not smoke or work on a car near heaters or other fire hazards when diagnosing and repairing fuel system problems. Have a fire extinguisher available in case of an emergency.</li>
+<li>When working on an open fuel system, wear suitable hand protection, as prolonged contact with fuel can cause illnesses and skin disorders.</li>
+<li>The ignition system produces high voltages that can be fatal. Avoid contact with exposed terminals. Use extreme caution when working on a car with the ignition switched on or the engine running.</li>
+<li>Do not touch or disconnect any cables from the coils while the engine is running or being cranked by the starter.</li>
+<li>Connect and disconnect the DME system wiring and test equipment leads only when the ignition is switched off.</li>
+<li>Renew fuel system hoses, clamps and O-rings any time they are removed.</li>
+<li>Before making any electrical tests that require the engine to be cranked using the starter, disable the ignition system as described in [120 Ignition System].</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Prior to disconnecting the battery, read the battery disconnection cautions given at the front of this manual on page viii.</li>
+<li>Do not connect any test equipment that delivers a 12-volt power supply to terminal 15 (+) of the ignition coil. The current flow may damage the ECM. In general, connect test equipment only as specified by BMW, or the equipment maker.</li>
+<li>Only use a digital multimeter for electrical tests.</li>
+<li>Only use an LED test light for quick tests.</li>
+<li>Disconnecting the battery may erase fault code(s) stored in memory. Check for fault codes prior to disconnecting the battery cables.</li>
+<li>Wait at least 40 seconds after turning off the ignition before removing the engine control module (ECM) connector. If the connector is removed before this time, residual power in the system relay may damage the control module.</li>
+<li>Cleanliness is essential when working on an open fuel system. Thoroughly clean fuel line connections and surrounding areas before loosening. Avoid moving the car. Only install clean parts.</li>
+<li>Fuel system cleaners and other chemical additives other than those specifically recommended by BMW may damage the catalytic converter, the oxygen sensor or other fuel supply components.</li>
+</ul>
+</blockquote>
+</article></body></html>

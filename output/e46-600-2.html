@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>E46 Electrical System</h1>
+<blockquote>
+<p>Source: Bentley <em>BMW 3 Series (E46) 1999–2005 (M3) Repair Manual</em>, section 600-2 (PDF pages 943–952 of 1252).</p>
+</blockquote>
+<p>E46 cars are electrically complex. Many vehicle systems and subsystems are interconnected or integrated. In addition, the requirements of second generation On-Board Diagnostics (OBD II) are such that there are now many more circuits and wires in the vehicle than ever before. The components must exchange large volumes of data with one another in order to perform their various functions.</p>
+<p>The use of dedicated data lines for each link in the system has reached the limits of its capabilities. On the one hand, wiring harnesses now must be so complex that they become unmanageable. In addition, the finite number of pins on conventional connectors becomes a limiting factor in electronic control module development.</p>
+<p>The solution has been found in the use of specialized, vehicle compatible serial bus systems. The E46 bus system is summarized in [Table a].</p>
+<p>Table a. E46 busses</p>
+<table>
+<thead>
+<tr>
+<th>Bus</th>
+<th>Circuits covered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K-bus</td>
+<td>Driver information systems (instrument cluster, Check Control, on-board computer)<br>Central Body Electronics (ZKE V)<br>General Module (GM V)<br>Seat memory (SM)<br>Sunroof (SHD)<br>Rain sensor (AIC)<br>Telephone and sound system<br>Headlight module (LSZ)<br>Coded anti-theft (EWS III) and anti-theft (DWA)<br>Remote entry (FZV)<br>Park distance control (PDC)</td>
+</tr>
+<tr>
+<td>M-bus</td>
+<td>Heating and air conditioning (IHKA) components</td>
+</tr>
+<tr>
+<td>CAN-bus</td>
+<td>Engine management system (DME)<br>Transmission control (AGS)<br>Antilock brakes (ABS)<br>Traction control (ASC)<br>Dynamic stability control (DSC)</td>
+</tr>
+<tr>
+<td>D-bus</td>
+<td>Data link connector (DLC)<br>OBD II connector<br>Multiple restraint system (MRS II)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>1999 E46 bus system, diagram</strong></p>
+<p><img src="e46_600-2_fig01.jpg" alt="Top part of 1999 E46 bus system diagram: K-bus body modules and instrument cluster, M-bus air-distribution stepper motors, CAN-bus engine/transmission/brake controllers, and D-bus connection. Split across PDF pages 944–945." /></p>
+<p><img src="e46_600-2_fig02.jpg" alt="Bottom part of 1999 E46 bus system diagram: MRS II multiple restraint and SBE seat occupancy sensor, DLC OBD II connector on D-bus (Illustration ID: 0021243). Split across PDF pages 944–945." /></p>
+<h2>Voltage and polarity</h2>
+<p>The vehicle electrical system is a 12-volt direct current (DC) negative-ground system. A voltage regulator controls system voltage at approximately 12-volts. All circuits are grounded by direct or indirect connection to the negative (-) terminal of the battery. A number of ground connections throughout the car connect the wiring harness to chassis ground. These circuits are completed by the battery cable or ground strap between the body and the battery negative (-) terminal.</p>
+<h2>Wiring, fuses and relays</h2>
+<p>Electrical components connect using one of the following:</p>
+<ul>
+<li>Heavy cables with lug-type connectors (battery and starter)</li>
+<li>Electrical harnesses with keyed, push-on connectors that lock into place</li>
+<li>Busses with modular connectors</li>
+</ul>
+<p>With the exception of the starter and the charging system, most electrical power is routed from the ignition switch or the battery through the main relay panel in back of the glove compartment or the main fuse box (arrow) above the glove compartment. Fuses are color coded to indicate current capacities.</p>
+<p><img src="e46_600-2_fig03.jpg" alt="Top part of photo: main fuse box above glove compartment, arrow pointing at fuse panel. Split across PDF pages 945–946." /></p>
+<p><img src="e46_600-2_fig04.jpg" alt="Bottom part of photo: open glove compartment below the fuse panel (Illustration ID: 0021264). Split across PDF pages 945–946." /></p>
+<p>The relays and control modules are mounted in various places throughout the vehicle. See [610 Electrical Component Locations].</p>
+<h2>Central Body Electronics (ZKE V)</h2>
+<p>E46 vehicles are equipped with an integrated complex of electronic modules connected mostly via K-bus. This system, called ZKE V, is primarily controlled by the General Module (GM V).</p>
+<p>These functions are controlled directly by the GM V:</p>
+<ul>
+<li>Windshield wiper/washer system, with optional Rain Sensor Interface. See [611 Wipers and Washers].</li>
+<li>Central locking, power trunk release, keyless entry (FZV). See [515 Central Locking and Anti-theft].</li>
+<li>Power window control. See [512 Door Windows].</li>
+<li>Car Memory/Key Memory. See [515 Central Locking and Anti-theft].</li>
+<li>Interior lighting. See [612 Switches].</li>
+<li>Alarm system (DWA). See [515 Central Locking and Anti-theft].</li>
+<li>Electronic consumer sleep mode, described later in this section</li>
+</ul>
+<p>Other functions are not directly controlled by the GM V but interconnected:</p>
+<ul>
+<li>Rain sensor (AIC). See [611 Wipers and Washers].</li>
+<li>Sunroof operation (SHD). See [540 Sunroof].</li>
+<li>Seat memory (SM) and electrical operation. See [520 Seats].</li>
+<li>Outside rear-view mirror control and heating. See [510 Exterior Trim, Bumpers].</li>
+<li>Windshield washer jet heating. See [611 Wipers and Washers].</li>
+</ul>
+<h2>Redundant data storage</h2>
+<p>The following vehicle information is stored redundantly in the instrument cluster and the light switch module:</p>
+<ul>
+<li>Vehicle identification number (VIN)</li>
+<li>Total mileage</li>
+<li>Service interval data</li>
+</ul>
+<p>This redundancy means that the instrument cluster or light module may be replaced without loss of stored data.</p>
+<p><img src="e46_600-2_fig05.jpg" alt="Top part of redundant data storage diagram: LSZ light switch module and instrument cluster compared (≠), each storing VIN, total mileage and service interval. Split across PDF pages 947–948." /></p>
+<p><img src="e46_600-2_fig06.jpg" alt="Bottom part of redundant data storage diagram: enlarged instrument cluster mileage display with tamper warning dot (arrow) (Illustration ID: 0021266). Split across PDF pages 947–948." /></p>
+<p>The data between the two units is compared each time the ignition is switched on (KL 15 on). If the data does not match, the tamper warning dot (arrow) in the mileage display will be illuminated. Under certain circumstances a fault code (DTC) will be set.</p>
+<p>Resetting and resynchronizing of codes and data requires the use of BMW scan tools DIS or MoDiC.</p>
+<h2>Car Memory/Key Memory</h2>
+<p>A number of features and functions can be customized to the driver(s) preference. The identity of the vehicle user is provided by a signal from the keyless entry system (FZV).</p>
+<p>Car Memory and Key Memory are actually two separate functions, although they are marketed as a combined feature. See [515 Central Locking and Anti-theft] for further details.</p>
+<h2>Electrical consumer sleep mode</h2>
+<p>Central body electronics (ZKE V) is designed to bring the vehicle electrical consumers into &quot;sleep mode&quot; after 16 minutes of inactivity.</p>
+<p>In order to test sleep mode:</p>
+<ul>
+<li>Switch ignition off.</li>
+<li>Close all doors, trunk and hood.</li>
+<li>Lock vehicle using central locking.</li>
+<li>Wait 16 minutes.</li>
+</ul>
+<p>If one of a number of inputs into the General Module (GM V) is activated before the vehicle is in sleep mode, the 16 minute cycle starts again. Once the vehicle is in sleep mode, the GM V will &quot;wake up&quot; if it receives a change of signal from one of the following sensors:</p>
+<ul>
+<li>K-bus</li>
+<li>Door jamb sensors</li>
+<li>Trunk lid lock cylinder microswitch</li>
+<li>Interior trunk lid release push-button microswitch</li>
+<li>Central locking button</li>
+<li>Engine hood latch microswitch</li>
+<li>Trunk key position switch</li>
+<li>Interior light switch</li>
+<li>Internal motion sensor</li>
+<li>Tilt sensor</li>
+<li>Driver's door lock sensors</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> If an interior light is accidentally left on, the GM V will override the signal from it after 16 minutes and implement sleep mode.</p>
+</blockquote>
+<h2>Electrical system safety precautions</h2>
+<p>Please read the warnings and cautions in this section before doing any work on your electrical system.</p>
+<blockquote>
+<p><strong>WARNING!</strong></p>
+<ul>
+<li>An airbag unit houses an explosive powerful charge. Making repairs without the proper knowledge and special test equipment may cause serious personal injury. See [721 Airbag System (SRS)].</li>
+<li>The ignition system of the car operates at lethal voltages. People with pacemakers or weak hearts should not expose themselves to the ignition system electric currents. Extra caution must be taken when working on the ignition system or when servicing the engine while it is running or the key is on. See [120 Ignition System] for additional ignition system warnings and cautions.</li>
+<li>Keep hands, clothing and other objects clear of the electric radiator cooling fan when working on a warm engine. The fan may start at any time, even when the ignition is switched off.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Always turn off the engine and disconnect the negative (-) cable from the battery before removing any electrical components. Disconnecting the battery may erase fault code(s) stored in control module memory. Check for fault codes using special BMW diagnostic equipment.</li>
+<li>Prior to disconnecting the battery, read the battery disconnection cautions given at the front of this manual on page viii.</li>
+<li>Connect and disconnect ignition system wires, multiple connectors and ignition test equipment leads only while the ignition is off.</li>
+<li>Do not disconnect the battery with the engine running.</li>
+<li>Do not quick-charge the battery (for boost starting) for longer than one minute, and do not exceed 16.5 volts at the battery with the boosting cables attached. Wait at least one minute before boosting the battery a second time.</li>
+<li>Do not use an analog meter. Use only a digital multimeter.</li>
+<li>Many of the solid-state modules are static sensitive. Static discharge will permanently damage them. Always handle the modules using proper static prevention equipment and techniques.</li>
+<li>To avoid damaging harness connectors or relay panel sockets, use jumper wires with flat-blade connectors that are the same size as the connector or relay terminals.</li>
+<li>Always switch a digital multimeter to the appropriate function and range before making test connections.</li>
+<li>Do not try to start the engine of a car which has been heated above 176F/80C, (for example, in a paint drying booth). Allow it to cool to normal temperature.</li>
+<li>Disconnect the battery before doing any electric welding on the car.</li>
+<li>Do not wash the engine while it is running, or anytime the ignition is switched on.</li>
+<li>Choose test equipment carefully. Use a digital multimeter with at least 10 megaohm input impedance, or an LED test light. An analog meter (swing-needle) or a test light with a normal incandescent bulb may draw enough current to damage sensitive electronic components.</li>
+<li>An ohmmeter must not be used to measure resistance on solid state components such as control units or time delay relays.</li>
+<li>Always disconnect the battery before making resistance (ohm) measurements on the circuit.</li>
+</ul>
+</blockquote>
+</article></body></html>

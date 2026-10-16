@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>General (Radiator and Cooling System)</h1>
+<blockquote>
+<p>Source: BMW 3 Series (E46) Repair Manual, section 170-1, Radiator and Cooling System chapter (PDF pages 360–365 of 1252).</p>
+</blockquote>
+<p>This section covers component repair information for the engine cooling system.</p>
+<p>The E46 cooling system uses a centrifugal-type belt-driven coolant pump, an electric primary cooling fan, and an electrically heated thermostat. The cooling system is unique in that the cooling fan and the thermostat are controlled and monitored by the DME engine management system. Therefore, cooling system faults can be diagnosed using an appropriate scan tool.</p>
+<h2>Special tools</h2>
+<p>Special tools are necessary for fan clutch removal and pressure testing the cooling system.</p>
+<p><img src="e46_170-1_fig01.jpg" alt="Cooling fan counterhold wrench BMW 11 5 030 installed on fan clutch (tool A)." /></p>
+<ul>
+<li>Cooling fan counterhold wrench BMW 11 5 030</li>
+</ul>
+<p><img src="e46_170-1_fig02.jpg" alt="Cooling fan wrench BMW 11 5 040 (tool B)." /></p>
+<ul>
+<li>Cooling fan wrench BMW 11 5 040</li>
+</ul>
+<p><img src="e46_170-1_fig03.jpg" alt="Top half of drawing: cooling system pressure tester BMW 17 0 002/17 0 005 (tool C). Split across PDF pages 360–361." /></p>
+<p><img src="e46_170-1_fig04.jpg" alt="Bottom half of the same drawing: tester hand pump and hose." /></p>
+<ul>
+<li>Cooling system pressure tester BMW 17 0 002/17 0 005</li>
+</ul>
+<p><img src="e46_170-1_fig05.jpg" alt="Expansion tank cap test adapter BMW 17 0 007 (tool D)." /></p>
+<ul>
+<li>Expansion tank cap test adapter BMW 17 0 007</li>
+</ul>
+<p>Cooling system (DME MS 42.0)</p>
+<p><img src="e46_170-1_fig06.jpg" alt="Labeled diagram: cooling system (DME MS 42.0) — ECM and E-box, cylinder head, expansion tank, radiator with outlet temperature sensor and drain plug, electric heater thermostat, electrical harness connector, upper and lower hoses, bleed screw, ATF cooler. Illustration ID: 0021209" /></p>
+<h2>Coolant pump</h2>
+<p>A centrifugal-type coolant pump is mounted to the front of the engine. The belt-driven pump circulates coolant through the system whenever the engine is running.</p>
+<h2>Thermostat</h2>
+<p>An electrically heated thermostat regulates the engine coolant temperature and is controlled by the DME control module. The heated thermostat allows the engine to be operated at higher temperatures at idle and at part throttle. Having the ability to control the engine coolant temperature electronically results in improved emissions and performance. Problems with the heated thermostat can be diagnosed using a compatible scan tool.</p>
+<p><img src="e46_170-1_fig07.jpg" alt="Cutaway drawing of electrically heated thermostat: heating element, wax core, electrical connection." /></p>
+<h2>Radiator and expansion tank</h2>
+<p>The radiator is a crossflow design. An expansion tank provides for coolant expansion at higher temperatures and easy monitoring of the coolant level.</p>
+<p>On cars with automatic transmission, ATF is circulated through an additional heat exchanger (ATF cooler).</p>
+<h2>Cooling fan (primary)</h2>
+<p>There are two cooling fan configurations used on the cars covered by this manual, depending on transmission application.</p>
+<p><img src="e46_170-1_fig08.jpg" alt="Top sliver of schematic: ECM box edge. Split across PDF pages 362–363." /></p>
+<p><img src="e46_170-1_fig09.jpg" alt="Schematic: cooling fan output final stage with 5-pin connector, A/C compressor cut-out signal, automatic climate control inputs via CAN bus, fan control signal, radiator outlet temperature sensor, power output final stage and electric cooling fan." /></p>
+<p>On cars with automatic transmissions, the main fan is electric and mounted on the bumper side of the radiator. The fan is controlled by the DME control module via the output final stage. Additionally a belt-driven fan via a viscous fluid coupling (clutch) is attached to the front of the coolant pump. The fan clutch controls the speed of the fan based on engine compartment temperature.</p>
+<p>On cars with manual transmissions, a single multi-speed electric cooling fan is used. The fan is mounted on the engine side of the radiator and controlled by the DME control module via the output final stage.</p>
+<p>On both configurations, the output final stage is mounted on the fan housing, next to the fan motor. The fan is operated using a pulse width modulated (PWM) signal and is protected by a 50-amp fuse. Electric fan activation is based on the following inputs to the ECM:</p>
+<ul>
+<li>Radiator outlet temperature</li>
+<li>Catalyst temperature (calculated temperature)</li>
+<li>Vehicle speed</li>
+<li>Battery voltage</li>
+<li>A/C pressure (calculated pressure)</li>
+</ul>
+<p>When the vehicle is first started, the ECM activates the electric fan briefly at 20% of its maximum speed, then switches off. This is for diagnostic monitoring. The voltage generated by the fan when it slows down (acting as a generator) must match the stored `rpm' values in the fan power output stage to confirm that the fan is operating correctly.</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>If the ECM stored a cooling fan fault, check that the fan is not seized and that it spins freely.</li>
+<li>When A/C is switched ON, the electric fan is not immediately turned on.</li>
+<li>After the engine is switched OFF, the fan may continue to run at varying speeds for up to 10 minutes, based on calculated catalyst temperature.</li>
+</ul>
+</blockquote>
+<h2>Warnings and cautions</h2>
+<p>The following warnings and cautions should be observed when working on the cooling system.</p>
+<blockquote>
+<p><strong>WARNING!</strong></p>
+<ul>
+<li>At normal operating temperature the cooling system is pressurized. Allow the system to cool as long as possible before opening-a minimum of an hour-then release the cap slowly to allow safe release of pressure. Releasing the cooling system pressure lowers the coolant boiling point and the coolant may boil suddenly. Use heavy gloves and wear eye and face protection to guard against scalding.</li>
+<li>Use extreme care when draining and disposing of engine coolant. Coolant is poisonous and lethal to humans and pets. Pets are attracted to coolant because of its sweet smell and taste. Consult a veterinarian immediately if coolant is ingested by an animal.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Avoid adding cold water to the coolant while the engine is hot or overheated. If it is necessary to add coolant to a hot system, do so only with the engine running and coolant pump turning.</li>
+<li>To avoid excess silicate gel precipitation in the cooling system and loss of cooling capacity, use BMW coolant or equivalent low silicate antifreeze.</li>
+<li>If oil enters the cooling system, the radiator, expansion tank and heating circuit must be flushed with cleaning agent. BMW recommends removal of the radiator and expansion tank to flush.</li>
+<li>When working on the cooling system, cover the alternator to protect it against coolant drips.</li>
+<li>Prior to disconnecting the battery, read the battery disconnection cautions given at the front of this manual on page viii.</li>
+</ul>
+</blockquote>
+</article></body></html>

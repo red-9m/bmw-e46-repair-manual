@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>Interior Lights</h1>
+<blockquote>
+<p>Source: Bentley <em>BMW 3 Series (E46) 1999–2005 (M3) Repair Manual</em>, section 630-6 (PDF pages 1108–1112 of 1252).</p>
+</blockquote>
+<p>The ZKE V general module (GM V) controls the interior lighting automatically using input from several monitors. The lighting can also be manually controlled.</p>
+<p>Each door lock actuator contains a hall effect sensor for the purpose of monitoring door open/closed status. The hall effect sensor is located directly behind the rotary latch plate encased in the lock actuator. The sensor is activated by the rotary latch plate position.</p>
+<ul>
+<li>Door closed: Rotary latch plate in latched position. Current flow through hall sensor &lt;5 mA.</li>
+<li>Door open: Rotary latch plate in open position. Current flow through hall sensor &gt;12 mA.</li>
+</ul>
+<p>A change in current flow informs the GM V when a door is opened or closed.</p>
+<p>The overhead front seat interior/map light unit contains a single main interior light. The light is controlled by the GM V automatically or by momentarily pressing the interior light switch located on the light assembly. The switch provides a momentary ground signal that the GM V recognizes as a request to either turn the light on (if off) or turn the light off (if on).</p>
+<p>If the switch is held for more than 3 seconds, the GM V interprets the continuous ground signal as a request to turn the interior light circuit off (workshop mode). Workshop mode is stored in memory: Even if the GM V is removed from the power supply and reconnected, the lights do not come back on unless the switch is pressed again.</p>
+<p>There are two reading/map lights located in the front interior light assembly. Each is mechanically controlled by depressing the corresponding switch. The power supply for the map lights is supplied by the GM V.</p>
+<p>There is a courtesy light in each front footwell. These lights are only operated when the GM V provides power to the interior lighting circuit.</p>
+<p><strong>Interior lighting system</strong></p>
+<p><img src="e46_630-6_fig01.jpg" alt="Interior lighting system diagram: GM V module connected to the left/right front and rear door lock Hall sensors (TKFT, TKFH, TKBT, TKBH circuits) and battery, IB/SIB/VA inputs, footwell lights (VB 31), front interior light assembly (VB 58g, VB 31) and the left/right rear interior lights. Illustration ID: 0021450" /></p>
+<h2>Interior light automatic controls</h2>
+<p>The GM V provides 12 volts to the interior lighting circuit when the status of one of the following input signals changes:</p>
+<ul>
+<li>Door contact hall sensor active (door open)</li>
+<li>&quot;Unlock&quot; request received from driver door key lock hall sensor (ignition switch OFF)</li>
+<li>&quot;Unlock&quot; request from FZV keyless entry system received via K bus (ignition switch OFF)</li>
+<li>Vehicle exterior lights on for minimum of 2 minutes when ignition switch is OFF</li>
+<li>Active crash signal from MRS II control module</li>
+<li>Lock button of FZV key pressed with vehicle already locked (interior search function)</li>
+<li>Immediately after ignition switch is turned to &quot;radio&quot; position with driver door closed.</li>
+<li>When vehicle is locked (single or double) with door contacts closed.</li>
+<li>When vehicle door contacts are closed. Lights remain on for 20 seconds, then go to soft off.</li>
+<li>After interior search function is activated, lights automatically turn off (soft off) after 8 seconds.</li>
+<li>After 16 minutes with door contact active (open door) and key off, lights are switched off (consumer cutoff function).</li>
+</ul>
+<p>The component activation function of DIS also has the ability to switch the lights.</p>
+<h2>Interior light, footwell light, or cargo compartment light (Sport Wagon), replacing bulb</h2>
+<p>Pry interior light fixture gently to remove.</p>
+<p><img src="e46_630-6_fig02.jpg" alt="Interior light fixture being pried gently out of the headliner with a prying tool. Illustration ID: 0022732" /></p>
+<ul>
+<li>Detach electrical harness connector.</li>
+<li>Remove bulb and replace.</li>
+</ul>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>When replacing bulbs, do not touch glass of bulb with fingers. Only touch bulb with clean cloth or bulb packaging.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Installation is reverse of removal. Bulb types and specifications for various interior lamps are listed below.</li>
+</ul>
+<p>Interior light applications</p>
+<table>
+<thead>
+<tr>
+<th>Location</th>
+<th>Type &amp; rating</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Footwell light bulb</td>
+<td>Softlite 5W</td>
+</tr>
+<tr>
+<td>Glove compartment light bulb</td>
+<td>Softlite 5W</td>
+</tr>
+<tr>
+<td>Passenger compartment bulb, front or rear</td>
+<td>Softlite 5W</td>
+</tr>
+<tr>
+<td>Reading bulb, front or rear</td>
+<td>6W</td>
+</tr>
+<tr>
+<td>Tailgate courtesy light bulb</td>
+<td>Softlite 10W</td>
+</tr>
+<tr>
+<td>Visor vanity light bulb</td>
+<td>Softlite 10W</td>
+</tr>
+</tbody>
+</table>
+<p>Note: Table splits across pages 1111/1112 with repeated header, and the &quot;Passenger compartment bulb&quot; row is split by the page break — merged.</p>
+<h2>Trunk light bulb, replacing</h2>
+<p>The trunk lights are integrated with the taillight assembly.</p>
+<p>Pry trunk light cover (arrow) gently to remove from taillight corner bulb carrier.</p>
+<p><img src="e46_630-6_fig03.jpg" alt="Trunk light cover (white arrow) at the taillight corner bulb carrier being pried gently to remove. Illustration ID: 0022725" /></p>
+<ul>
+<li>Remove bulb and replace.</li>
+<li>Installation is reverse of removal.</li>
+</ul>
+<p>Trunk light application</p>
+<table>
+<thead>
+<tr>
+<th>Location</th>
+<th>Type &amp; rating</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trunk light bulb</td>
+<td>Softlite 10W</td>
+</tr>
+</tbody>
+</table>
+</article></body></html>

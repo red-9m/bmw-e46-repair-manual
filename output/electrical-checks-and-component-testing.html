@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>Electrical Checks and Component Testing</h1>
+<blockquote>
+<p>Source: BMW 3 Series (E46) Repair Manual, section 130-2, Fuel Injection chapter (PDF pages 326–331 of 1252).</p>
+</blockquote>
+<p>Troubleshooting and fault diagnosis on OBD II cars is best performed using an electronic scan tool. However, it may be necessary to perform basic tests of the engine management main components, fuel system or wiring.</p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>The tests in this section may set fault codes (DTCs) in the ECM and illuminate the MIL. After all testing is completed, access and clear DTC fault memory using a BMW compatible scan tool. See [OBD On Board Diagnostics] at the back of this manual.</li>
+<li>Only use a digital multimeter for electrical tests.</li>
+<li>Relay positions can vary. Be sure to confirm relay position by identifying the wiring in the socket using the wiring diagrams found at the rear of this manual.</li>
+</ul>
+</blockquote>
+<h2>DME main relay, testing</h2>
+<p>The DME main relay is energized via the engine control module (ECM) and supplies battery positive (B+) power to many of the engine management components and subsystems. If this relay is faulty, the engine will not start.</p>
+<ul>
+<li>With ignition off, remove main relay (arrow) in electronics box (E-box) at left rear of engine compartment.
+<ul>
+<li>Check for voltage at terminal 6 of main relay socket (30- red wire).</li>
+<li>If battery voltage is present continue testing.</li>
+<li>If battery voltage is not present, check large red wire in relay socket. See [Electrical Wiring Diagrams].</li>
+<li>Reinstall relay and turn ignition on. Gain access to underside of relay socket and check for ground at terminal 4 (85- brown/white wire).</li>
+<li>If ground is present continue testing.</li>
+<li>If ground is not present, signal from ECM (connector X60002, pin 23) is missing. Check wire between ECM and relay.</li>
+<li>With ignition on and relay installed, check for battery voltage at terminal 2 (87- red/white wire).</li>
+<li>If battery voltage is present, relay has energized and is functioning correctly.</li>
+<li>If battery voltage is not present and all earlier tests are OK, relay is faulty and should be replaced.</li>
+</ul>
+</li>
+</ul>
+<p><img src="e46_130-2_fig01.jpg" alt="Top half of photo: electronics box (E-box) at left rear of engine compartment. Split across PDF pages 326–327. Illustration ID: 0021391c" /></p>
+<p><img src="e46_130-2_fig02.jpg" alt="Bottom half of the same photo: arrow at DME main relay in E-box. Illustration ID: 0021391c" /></p>
+<p><img src="e46_130-2_fig03.jpg" alt="Diagram: DME main relay wiring — B+ junction point, DME main relay (K6300), ECM (A6000) connector X60002 pin 23, engine electronics fuse carrier in E-box (A58) Fuse 3 (20 A), wire color codes. Illustration ID: 0021033" /></p>
+<h2>Fuel pump relay, testing</h2>
+<p>The ECM energizes the fuel pump relay by providing the coil side of the relay with ground. During starting, the fuel pump runs as long as the ignition switch is in the start position and continues to run once the engine starts. If the relay is faulty the fuel pump will not run.</p>
+<ul>
+<li>Fuel pump relay (arrow) is located behind glove compartment. Remove glove compartment. See [513 Interior Trim].</li>
+<li>Remove fuel pump relay from socket.</li>
+</ul>
+<p><img src="e46_130-2_fig04.jpg" alt="Glove compartment removed, arrow at fuel pump relay behind it. Illustration ID: 0021787" /></p>
+<ul>
+<li>With ignition in START position, check for battery voltage at relay connector (X10156) terminals 6 and 8 (red/violet and red/white wires).</li>
+</ul>
+<p><img src="e46_130-2_fig05.jpg" alt="Diagram: fuel pump relay wiring — Fuse 44 (30 A) in fuse panel (F54), Fuse 3 (20 A) in engine electronics fuse carrier in E-box (A680), connector X10156, fuel pump relay (K96), fuel pump (M2), ECM (A6000), wire color codes. Illustration ID: 0021034" /></p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Ensure that manual transmission vehicles are not in gear, and automatic transmission vehicles are in Park or Neutral prior to operating ignition in START position.</li>
+</ul>
+</blockquote>
+<ul>
+<li>With ignition in START position, use digital multimeter to check for ground at terminal 4 (black/violet wire).</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>The ground at terminal 4 is switched by the ECM. The ECM harness must be connected to check the switched ground connection.</li>
+</ul>
+</blockquote>
+<ul>
+<li>If no faults are found up to this point, turn ignition key off. Using a fused (14 gauge) jumper wire, connect relay connector terminal 6 to terminal 2. The fuel pump should run.
+<ul>
+<li>If pump runs and all other tests are as specified, fuel pump relay is probably faulty.</li>
+<li>If pump does not run, test fuel pump operation as described in [160 Fuel Tank and Fuel Pump].</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>The jumper wire should be 1.5 mm² (14 ga.) and include an in-line fuse holder with a 15 amp fuse. To avoid fuse/relay panel damage from repeated connecting and disconnecting, also include a toggle switch.</li>
+</ul>
+</blockquote>
+<h2>Fuel delivery and fuel pressure</h2>
+<p>Checking fuel delivery volume and fuel pressure is a fundamental part of troubleshooting and diagnosing the engine management system. Fuel pressure directly influences fuel delivery. Procedures for measuring the fuel pressure and fuel volume are given in [160 Fuel Tank and Fuel Pump].</p>
+<h2>Relieving fuel pressure</h2>
+<p>The fuel system retains fuel pressure in the system when the engine is turned off. To prevent fuel from spraying on a hot engine, system fuel pressure should be relieved before disconnecting fuel lines. One method is to tightly wrap a shop towel around a fuel line fitting and loosen or disconnect the fitting.</p>
+<p>Cleanliness is essential when working with fuel circuit components. Thoroughly clean the unions before disconnecting fuel lines.</p>
+<blockquote>
+<p><strong>WARNING!</strong></p>
+<ul>
+<li>Gasoline is highly flammable and its vapors are explosive. Do not smoke or work on a car near heaters or other fire hazards when diagnosing and repairing fuel system problems. Have a fire extinguisher available in case of an emergency.</li>
+<li>When working on an open fuel system, wear suitable hand protection. Prolonged contact with fuel can cause illnesses and skin disorders.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Remove interior ventilation microfilter housing.
+<ul>
+<li>Remove upper cover and microfilter.</li>
+<li>Open wiring harness loom (A) and move wiring out of way.</li>
+<li>Unfasten screws (B) and remove lower microfilter housing.</li>
+</ul>
+</li>
+</ul>
+<p><img src="e46_130-2_fig06.jpg" alt="Microfilter housing area at cowl: wiring harness loom (A), lower microfilter housing mounting screws (B). Illustration ID: 0021314" /></p>
+<ul>
+<li>Remove fuel rail cover by prying off nut covers (arrows) and removing nuts.</li>
+</ul>
+<p><img src="e46_130-2_fig07.jpg" alt="Valve cover with fuel rail cover, arrows at its nut covers. Illustration ID: 0021021" /></p>
+<ul>
+<li>Unscrew schraeder valve cap (arrow) from fuel rail. Unscrew fuel tank cap to release pressure to vent tank.</li>
+</ul>
+<p><img src="e46_130-2_fig08.jpg" alt="Fuel rail on intake manifold, arrow at schraeder valve cap. Illustration ID: 0021800" /></p>
+<ul>
+<li>Using a brief burst of compressed air (maximum of 3 bar or 43.5 psi) blow fuel back through return line into fuel tank.</li>
+</ul>
+<blockquote>
+<p><strong>WARNING!</strong></p>
+<ul>
+<li>Fuel in fuel line is under pressure (approx. 3 - 5 bar or 45 - 75 psi) and may be expelled under pressure. Do not smoke or work near heaters or other fire hazards. Keep a fire extinguisher handy. Before disconnecting fuel hoses, wrap a cloth around fuel hoses to absorb any leaking fuel. Catch and dispose of escaped fuel. Plug all open fuel lines.</li>
+<li>Always unscrew fuel tank cap to release pressure in the tank before working on the tank or lines.</li>
+</ul>
+</blockquote>
+</article></body></html>

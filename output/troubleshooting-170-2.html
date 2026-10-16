@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>Troubleshooting (Radiator and Cooling System)</h1>
+<blockquote>
+<p>Source: BMW 3 Series (E46) Repair Manual, section 170-2, Radiator and Cooling System chapter (PDF pages 366–370 of 1252).</p>
+</blockquote>
+<p>Begin the diagnosis of cooling system problems with a thorough visual inspection. If no visual faults are found, it is recommended that the DME system be checked for stored diagnostic fault codes (DTCs) using BMW scan tools DIS (Diagnostic Information System) or MoDiC (Mobile Diagnostic Computer) or an aftermarket equivalent.</p>
+<p>Common cooling system faults can be grouped into one of four categories:</p>
+<ul>
+<li>Cooling system leaks</li>
+<li>Poor coolant circulation</li>
+<li>Radiator cooling fan faults</li>
+<li>Electrical/electronic faults</li>
+</ul>
+<p>Be sure to check the condition and tension of the coolant pump drive belt. Check hoses for cracks or softness. Check clamps for looseness. Check the coolant level and check for evidence of coolant leaks from the engine.</p>
+<p>Check that the radiator fins are not blocked with dirt or debris. Clean the radiator using low-pressure water or compressed air. Blow outward, from the engine side out.</p>
+<p>To check coolant pump:</p>
+<p><img src="e46_170-2_fig01.jpg" alt="Top half of drawing: coolant pump drive belt, large arrow at belt tensioner hex. Split across PDF pages 366–367." /></p>
+<p><img src="e46_170-2_fig02.jpg" alt="Bottom half of the same drawing: coolant pump pulley and drive belt. Illustration ID: 0013018" /></p>
+<ul>
+<li>Lever tensioner clockwise using wrench on hex (large arrow) and slip belt off pulley.</li>
+<li>Firmly grasp opposite sides of pulley and check for play in all directions.</li>
+<li>Spin pulley and check that shaft runs smoothly without play.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>The coolant provides lubrication for the pump shaft, so an occasional drop of coolant leaking from the pump is acceptable. If coolant drips steadily from the vent hole, the pump should be replaced.</li>
+</ul>
+</blockquote>
+<p>The cooling system becomes pressurized at normal operating temperature, which raises the boiling point of the coolant. Leaks may prevent the system from becoming pressurized, allowing the coolant to boil at a lower temperature. If visual evidence is inconclusive, a cooling system pressure test can help to pinpoint hard-to-find leaks.</p>
+<p>If the cooling system is full of coolant and holds pressure, the next most probable causes of overheating are:</p>
+<ul>
+<li>Faulty radiator fan or DME control circuit. Use an appropriate scan tool to interrogate the DME control module for faults.</li>
+<li>Loose or worn drive belt.</li>
+<li>Failed thermostat or coolant pump impeller. Some pumps may be fitted with plastic impellers.</li>
+<li>Clogged/plugged radiator or coolant passages.</li>
+</ul>
+<h2>Cooling system pressure test</h2>
+<p>A cooling system pressure test is used to check for internal leaks. Some of the common sources of internal leaks are a faulty cylinder head gasket, a cracked cylinder head, or a cracked cylinder block.</p>
+<p>To do a cooling system pressure test, a special pressure tester is needed.</p>
+<blockquote>
+<p><strong>WARNING!</strong></p>
+<ul>
+<li>At normal operating temperature the cooling system is pressurized. Allow the system to cool before opening. Release the cap slowly to allow safe release of pressure.</li>
+</ul>
+</blockquote>
+<ul>
+<li>With engine cold, install pressure tester (BMW special tools 17 0 002/17 0 005 or equivalent) to expansion tank.</li>
+</ul>
+<p><img src="e46_170-2_fig03.jpg" alt="Cooling system pressure tester BMW 17 0 002/17 0 005 with adapter installed on expansion tank neck. Illustration ID: 0021663" /></p>
+<ul>
+<li>Pressurize system to specification listed in [Table a].</li>
+<li>Pressure should not drop more than 0.1 bar (1.45 psi) for at least two minutes.</li>
+<li>If pressure drops rapidly and there is no sign of external leakage, cylinder head gasket may be faulty. Perform compression and leak-down tests as described in [100 Engine–General]</li>
+<li>Also test expansion tank cap using pressure tester and correct adapter (BMW special tool 17 0 007 or equivalent). Replace faulty cap or cap gasket.</li>
+</ul>
+<p>Table a. Cooling system test pressures</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Test pressure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Radiator</td>
+<td>1.5 bar (21.75 psi)</td>
+</tr>
+<tr>
+<td>Radiator cap</td>
+<td>2 bar (29 psi)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Exceeding the specified test pressure could damage the radiator or other system components.</li>
+</ul>
+</blockquote>
+<h2>Combustion chamber leak test</h2>
+<ul>
+<li>If you suspect that combustion chamber pressure is leaking into the cooling system past the cylinder head gasket, use an exhaust gas analyzer to test the vapors rising from the coolant at the expansion tank.</li>
+</ul>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Use an extension tube above the reservoir neck to maintain distance between the top of the coolant and the gas analyzer nozzle. The gas analyzer is easily damaged if it is allowed to inhale liquid coolant.</li>
+<li>While running engine to check for causes of overheating, observe coolant temperature carefully in order to avoid engine damage.</li>
+</ul>
+</blockquote>
+<h2>Thermostat, checking</h2>
+<p>If the engine overheats or runs too cool and no other cooling system tests indicate trouble, the electrically heated thermostat may be faulty.</p>
+<p>Check for thermostat diagnostic fault codes (DTCs) using BMW scan tools DIS or MoDiC or equivalent. DTCs pertaining to cooling system malfunctions are listed in [Table b]. See also [OBD On Board Diagnostics] at the back of this manual.</p>
+<p>Table b. Cooling system fault codes</p>
+<table>
+<thead>
+<tr>
+<th>BMW fault code</th>
+<th>Explanation</th>
+<th>Possible cause(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>Engine coolant temperature out of predefined range</td>
+<td>Faulty thermostat or cooling fan. Faulty wiring to cooling fan or thermostat.</td>
+</tr>
+<tr>
+<td>222</td>
+<td>Insufficient coolant temperature signal to permit closed loop operation</td>
+<td>Faulty thermostat. Faulty thermostat electrical circuit.</td>
+</tr>
+</tbody>
+</table>
+</article></body></html>

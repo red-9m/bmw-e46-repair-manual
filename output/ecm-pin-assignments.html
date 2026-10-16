@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>ECM Pin Assignments</h1>
+<blockquote>
+<p>Source: BMW 3 Series (E46) Repair Manual, section 130-4, Fuel Injection chapter (PDF pages 351–359 of 1252).</p>
+</blockquote>
+<p>ECM pin assignments are given in Table b. ECM pin assignment-DME MS 42.0 and MS 43.0. This information may be helpful when diagnosing faults to or from the ECM. If all inputs and wiring are OK but operational problems still exist, the ECM itself may be faulty. Generally, absence of voltage or continuity means there is a wiring or connector problem. Test results with incorrect values do not necessarily mean that a component is faulty. Check for loose, broken or corroded connections and wiring before replacing components. If the results are still incorrect, check the component itself.</p>
+<p>For engine management system electrical schematics, see [Electrical Wiring Diagrams].</p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Always wait at least three minutes after turning off the ignition before removing the connector from the engine control module (ECM). If the connector is removed before this time, residual power in the system relay may damage the ECM.</li>
+<li>Always connect or disconnect the control module connector and meter probes with the ignition off.</li>
+</ul>
+</blockquote>
+<p>When making checks at the ECM itself, a breakout box should be used to allow tests to be made with the connector attached to the ECM. This also prevents damage to the small terminals in the connector. As an alternative, the harness connector housing can be separated so that electrical checks can be made from the back of the connector.</p>
+<p>Table b. ECM pin assignment-DME MS 42.0 and MS 43.0</p>
+<p><strong>Connector X60001 9-pin black</strong></p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Signal</th>
+<th>Component/function</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Output</td>
+<td>Terminal 15</td>
+<td>Unloader relay terminal 15</td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Ground</td>
+<td>Ground</td>
+<td>Ground point</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Ground</td>
+<td>Ground</td>
+<td>Ground connector</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Ground</td>
+<td>Ground</td>
+<td>Ground connector</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Input</td>
+<td>Terminal 30 (Fuse 80 amp)</td>
+<td>B+ Terminal</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Input</td>
+<td>Voltage supply (Fuse 2)</td>
+<td>Fuse carrier, engine electronics</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Input</td>
+<td>Voltage supply</td>
+<td>Fuse carrier, engine electronics</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Connector X60002 24-pin black</strong></p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Signal</th>
+<th>Component/function</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Input</td>
+<td>Heater, precatalyst oxygen sensor 1</td>
+<td>Heated oxygen sensor 1 in front of catalytic converter</td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Input/output</td>
+<td>CAN bus signal, low</td>
+<td>Transmission control module</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Input/output</td>
+<td>CAN bus signal, high</td>
+<td>Transmission control module</td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Input/output</td>
+<td>Transmit diagnosis line (TXD) data link signal</td>
+<td>Transmission control module</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Input</td>
+<td>Heater, post-catalyst oxygen sensor 1</td>
+<td>Heated oxygen sensor 1 behind catalytic converter</td>
+</tr>
+<tr>
+<td>8</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Input</td>
+<td>Signal, 3/2-way valve, running losses (MS 42.0)</td>
+<td>3/2 way valve, running losses (MS 42.0)</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Input</td>
+<td>Heater, precatalyst oxygen sensor 2</td>
+<td>Heated oxygen sensor 2 in front of catalytic converter</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Input</td>
+<td>Signal, precatalyst oxygen sensor 1</td>
+<td>Heated oxygen sensor 1 in front of catalytic converter</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Input</td>
+<td>Signal, precatalyst oxygen sensor 2</td>
+<td>Heated oxygen sensor 2 in front of catalytic converter</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Input</td>
+<td>Signal, post-catalyst oxygen sensor 1</td>
+<td>Heated oxygen sensor 1 behind catalytic converter</td>
+</tr>
+<tr>
+<td>17</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>Input</td>
+<td>Signal, post-catalyst oxygen sensor 2</td>
+<td>Heated oxygen sensor 2 behind catalytic converter</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Input</td>
+<td>Heater, post catalyst oxygen sensor 2</td>
+<td>Heated oxygen sensor 2 behind catalytic converter</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Ground</td>
+<td>Ground, precatalyst oxygen sensor 1</td>
+<td>Heated oxygen sensor 1 in front of catalytic converter</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Ground</td>
+<td>Ground, precatalyst oxygen sensor 2</td>
+<td>Heated oxygen sensor 2 in front of catalytic converter</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Ground</td>
+<td>Ground, post-catalyst oxygen sensor 1</td>
+<td>Heated oxygen sensor 1 behind catalytic converter</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Input</td>
+<td>DME main relay signal activation</td>
+<td>DME main relay</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Ground</td>
+<td>Ground, post-catalyst oxygen sensor 2</td>
+<td>Heated oxygen sensor 2 behind catalytic converter</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Connector X60003 52-pin black</strong></p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Signal</th>
+<th>Component/function</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Input</td>
+<td>Signal, mass air flow sensor</td>
+<td>Hot film mass air flow sensor</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Input</td>
+<td>Signal, exhaust camshaft sensor 1</td>
+<td>Camshaft position sensor II</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Input</td>
+<td>Signal, suction jet pump valve (2.8 L, 3.0 L)</td>
+<td>Suction jet pump valve</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Output</td>
+<td>Throttle valve supply (MS 42.0)</td>
+<td>Throttle valve (MS 42.0)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Input</td>
+<td>Signal, intake camshaft position sensor</td>
+<td>Camshaft position sensor I</td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Output</td>
+<td>Throttle valve supply</td>
+<td>Throttle valve</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Input</td>
+<td>Signal, crankshaft position sensor</td>
+<td>Crankshaft position sensor</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Input</td>
+<td>Signal, pedal position sensor 2 (MS 42.0)</td>
+<td>Throttle valve (MS 42.0)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Input</td>
+<td>Signal, throttle position potentiometer 2</td>
+<td>Throttle valve</td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Input</td>
+<td>Feedback signal, engine start</td>
+<td>Starter</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Input</td>
+<td>Signal, battery charge indicator lamp</td>
+<td>Generator (Alternator)</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Ground</td>
+<td>Ground, throttle position sensor (MS 42.0)</td>
+<td>Throttle valve (MS 42.0)</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Ground</td>
+<td>Ground, exhaust camshaft sensor 1</td>
+<td>Camshaft position sensor II</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Input</td>
+<td>Signal, pedal position sensor 1 (MS 42.0)</td>
+<td>Throttle valve (MS 42.0)</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Ground</td>
+<td>Ground, mass air flow sensor</td>
+<td>Hot film mass air flow sensor</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Ground</td>
+<td>Ground, intake camshaft sensor 1</td>
+<td>Camshaft position sensor I</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Input</td>
+<td>Signal, throttle potentiometer 1</td>
+<td>Throttle valve</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Ground</td>
+<td>Ground, throttle position sensor</td>
+<td>Throttle valve</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Ground</td>
+<td>Ground, crankshaft position sensor</td>
+<td>Crankshaft position sensor</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Output</td>
+<td>Signal, intake air temperature</td>
+<td>Intake air temperature sensor</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Ground</td>
+<td>Ground, intake air temperature sensor</td>
+<td>Intake air temperature sensor</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Output</td>
+<td>Signal, coolant temperature sensor</td>
+<td>Coolant temperature sensor</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Ground</td>
+<td>Ground, coolant temperature sensor</td>
+<td>Coolant temperature sensor</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Input</td>
+<td>Signal, oil pressure</td>
+<td>Oil pressure switch</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Output</td>
+<td>Signal, engine oil temperature</td>
+<td>Oil temperature sensor</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Ground</td>
+<td>Ground, engine oil temperature sensor</td>
+<td>Oil temperature sensor</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Output</td>
+<td>Signal, knock sensor</td>
+<td>Knock sensor</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Output</td>
+<td>Signal, knock sensor</td>
+<td>Knock sensor</td>
+</tr>
+<tr>
+<td>31</td>
+<td>Output</td>
+<td>Signal, knock sensor</td>
+<td>Knock sensor</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Output</td>
+<td>Signal, knock sensor</td>
+<td>Knock sensor</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Input</td>
+<td>Signal, cylinder 1 fuel injector</td>
+<td>Cylinder 1 fuel injector</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Input</td>
+<td>Signal, cylinder 2 fuel injector</td>
+<td>Cylinder 2 fuel injector</td>
+</tr>
+<tr>
+<td>35</td>
+<td>Input</td>
+<td>Signal, cylinder 3 fuel injector</td>
+<td>Cylinder 3 fuel injector</td>
+</tr>
+<tr>
+<td>36</td>
+<td>Input</td>
+<td>Signal, cylinder 4 fuel injector</td>
+<td>Cylinder 4 fuel injector</td>
+</tr>
+<tr>
+<td>37</td>
+<td>Input</td>
+<td>Signal, cylinder 5 fuel injector</td>
+<td>Cylinder 5 fuel injector</td>
+</tr>
+<tr>
+<td>38</td>
+<td>Input</td>
+<td>Signal, cylinder 6 fuel injector</td>
+<td>Cylinder 6 fuel injector</td>
+</tr>
+<tr>
+<td>39</td>
+<td>Input</td>
+<td>Signal, oil level sensor</td>
+<td>Oil level sensor</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Input</td>
+<td>Signal, VANOS inlet valve</td>
+<td>VANOS inlet valve</td>
+</tr>
+<tr>
+<td>41</td>
+<td>Input</td>
+<td>Signal, VANOS outlet valve</td>
+<td>VANOS outlet valve</td>
+</tr>
+<tr>
+<td>42</td>
+<td>Input</td>
+<td>Signal, evaporative emissions valve</td>
+<td>Evaporative emissions valve</td>
+</tr>
+<tr>
+<td>43</td>
+<td>Input</td>
+<td>Signal, throttle valve drive</td>
+<td>Throttle valve</td>
+</tr>
+<tr>
+<td>44</td>
+<td>Input</td>
+<td>Signal, throttle valve drive</td>
+<td>Throttle valve</td>
+</tr>
+<tr>
+<td>45</td>
+<td>Input</td>
+<td>Signal, engine coolant thermostat</td>
+<td>Engine coolant thermostat (map controlled)</td>
+</tr>
+<tr>
+<td>46</td>
+<td>Input</td>
+<td>Signal, close idle speed control valve</td>
+<td>Idle speed control valve</td>
+</tr>
+<tr>
+<td>47</td>
+<td>Input</td>
+<td>Signal, open idle speed control valve</td>
+<td>Idle speed control valve</td>
+</tr>
+<tr>
+<td>48</td>
+<td>Ground</td>
+<td>Signal shield, knock sensor</td>
+<td>Shield, knock sensor</td>
+</tr>
+<tr>
+<td>49</td>
+<td>Input</td>
+<td>Signal, resonance valve intake system</td>
+<td>Resonance valve intake system</td>
+</tr>
+<tr>
+<td>50</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>51</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>52</td>
+<td>Input</td>
+<td>Signal, secondary air injection pump valve</td>
+<td>Secondary air injection valve</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Connector X60004 40-pin black</strong></p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Signal</th>
+<th>Component/function</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Input</td>
+<td>Signal, battery charge indicator lamp</td>
+<td>Instrument cluster control unit</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Input</td>
+<td>Feedback signal, engine start</td>
+<td>Instrument cluster control module</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Input</td>
+<td>Signal, secondary air injection pump</td>
+<td>Secondary air injection pump relay</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Input</td>
+<td>Signal, electric fan</td>
+<td>Auxiliary fan motor</td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td>Pedal position sensor (PWG) (MS 43.0)</td>
+<td>Pedal position sensor (PWG) (MS 43.0)</td>
+</tr>
+<tr>
+<td>8</td>
+<td></td>
+<td>Signal, pedal position sensor (PWG) (MS 43.0)</td>
+<td>Pedal position sensor (PWG) (MS 43.0)</td>
+</tr>
+<tr>
+<td>9</td>
+<td></td>
+<td>Pedal position sensor (PWG) (MS 43.0)</td>
+<td>Pedal position sensor (PWG) (MS 43.0)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Input</td>
+<td>Signal, fuel pump relay 1</td>
+<td>Fuel pump relay 1</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Input</td>
+<td>Signal, oil pressure switch</td>
+<td>Instrument cluster control module</td>
+</tr>
+<tr>
+<td>12</td>
+<td></td>
+<td>Pedal position sensor (PWG) (MS 43.0)</td>
+<td>Pedal position sensor (PWG) (MS 43.0)</td>
+</tr>
+<tr>
+<td>13</td>
+<td></td>
+<td>Signal, pedal position sensor (PWG) (MS 43.0)</td>
+<td>Pedal position sensor (PWG) (MS 43.0)</td>
+</tr>
+<tr>
+<td>14</td>
+<td></td>
+<td>Pedal position sensor (PWG) (MS 43.0)</td>
+<td>Pedal position sensor (PWG) (MS 43.0)</td>
+</tr>
+<tr>
+<td>15</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>Input</td>
+<td>Speed signal (MS 42.0 up to 6-00) (MS 42.0 from 6-00 and MS 43.0)</td>
+<td>Data link connector (OBDII 16 pin connector)</td>
+</tr>
+<tr>
+<td>18</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td>Output</td>
+<td>Diagnostic module tank leak (DMTL) detection (MS 43.0)</td>
+<td>Leak detection (DMTL) (MS 43.0)</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Input</td>
+<td>Signal, oil level sensor</td>
+<td>Instrument cluster control module</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Input</td>
+<td>Signal, processed wheel speed, right rear</td>
+<td>ABS/ASC module, ABS/DSC module</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Output</td>
+<td>Signal, clutch pedal position switch</td>
+<td>Clutch pedal position switch</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Input</td>
+<td>Signal, brake light switch</td>
+<td>Light switching center control unit</td>
+</tr>
+<tr>
+<td>25</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>26</td>
+<td>Input</td>
+<td>Terminal 15</td>
+<td>Fuse F29</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Output</td>
+<td>Voltage supply, multifunction steering wheel</td>
+<td>Volute spring</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Input</td>
+<td>Signal, brake light switch</td>
+<td>Brake light switch</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Input</td>
+<td>Signal, relay, A/C compressor</td>
+<td>A/C compressor relay</td>
+</tr>
+<tr>
+<td>30</td>
+<td></td>
+<td>Signal, leakage diagnosis pump (MS 42.0); Signal diagnostic module (MS 43.0) [text overprinted in source]</td>
+<td>Leakage diagnosis pump; Leak detection (MS 43.0)</td>
+</tr>
+<tr>
+<td>31</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Input/output</td>
+<td>Transmit diagnosis line (TXD) data link signal</td>
+<td>Data link connector (MS 42.0) OBD II connector (MS 43.0)</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Input</td>
+<td>Electronic vehicle immobilization</td>
+<td>Electronic immobilizer control module</td>
+</tr>
+<tr>
+<td>34</td>
+<td></td>
+<td>Signal, leakage diagnosis pump (LDP) (MS 42.0)</td>
+<td>Leakage diagnosis pump (LDP) (MS 42.0)</td>
+</tr>
+<tr>
+<td>35</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>36</td>
+<td>Input/output</td>
+<td>CAN bus signal, high</td>
+<td>Connector, CAN bus</td>
+</tr>
+<tr>
+<td>37</td>
+<td>Input/output</td>
+<td>CAN bus signal, low</td>
+<td>Connector, CAN bus</td>
+</tr>
+<tr>
+<td>38</td>
+<td>Ground</td>
+<td>Ground, coolant outlet temperature sensor</td>
+<td>Temperature sensor</td>
+</tr>
+<tr>
+<td>39</td>
+<td>Output</td>
+<td>Signal, coolant outlet temperature</td>
+<td>Temperature sensor</td>
+</tr>
+<tr>
+<td>40</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Connector X60005 9-pin black</strong></p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Signal</th>
+<th>Component/function</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Input</td>
+<td>Signal, ignition coil 3</td>
+<td>Ignition coil 3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Input</td>
+<td>Signal, ignition coil 2</td>
+<td>Ignition coil 2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Input</td>
+<td>Signal, ignition coil 1</td>
+<td>Ignition coil 1</td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td>not used</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Ground</td>
+<td>Ground</td>
+<td>Ground connector</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Ground</td>
+<td>Ground</td>
+<td>Ground connector</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Input</td>
+<td>Signal, ignition coil 6</td>
+<td>Ignition coil 6</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Input</td>
+<td>Signal, ignition coil 5</td>
+<td>Ignition coil 5</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Input</td>
+<td>Signal, ignition coil 4</td>
+<td>Ignition coil 4</td>
+</tr>
+</tbody>
+</table>
+</article></body></html>

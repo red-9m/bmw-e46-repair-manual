@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>General (Ignition System)</h1>
+<blockquote>
+<p>Source: BMW 3 Series (E46) Repair Manual, section 120-1, Ignition System chapter (PDF pages 297–307 of 1252).</p>
+</blockquote>
+<p>This repair group covers component replacement information for the ignition system.</p>
+<p>When diagnosing engine management problems, including on-board diagnostics (OBD II) fault code analysis, also refer to these repair groups:</p>
+<ul>
+<li>[100 Engine–General]</li>
+<li>[130 Fuel Injection]</li>
+<li>[Electrical Wiring Diagrams] at the rear of this manual</li>
+<li>[OBD On Board Diagnostics] at the rear of this manual</li>
+</ul>
+<h2>Special tools</h2>
+<p>Owing to the coil-per-cylinder configuration, system diagnosis and testing requires special test equipment.</p>
+<p><img src="e46_120-1_fig01.jpg" alt="LED test light Baum 1115 (tool A)." /></p>
+<ul>
+<li>LED test light Baum 1115 (Source: Baum Tools Unlimited)</li>
+</ul>
+<p><img src="e46_120-1_fig02.jpg" alt="Top half of photo: automotive digital multimeter Fluke 87 (tool B). Split across PDF pages 297–298." /></p>
+<p><img src="e46_120-1_fig03.jpg" alt="Bottom sliver of the same photo: base of the multimeter." /></p>
+<ul>
+<li>Automotive digital multimeter Fluke 87</li>
+</ul>
+<p><img src="e46_120-1_fig04.jpg" alt="Primary voltage test harness BMW 12 7 020 (tool C)." /></p>
+<ul>
+<li>Primary voltage test harness BMW 12 7 020</li>
+</ul>
+<p><img src="e46_120-1_fig05.jpg" alt="Secondary voltage test harness BMW 12 7 030 (tool D)." /></p>
+<ul>
+<li>Secondary voltage test harness BMW 12 7 030</li>
+</ul>
+<p><img src="e46_120-1_fig06.jpg" alt="Ignition coil test adapters BMW 12 7 040 in fitted case (tool E)." /></p>
+<ul>
+<li>Ignition coil test adapters BMW 12 7 040</li>
+</ul>
+<h2>Engine management</h2>
+<p>BMW E46 engines use an advanced engine management system known as Digital Motor Electronics (DME). DME incorporates on-board diagnostics, fuel injection, ignition and other engine control functions. DME variants are listed in [Table a].</p>
+<p>Second generation On-Board Diagnostics (OBD II) is incorporated into the engine management systems used on the cars covered by this manual. Using a BMW-specific electronic scan tool, it is possible to access Diagnostic Trouble Codes (DTCs) that pinpoint ignition and other engine management problems.</p>
+<p>Additional information about DTCs and engine management system electronic system diagnosis is provided in [OBD On Board Diagnostics] at the rear of this manual.</p>
+<p>Table a. Engine management systems</p>
+<table>
+<thead>
+<tr>
+<th>Year: Engine</th>
+<th>DME system</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1999 - 2000: M52 TU B25, M52 TU B28</td>
+<td>Siemens MS 42.0</td>
+</tr>
+<tr>
+<td>2001: M54 B25, M54 B30</td>
+<td>Siemens MS 43.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Ignition system</h2>
+<p>All engines use a distributorless ignition system with individual ignition coils for each cylinder. There is no distributor cap or ignition rotor.</p>
+<p><img src="e46_120-1_fig07.jpg" alt="Valve cover with six individual ignition coils, cylinders numbered 6 through 1. Illustration ID: 0022018c" /></p>
+<p>Each coil can be controlled by the Engine Control Module (ECM) on a cylinder-by-cylinder basis.</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Schematic diagram of ignition coil circuit is for MS 42.0 engine management system. On MS 43.0 system, ignition coil terminal 3 receives power from Fuse 1 (30 amp). See [Electrical Wiring Diagrams] for specific wiring information.</li>
+</ul>
+</blockquote>
+<p><img src="e46_120-1_fig08.jpg" alt="Top of schematic: ignition coil wiring (MS 42.0) — ECM, Fuse 5 (30 A) in fuse panel, unloader relay, ignition coils, wiring color code legend. Split across PDF pages 299–300." /></p>
+<p><img src="e46_120-1_fig09.jpg" alt="Bottom sliver of the same schematic: DME connector pin designations." /></p>
+<blockquote>
+<p><strong>WARNING!</strong></p>
+<ul>
+<li>Do not touch or disconnect any cables from the coils while the engine is running or being cranked by the starter.</li>
+<li>The ignition system produces high voltages that can be fatal. Avoid contact with exposed terminals. Use extreme caution when working on a car with the ignition switched on or the engine running.</li>
+<li>Connect and disconnect the DME system wiring and test equipment leads only when the ignition is OFF.</li>
+<li>Before operating the starter without starting the engine (for example when making a compression test) always disable the ignition.</li>
+</ul>
+</blockquote>
+<p>Knock sensors (arrows) monitor the combustion chamber for engine-damaging knock. Two sensors monitor three cylinders each. If engine knock is detected, the ignition point is retarded by the ECM.</p>
+<p><img src="e46_120-1_fig10.jpg" alt="Two knock sensors under the intake manifold, arrows at sensor locations. Illustration ID: 0022020" /></p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>When knock is detected, ignition timing will be retarded at the selective cylinder(s) by 3° increments. If knock is no longer detected, the timing will be advanced in 1° increments.</li>
+</ul>
+</blockquote>
+<p>Ignition timing is electronically mapped and not adjustable. The ECM uses engine load, engine speed, coolant temperature, knock detection and intake air temperature as the basic inputs for timing control. A three dimensional map similar to the one shown is digitally stored in the ECM. The initial ignition point is determined by the crankshaft speed sensor during cranking. Once the engine is running, timing is continually adjusted based on operating conditions.</p>
+<p><img src="e46_120-1_fig11.jpg" alt="Top of graph: three dimensional ignition advance map (ignition advance vs. engine speed and engine load). Split across PDF pages 300–301." /></p>
+<p><img src="e46_120-1_fig12.jpg" alt="Bottom of the same graph: engine speed and engine load axes. Illustration ID: 0011828" /></p>
+<h2>Basic troubleshooting principles</h2>
+<p>Poor driveability may have a variety of causes. The fault may lie with the ignition system, the fuel system, parts of the emission control system, or a combination of the three. Because of these interrelated functions and their effects on each other, it is often difficult to know where to begin looking for problems.</p>
+<p>For this reason, effective troubleshooting should always begin with an interrogation of the On-Board Diagnostics (OBD II) system. The OBD II system detects engine management malfunctions. When faults are detected, the OBD II system stores a Diagnostic Trouble Code (DTC) in the Engine Control Module (ECM) along with other pertinent fault information. In addition, the Malfunction Indicator Light (MIL) will come on if an emissions related fault is detected. Additional OBD II information, including a DTC lookup table can be found in the back of this manual under [OBD On Board Diagnostics].</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>On model year 1999 and 2000 cars, the MIL is labeled Check Engine. On model year 2001 cars, the MIL is labeled Service Engine Soon.</li>
+</ul>
+</blockquote>
+<p>An engine that starts and runs indicates that the ignition system is fundamentally working-delivering voltage to the spark plugs. A hard-starting or poor-running engine, however, may indicate a problem with how well the spark is delivered. Faulty or worn ignition components, such as old spark plugs, or an individual coil problem may be the cause.</p>
+<blockquote>
+<p><strong>WARNING!</strong></p>
+<ul>
+<li>Inefficient combustion (rich air/fuel mixture) can cause elevated hydrocarbon exhaust emissions and catalytic converter damage. For this reason, if a severe misfire is detected, the fuel injector will be turned off to the specific cylinder and the MIL illuminated.</li>
+</ul>
+</blockquote>
+<p>One way to diagnose a faulty coil on a car that is running is to use an oscilloscope to analyze spark quality. The illustrations show normal scope trace of spark at idle.</p>
+<p><img src="e46_120-1_fig13.jpg" alt="Oscilloscope chart: spark traces at idle, six cylinders, kV scale. Illustration ID: 0018157" /></p>
+<p><img src="e46_120-1_fig14.jpg" alt="Normal oscilloscope pattern with callouts 1 through 7 identifying phases of the spark trace. Illustration ID: 022135" /></p>
+<p>[Table b] lists common ignition coil voltage faults and related causes.</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Note the length of sparking period and the up-down voltage attenuations. A short sparking period and/or an irregular/low voltage attenuation usually indicates a faulty coil.</li>
+</ul>
+</blockquote>
+<p>A normal oscilloscope pattern for a six cylinder engine.</p>
+<ol>
+<li>Start of ignition voltage peak</li>
+<li>Level of ignition voltage</li>
+<li>Level of combustion voltage</li>
+<li>Period of combustion</li>
+<li>Combustion curve characteristics</li>
+<li>Start of decay process</li>
+<li>Termination oscillations</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>See [Ignition coil assembly, testing and replacing] as described later.</li>
+</ul>
+</blockquote>
+<p>Table b. Ignition trace diagnostics</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Ignition voltage low</th>
+<th>Ignition voltage high</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spark plug electrode gap</td>
+<td>too small</td>
+<td>too big</td>
+</tr>
+<tr>
+<td>Spark plug electrode condition</td>
+<td>-</td>
+<td>worn/burnt</td>
+</tr>
+<tr>
+<td>Spark plug electrode temperature</td>
+<td>too high</td>
+<td>too low</td>
+</tr>
+<tr>
+<td>Engine compression</td>
+<td>too low</td>
+<td>too high</td>
+</tr>
+<tr>
+<td>Spark plug wire(s)</td>
+<td>-</td>
+<td>faulty</td>
+</tr>
+<tr>
+<td>Fuel air mixture</td>
+<td>-</td>
+<td>too lean</td>
+</tr>
+</tbody>
+</table>
+<h2>Misfire detection</h2>
+<p>Engine misfire, the result of inefficient combustion in one or more cylinders, may be caused by a variety of malfunctions in various subsystems. The OBD II system incorporated into the MS 42.0 and MS 43.0 engine management systems is designed to detect and warn of misfire faults during engine operation. Misfire fault codes are listed in [Table c]. Misfire fault codes. For a detailed list of fault codes see [OBD On Board Diagnostics].</p>
+<p>Once engine misfire has been detected and the fault codes downloaded from the ECM, it is necessary to follow a diagnostic path to correct the problem. The ignition subset of the diagnostic path is shown in [Table d]. Ignition system problems</p>
+<p>Table c. Misfire fault codes</p>
+<table>
+<thead>
+<tr>
+<th>P code</th>
+<th>BMW fault code</th>
+<th>Fault code</th>
+<th>Possible cause(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P0301</td>
+<td>238</td>
+<td>Misfire cylinder 1</td>
+<td>Ignition fault: Defective or incorrect spark plug(s) or connector(s); defective ignition coil(s). Mechanical fault: Crankshaft pulse wheel loose or damaged; damaged piston(s), valve(s) or camshaft(s); oil pressure low. Catalyst fault: Excessive exhaust backpressure due to restricted catalyst. Fuel supply fault: Contaminated fuel; fuel delivery fault (blocked filter, low fuel in tank, defective fuel pump); running loss system fault; leaking or blocked fuel injector(s); fuel pressure regulator fault; evaporative system fault. ECM/sensor input fault: Implausible sensor signal; oxygen sensor(s) faulty; ECM faulty. (Causes apply to P0301 through P0306.)</td>
+</tr>
+<tr>
+<td>P0302</td>
+<td>239</td>
+<td>Misfire cylinder 2</td>
+<td></td>
+</tr>
+<tr>
+<td>P0303</td>
+<td>240</td>
+<td>Misfire cylinder 3</td>
+<td></td>
+</tr>
+<tr>
+<td>P0304</td>
+<td>241</td>
+<td>Misfire cylinder 4</td>
+<td></td>
+</tr>
+<tr>
+<td>P0305</td>
+<td>242</td>
+<td>Misfire cylinder 5</td>
+<td></td>
+</tr>
+<tr>
+<td>P0306</td>
+<td>243</td>
+<td>Misfire cylinder 6</td>
+<td></td>
+</tr>
+<tr>
+<td>P1396</td>
+<td>244</td>
+<td>Crankshaft sensor adaptation at limit</td>
+<td>Misfire detection fault: Varying pulse wheel tolerances or loose pulse wheel</td>
+</tr>
+</tbody>
+</table>
+<p>Table d. Ignition system problems</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Condition</th>
+<th>Test</th>
+<th>Repair</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spark plug</td>
+<td>Incorrect spark plug; Electrode gap too small; Electrode(s) missing; Oil or fuel fouled spark plug; Ceramic insulation cracked</td>
+<td>Inspect spark plugs.</td>
+<td>Verify correct spark plugs. Replace plugs if defective. Check crankcase ventilation and oil level.</td>
+</tr>
+<tr>
+<td>Secondary circuit</td>
+<td>Wet coil; Corroded coil connections</td>
+<td>Secondary circuit</td>
+<td>Check for water leak. Check resistance values (see [Table e]).</td>
+</tr>
+<tr>
+<td>Ignition coil</td>
+<td>Primary or secondary circuit open or shorted; Housing cracked, damaged</td>
+<td>Primary and secondary circuits (see [Table e])</td>
+<td>Replace coil as necessary.</td>
+</tr>
+<tr>
+<td>Ignition coil harness connector</td>
+<td>Power supply, primary control circuit or ground (shunt signal) circuits impaired</td>
+<td>Primary ignition and terminal 4A feedback preset measurements</td>
+<td>Look for open, loose connector, corrosion, crossed or damaged connector pins. Inspect ignition unloader relay. Replace coils as necessary.</td>
+</tr>
+</tbody>
+</table>
+<h2>Warnings and cautions</h2>
+<p>The engine management system contains sensitive electronic components. To protect the system and for general safety, the following warnings and cautions should be observed during ignition system troubleshooting, maintenance or repair work.</p>
+<blockquote>
+<p><strong>WARNING!</strong></p>
+<ul>
+<li>Do not touch or disconnect any cables from the coils while the engine is running or being cranked by the starter.</li>
+<li>The ignition system produces high voltages that can be fatal. Avoid contact with exposed terminals. Use extreme caution when working on a car with the ignition switched on or the engine running.</li>
+<li>Connect and disconnect the DME system wiring and test equipment leads only when the ignition is OFF.</li>
+<li>Before operating the starter without starting the engine (for example when making a compression test) always disable the ignition.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Prior to disconnecting the battery, read the battery disconnection cautions given at the front of this manual on page viii.</li>
+<li>Do not attempt to disable the ignition by removing the coils from the spark plugs.</li>
+<li>Connect or disconnect ignition system wires, multiple wire connectors, and ignition test equipment leads only while the ignition is off. Switch multimeter functions or measurement ranges only with the test probes disconnected.</li>
+<li>Do not disconnect the battery while the engine is running.</li>
+<li>A high impedance digital multimeter should be used for all voltage and resistance tests. An LED test light should be used in place of an incandescent-type test lamp.</li>
+<li>In general, make test connections only as specified by BMW, as described in this manual, or as described by the instrument manufacturer.</li>
+</ul>
+</blockquote>
+</article></body></html>

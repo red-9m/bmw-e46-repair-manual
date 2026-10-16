@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>BMW Fault Codes (DTCs)</h1>
+<blockquote>
+<p>Source: Bentley BMW 3 Series (E46) 1999–2005 (M3) Repair Manual, section OBD-3 (PDF pages 1233–1252 of 1252). Second copy of the OBD-3 fault-code table — byte-identical text extraction to bmw-fault-codes.md (pp. 89–108); no figures in this copy.</p>
+</blockquote>
+<p>Below is a comprehensive listing of BMW DTCs and the corresponding SAE P-codes.</p>
+<p><strong>Table a.</strong> Diagnostic trouble codes (DTCs)</p>
+<p><em>[Conversion note: where a single BMW code has multiple printed sub-rows (e.g. separate values for the MS 42 and MS 43 engine control versions), the cell contents are stacked with <code>&lt;br&gt;</code> in source order.]</em></p>
+<table>
+<thead>
+<tr>
+<th>BMW code</th>
+<th>P-code</th>
+<th>Fault type and function</th>
+<th>Signal type and range</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td>Ignition coil cyl.2</td>
+<td>Input analog timing (100 mV)</td>
+<td>DME initiates secondary ignition for each cylinder then looks for feedback through shunt resistor in harness to determine if ignition actually occurred.</td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td>Ignition coil cyl.4</td>
+<td>Input analog timing (100 mV)</td>
+<td>DME initiates secondary ignition for each cylinder then looks for feedback through shunt resistor in harness to determine if ignition actually occurred.</td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td>Ignition coil cyl.6</td>
+<td>Input analog timing (100 mV)</td>
+<td>DME initiates secondary ignition for each cylinder then looks for feedback through shunt resistor in harness to determine if ignition actually occurred.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>P0202</td>
+<td>Injector circuit cyl. 2</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>P0201</td>
+<td>Injector circuit cyl. 1</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>P0101</td>
+<td>Mass air flow circuit range/perf.</td>
+<td>Input analog (0-5V)</td>
+<td>Failed signal range check against predefined diagnostic limits.</td>
+</tr>
+<tr>
+<td>10</td>
+<td></td>
+<td>Engine coolant temp. circuit range/perf.</td>
+<td>Input analog (0-5V)</td>
+<td>Signal range is checked against predefined diagnostic limits within specific engine operations.</td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td>Coolant temp. coolant outlet</td>
+<td>Input analog (0-5V)</td>
+<td>Signal range is checked against predefined diagnostic limits within specific engine operations.</td>
+</tr>
+<tr>
+<td>14</td>
+<td>P0111</td>
+<td>Intake air temp. range/performance</td>
+<td>Input analog (0-5V)</td>
+<td>Signal range is checked against predefined diagnostic limits within specific engine operations.</td>
+</tr>
+<tr>
+<td>18</td>
+<td>P1397</td>
+<td>Exhaust cam position sensor malfunction</td>
+<td>Input analog phase shift (0-5V)</td>
+<td>Internal check of phase shift from camshaft sensor - should change during every crankshaft revolution. Phase shift occurs due to 2:1 relationship between camshafts.</td>
+</tr>
+<tr>
+<td>19</td>
+<td>P1529</td>
+<td>VANOS solenoid activation, exhaust</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>21</td>
+<td>P1525</td>
+<td>VANOS solenoid activation, intake</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>22</td>
+<td>P0203</td>
+<td>Injector circuit cyl. 3</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>23</td>
+<td>P0206</td>
+<td>Injector circuit cyl. 6</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>24</td>
+<td>P0204</td>
+<td>Injector circuit cyl. 4</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>25</td>
+<td>P0135</td>
+<td>Oxygen sensor heater pre-cat (Bank1)</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>27</td>
+<td>P1550</td>
+<td>Idle control valve closing coil</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>29</td>
+<td></td>
+<td>Ignition coil cyl.1</td>
+<td>Input analog timing (100 mV)</td>
+<td>DME initiates secondary ignition for each cylinder then looks for feedback through shunt resistor in harness to determine if ignition actually occurred.</td>
+</tr>
+<tr>
+<td>30</td>
+<td></td>
+<td>Ignition coil cyl.3</td>
+<td>Input analog timing (100 mV)</td>
+<td>DME initiates secondary ignition for each cylinder then looks for feedback through shunt resistor in harness to determine if ignition actually occurred.</td>
+</tr>
+<tr>
+<td>31</td>
+<td></td>
+<td>Ignition coil cyl.5</td>
+<td>Input analog timing (100 mV)</td>
+<td>DME initiates secondary ignition for each cylinder then looks for feedback through shunt resistor in harness to determine if ignition actually occurred.</td>
+</tr>
+<tr>
+<td>33</td>
+<td>P0205</td>
+<td>Injector circuit cyl. 5</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>35</td>
+<td>P1453</td>
+<td>Secondary air injection pump</td>
+<td>Output digital on/off (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>36</td>
+<td>MS 43</td>
+<td>Main relay malfunction</td>
+<td>Input analog (0-12V)</td>
+<td>Signal range check between DME ignition analog input and main relay power circuit analog input.</td>
+</tr>
+<tr>
+<td>38</td>
+<td>MS 43</td>
+<td>Clutch switch faulty</td>
+<td>Input digital (0-12V)</td>
+<td>Plausibility check of clutch switch and DME internal values such as load and engine speed.</td>
+</tr>
+<tr>
+<td>39</td>
+<td></td>
+<td>Brake light switch, and brake light plausibility test</td>
+<td>Input digital (0-12V)</td>
+<td>When brake light switch is active, brake light test switch must be also active. If not, fault is stored.</td>
+</tr>
+<tr>
+<td>40</td>
+<td></td>
+<td>Brake light switch, pedal sensor plausibility test</td>
+<td>Input digital / analog (0-12V / 0-5V)</td>
+<td>If pedal sensor is showing angle greater than &quot;limp home angle&quot; and additionally brake light switch is active, fault is stored.</td>
+</tr>
+<tr>
+<td>42</td>
+<td></td>
+<td>Multi functional steering wheel, redundant code</td>
+<td>Input binary stream (0-12V)</td>
+<td>Every signal from cruise control switch is transferred redundantly. A fault is set whenever two redundant information paths are showing a different status.</td>
+</tr>
+<tr>
+<td>43</td>
+<td></td>
+<td>Multi functional steering wheel, control switch</td>
+<td>Input binary stream (0-12V)</td>
+<td>When status from cruise control showing set/accelerate and deceleration are same time, fault is set.</td>
+</tr>
+<tr>
+<td>45</td>
+<td></td>
+<td>Multi functional steering wheel, toggle-bit</td>
+<td>Input binary stream (0-12V)</td>
+<td>Every 0.5 sec. a message that includes a toggle bit (toggles between 0-&gt;1 and 1-&gt;0) is transmitted. Change bit is monitored to indicate proper function.</td>
+</tr>
+<tr>
+<td>47</td>
+<td>MS 43</td>
+<td>Torque monitoring level 1</td>
+<td>DME internal values logical</td>
+<td></td>
+</tr>
+<tr>
+<td>48</td>
+<td>MS 43</td>
+<td>Internal control module</td>
+<td>DME HW test memory</td>
+<td></td>
+</tr>
+<tr>
+<td>49</td>
+<td></td>
+<td>ECU internal test</td>
+<td>DME HW test</td>
+<td></td>
+</tr>
+<tr>
+<td>50</td>
+<td>P1145 MS 42<br>MS 43</td>
+<td>Running losses valve (3/2), final stage<br>ECU internal test</td>
+<td>Output digital on/off (active low)<br>DME HW test</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>51</td>
+<td>MS 43</td>
+<td>ECU internal test</td>
+<td>DME HW test</td>
+<td></td>
+</tr>
+<tr>
+<td>52</td>
+<td></td>
+<td>Rear exhaust valve flap</td>
+<td>Output digital steady (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>53</td>
+<td>P1509</td>
+<td>Idle control valve opening coil</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>55</td>
+<td>P0155</td>
+<td>Oxygen sensor heater pre-cat (Bank 2)</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>56</td>
+<td></td>
+<td>Ignition feedback, interruption at shunt resistor</td>
+<td>Input analog (32V)</td>
+<td>Check for correct signal voltage. If voltage is 32V (limitation voltage) then secondary ignition voltage is detected and shunt resistor may be faulty.</td>
+</tr>
+<tr>
+<td>57</td>
+<td>P0325</td>
+<td>Knock sensor 1 circuit, (Bank 1) circuit continuity</td>
+<td>Input analog amplitude (13-19kHz)</td>
+<td>Plausibility check between knock sensor amplitude during knocking with internal knock detection mapped DME values.</td>
+</tr>
+<tr>
+<td>59</td>
+<td>P0330</td>
+<td>Knock sensor 2 circuit, (Bank 2) circuit continuity</td>
+<td>Input analog amplitude (13-19kHz)</td>
+<td>Plausibility check between knock sensor amplitude during knocking with internal knock detection mapped DME values.</td>
+</tr>
+<tr>
+<td>61</td>
+<td>P0141</td>
+<td>Oxygen sensor heater post-cat (Bank 2)</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>62</td>
+<td>P0412</td>
+<td>Secondary air injection system switching valve</td>
+<td>Output digital on/off (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>65</td>
+<td>P0340</td>
+<td>Intake cam position sensor, malfunction</td>
+<td>Input analog phase shift 0-5V</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>68</td>
+<td></td>
+<td>EVAP system, purge control valve circuit</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>69</td>
+<td></td>
+<td>Relay fuel pump</td>
+<td>Output digital on/off (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>74</td>
+<td></td>
+<td>AC compressor relay</td>
+<td>Output digital on/off (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>79</td>
+<td>P0161</td>
+<td>Oxygen sensor heater post-cat (Bank 1)</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>83</td>
+<td>P0335</td>
+<td>Crankshaft position sensor, malfunction</td>
+<td>Input digital (0-12V)</td>
+<td>Checks for correct signal pattern and correct number of expected flywheel teeth.</td>
+</tr>
+<tr>
+<td>100</td>
+<td>P0601</td>
+<td>Internal control module, memory check sum or communication</td>
+<td>DME internal values logical</td>
+<td>Internal hardware test of RAM, ROM, and Flash Prom.</td>
+</tr>
+<tr>
+<td>103</td>
+<td>P1519</td>
+<td>VANOS faulty reference value intake</td>
+<td>DME internal values logical</td>
+<td>Maximum VANOS adjustment angle, checked at every engine start must be within a specified limit.</td>
+</tr>
+<tr>
+<td>104</td>
+<td>P1520</td>
+<td>VANOS faulty reference value exhaust</td>
+<td>DME internal values logical</td>
+<td>Maximum VANOS adjustment angle, checked at every engine start must be within a specified limit.</td>
+</tr>
+<tr>
+<td>105</td>
+<td>P1522</td>
+<td>VANOS stuck (Bank 1) intake</td>
+<td>DME internal values</td>
+<td>Monitoring of a desired VANOS adjustment within a predefined diagnostic time limit.</td>
+</tr>
+<tr>
+<td>106</td>
+<td>P1523</td>
+<td>VANOS stuck (Bank 2) exhaust</td>
+<td>DME internal values</td>
+<td>Monitoring of a desired VANOS adjustment within a predefined diagnostic time limit.</td>
+</tr>
+<tr>
+<td>109</td>
+<td>P1580</td>
+<td>Motor throttle valve pulse width not plausible</td>
+<td>Output digital pulse width (0-12V)</td>
+<td>Throttle position control algorithm checks for problems with mechanical coupling spring within motor throttle body.</td>
+</tr>
+<tr>
+<td>110</td>
+<td>P1542</td>
+<td>Pedal sensor potentiometer 1</td>
+<td>Input analog (0-5V)</td>
+<td>Failed signal range check against predefined diagnostic limits.</td>
+</tr>
+<tr>
+<td>111</td>
+<td>P1542</td>
+<td>Pedal Sensor Potentiometer 2</td>
+<td>Input analog (0-5V)</td>
+<td>Failed signal range check against predefined diagnostic limits.</td>
+</tr>
+<tr>
+<td>112</td>
+<td>P0120 MS 42<br>MS 43</td>
+<td>Motor throttle valve potentiometer 1<br>Throttle position sensor 1</td>
+<td>Input analog (0-5V)<br>Input analog (0-5V)</td>
+<td>Failed signal range check against predefined diagnostic limits.<br>Failed signal range check against predefined diagnostic limits.</td>
+</tr>
+<tr>
+<td>113</td>
+<td>P0120</td>
+<td>Motor throttle valve potentiometer 2</td>
+<td>Input analog (0-5V)</td>
+<td>Failed signal range check against predefined diagnostic limits.</td>
+</tr>
+<tr>
+<td>114</td>
+<td>P1580 MS 42<br>MS 43</td>
+<td>Motor throttle valve final stage<br>A second pedal sensor range check failure is determined</td>
+<td>DME internal test<br>DME internal values logical</td>
+<td>Final stage inside DME (special H-bridge), will set internal flag whenever a short to ground, a short to battery voltage or a disconnection occurs.<br>If pedal sensor malfunction is determined, followed by a second malfunction, a signal is sent.</td>
+</tr>
+<tr>
+<td>115</td>
+<td>P1623 MS 42<br>MS 43</td>
+<td>Output voltage 5V for potentiometer operation 1<br>Range check for throttle position adaptation</td>
+<td>DME internal (5V)<br>Input analog (0-5V)</td>
+<td>Check for proper 5 volts supply to potentiometers is possible within a predefined voltage limit.<br>Range check for closed position of throttle sensors.</td>
+</tr>
+<tr>
+<td>116</td>
+<td>P1623</td>
+<td>Output voltage for potentiometer operation 2</td>
+<td>DME internal (5V)</td>
+<td>Check for proper 5 volts supply to potentiometers is possible within a predefined voltage limit.</td>
+</tr>
+<tr>
+<td>117</td>
+<td>P1542</td>
+<td>Pedal sensor potentiometer plausibility</td>
+<td>Input analog (0-5V)</td>
+<td>If there is a difference greater than specified between two redundant signals from potentiometer, fault will be set.</td>
+</tr>
+<tr>
+<td>118</td>
+<td>P0120 MS 42<br>MS 43</td>
+<td>Motor throttle feedback potentiometer plausibility<br>Throttle position sensor 1; plausibility check sensor 1 to mass air flow meter</td>
+<td>Input analog (0-5V)<br>DME internal values</td>
+<td>If there is a difference greater than specified between two redundant signals from potentiometer, fault will be set.<br>Signal range is checked against predetermined diagnostic limits. Rationality check with mass air flow meter.</td>
+</tr>
+<tr>
+<td>119</td>
+<td>P1580 MS 42<br>MS 43</td>
+<td>MDK, throttle mechanical sticking<br>Throttle position sensor 2; plausibility check sensor 1 to mass air flow meter</td>
+<td>DME internal test<br>DME internal values</td>
+<td>Throttle doesn't reach desired opening angle within a specified time.<br>Signal range is checked against predetermined diagnostic limits. Rationality check with mass air flow meter.</td>
+</tr>
+<tr>
+<td>120</td>
+<td>P1542 MS 42<br>MS 43</td>
+<td>Pedal sensor/ motor throttle valve potentiometer not plausible<br>Plausibility check between brake switch and pedal sensor</td>
+<td>DME internal values logical motor<br>Input digital / analog</td>
+<td>Signal from motor throttle valve potentiometer must be equal signal from pedal sensor potentiometer plus any adaptive values.<br>Plausibility check between constant pedal value and brake switch. First pedal value must be constant and for next step brake switch must be active.</td>
+</tr>
+<tr>
+<td>122</td>
+<td>P1101</td>
+<td>Oil temp. sensor malfunction</td>
+<td>Input analog (0-5V)</td>
+<td>Signal range is checked against predefined diagnostic limits and calculated temperature.</td>
+</tr>
+<tr>
+<td>123</td>
+<td>P1622</td>
+<td>Electric thermostat control, final stage</td>
+<td>Output digital on/off (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>124</td>
+<td>P1593</td>
+<td>DISA, range/perf.</td>
+<td>Output digital on/off (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>125</td>
+<td></td>
+<td>Coolant fan, final stage</td>
+<td>Output digital on/off (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>126</td>
+<td>P1470 MS 42<br>MS 43</td>
+<td>LDP-magnetic valve<br>DMTL valve</td>
+<td>Output digital on/off (active low)<br>Output digital on/off (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.<br>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>127</td>
+<td></td>
+<td>Fuel pump</td>
+<td>Output digital on/off (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>128</td>
+<td></td>
+<td>EWS signal not present or faulty</td>
+<td>Input binary stream bit data (0-12V)</td>
+<td>During time out check no signal was present within specific time or faulty information from serial interface (parity, overrun, etc.).</td>
+</tr>
+<tr>
+<td>130</td>
+<td></td>
+<td>CAN time out (ASC1)</td>
+<td>Input binary stream bit data (0-12V)</td>
+<td>CAN message between DME/EGS not received within expected time.</td>
+</tr>
+<tr>
+<td>131</td>
+<td></td>
+<td>CAN time out (instr 2)</td>
+<td>Input binary stream bit data (0-12V)</td>
+<td>CAN message between DME/EGS not received within expected time.</td>
+</tr>
+<tr>
+<td>132</td>
+<td></td>
+<td>CAN time out (instr 3)</td>
+<td>Input binary stream bit data (0-12V)</td>
+<td>CAN message between DME/EGS not received within expected time.</td>
+</tr>
+<tr>
+<td>133</td>
+<td></td>
+<td>CAN time out (ASC3)</td>
+<td>Input binary stream bit data (0-12V)</td>
+<td>CAN message between DME/EGS not received within expected time.</td>
+</tr>
+<tr>
+<td>135</td>
+<td>MS 43</td>
+<td>Limp home position adaptation necessary</td>
+<td>DME internal values logical</td>
+<td>Limp home position must be in specified range. If range is exceeded, a fault is set.</td>
+</tr>
+<tr>
+<td>136</td>
+<td>MS 43</td>
+<td>Motor throttle valve open / closing test failed</td>
+<td>DME internal values logical</td>
+<td>From limp home mode position, throttle valve will be open, afterwards it must fall back into limp home position. If fall back position is not in specified range, fault is set.</td>
+</tr>
+<tr>
+<td>140</td>
+<td>P1475</td>
+<td>LDP reed-switch not closed</td>
+<td>Input digital on/off (0-12V)</td>
+<td>With shut off valve open and no pressure on system, reed contact should be closed, showing a &quot;high signal&quot;. If not the case in beginning of every diagnostics check, a signal is sent.</td>
+</tr>
+<tr>
+<td>140</td>
+<td>MS 43</td>
+<td>DMTL pump final stage</td>
+<td>Output digital on/off (active low)</td>
+<td>DME final stage will set flag whenever a short to ground, a short to battery voltage or a disconnection between output transistor and component exists.</td>
+</tr>
+<tr>
+<td>141</td>
+<td>P1477</td>
+<td>EVAP: reed switch not closed, doesn't open or doesn't close</td>
+<td>Input digital on/off (0-12V)</td>
+<td>Within predetermined time LDP reed switch signal must change from high to low or from low to high or LDP reed switch is &quot;low&quot; for longer than predetermined time.</td>
+</tr>
+<tr>
+<td>142</td>
+<td>P1477</td>
+<td>EVAP: reed switch not closed, doesn't open or doesn't close</td>
+<td>Input digital on/off (0-12V)</td>
+<td>Within predetermined time LDP reed switch signal must change from high to low or from low to high or LDP reed switch is &quot;low&quot; for longer than predetermined time.</td>
+</tr>
+<tr>
+<td>142</td>
+<td>MS 43</td>
+<td>DMTL module fault</td>
+<td>DME internal values logical</td>
+<td></td>
+</tr>
+<tr>
+<td>143</td>
+<td>P1476</td>
+<td>EVAP: clamped tube check</td>
+<td>Input digital frequency (0-12V)</td>
+<td>Frequency of LDP pumps reed switch is lower than predetermined limit. Volume of leak is determined to be too small (i.e. pinched or restricted hose)</td>
+</tr>
+<tr>
+<td>146</td>
+<td>MS 43</td>
+<td>Range check voltage supply pedal sensor 2 and throttle position sensors</td>
+<td>DME internal input analog</td>
+<td>Supply voltage for sensors must be within a specified range.</td>
+</tr>
+<tr>
+<td>147</td>
+<td>MS 43</td>
+<td>Range check voltage supply pedal sensor 2 and throttle position sensors</td>
+<td>DME internal input analog</td>
+<td>Supply voltage for sensors must be within a specified range.</td>
+</tr>
+<tr>
+<td>149</td>
+<td>P1140</td>
+<td>Motor throttle feedback potentiometer and air mass sensor signal not plausible</td>
+<td>Input analog (0-5V)</td>
+<td>Signal from motor throttle valve potentiometer must be suitable to signal from air mass sensor. A fault is set if difference exceeds specified limit.</td>
+</tr>
+<tr>
+<td>150</td>
+<td>P0130</td>
+<td>Oxygen sensor pre-cat (Bank 1), short to battery volt.</td>
+<td>Input analog (0-5V)</td>
+<td>Oxygen sensor signal range is checked to determine if electrical shorts exist on input line. Voltage signal has to be within a predetermined range (0.1V -1V) or a fault will set.</td>
+</tr>
+<tr>
+<td>151</td>
+<td>P0130</td>
+<td>Oxygen sensor pre-cat (Bank 1), short to ground</td>
+<td>Input analog (0-5V)</td>
+<td>Oxygen sensor signal range is checked to determine if electrical shorts exist on input line. Voltage signal must be within a predetermined range (0.1V -1V) or fault will set.</td>
+</tr>
+<tr>
+<td>152</td>
+<td>P0130</td>
+<td>Oxygen sensor pre-cat (Bank 1), disconnection</td>
+<td>Input analog (0-5V)</td>
+<td>Oxygen sensor signal range is checked to determine if electrical disconnection exist on input line.</td>
+</tr>
+<tr>
+<td>153</td>
+<td>P0150</td>
+<td>Oxygen sensor pre-cat (Bank 2), short to battery volt.</td>
+<td>Input analog (0-5V)</td>
+<td>Oxygen sensor signal range is checked to determine if electrical shorts exist on input line. Voltage signal must be within a predetermined range (0.1V -1V) or fault will set.</td>
+</tr>
+<tr>
+<td>154</td>
+<td>P0150</td>
+<td>Oxygen sensor pre-cat (Bank 2), short to ground</td>
+<td>Input analog (0-5V)</td>
+<td>Oxygen sensor signal range is checked to determine if electrical shorts exist on input line. Voltage signal must be within a predetermined range (0.1V -1V) or fault will set.</td>
+</tr>
+<tr>
+<td>155</td>
+<td>P0150</td>
+<td>Oxygen sensor pre-cat (Bank 2), disconnection</td>
+<td>Input analog (0-5V)</td>
+<td>Oxygen sensor signal range is checked to determine if electrical disconnection exist on input line.</td>
+</tr>
+<tr>
+<td>156</td>
+<td>P0136</td>
+<td>Oxygen sensor post-cat (Bank 1), short to battery volt.</td>
+<td>Input analog (0-5V)</td>
+<td>Oxygen sensor signal range is checked to determine if electrical shorts exist on input line. Voltage signal must be within a predetermined range (0.1V -1V) or fault will set.</td>
+</tr>
+<tr>
+<td>157</td>
+<td>P0136</td>
+<td>Oxygen sensor Post Cat. (Bank 1), short to ground</td>
+<td>Input analog (0-5V)</td>
+<td>Oxygen sensor signal range is checked to determine if electrical shorts exist on input line. Voltage signal must be within a predetermined range (0.1V -1V) or fault will set.</td>
+</tr>
+<tr>
+<td>159</td>
+<td>P0156</td>
+<td>Oxygen sensor Post Cat. (Bank 2), short to battery volt.</td>
+<td>Input analog (0-5V)</td>
+<td>Oxygen sensor signal range is checked to determine if electrical shorts exist on input line. Voltage signal must be within a predetermined range (0.1V -1V) or fault will set.</td>
+</tr>
+<tr>
+<td>160</td>
+<td>P0156</td>
+<td>Oxygen sensor post-cat (Bank 2), short to ground</td>
+<td>Input analog (0-5V)</td>
+<td>Oxygen sensor signal range is checked to determine if electrical shorts exist on input line. Voltage signal must be within a predetermined range (0.1V -1V) or fault will set.</td>
+</tr>
+<tr>
+<td>160</td>
+<td>MS 43</td>
+<td>Throttle valve position controller</td>
+<td>DME internal values logical</td>
+<td></td>
+</tr>
+<tr>
+<td>161</td>
+<td>MS 43</td>
+<td>Throttle valve position controller</td>
+<td>DME internal values logical</td>
+<td></td>
+</tr>
+<tr>
+<td>162</td>
+<td>MS 43</td>
+<td>Throttle valve position controller</td>
+<td>DME internal values logical</td>
+<td></td>
+</tr>
+<tr>
+<td>168</td>
+<td>MS 43</td>
+<td>Throttle valve position, throttle sticking</td>
+<td>DME internal test calculated</td>
+<td></td>
+</tr>
+<tr>
+<td>169</td>
+<td></td>
+<td>MDK final stage shut off</td>
+<td>DME internal test</td>
+<td>This fault indicates problem on pedal sensor, throttle potentiometer or throttle. A separately stored fault code indicates problem.</td>
+</tr>
+<tr>
+<td>171</td>
+<td>P0601</td>
+<td>System has been shut down due to safety controller</td>
+<td>DME internal test</td>
+<td>Safety controller has shut down motor throttle valve function due to not plausible MDK input values.</td>
+</tr>
+<tr>
+<td>172</td>
+<td>P1542</td>
+<td>Pedal sensor potentiometer short between two potentiometer paths</td>
+<td>DME internal check</td>
+<td>5 volts for potentiometers are switched on within a specific time pattern.</td>
+</tr>
+<tr>
+<td>173</td>
+<td>P0120</td>
+<td>Motor throttle valve potentiometer contact short</td>
+<td>Rationality check</td>
+<td>Motor throttle valve potentiometer</td>
+</tr>
+<tr>
+<td>174</td>
+<td>P0120</td>
+<td>Motor throttle valve potentiometer adaptation of idle end position</td>
+<td>Input analog (0-5V)</td>
+<td>Signal for idle position must be within a specified range. If range is exceeded, fault is set.</td>
+</tr>
+<tr>
+<td>175</td>
+<td></td>
+<td>Pedal sensor potentiometer 1 adaptation of the idle end position</td>
+<td>Input analog (0-5V)</td>
+<td>Signal for idle position must be within a specified range. If range is exceeded, fault is set.</td>
+</tr>
+<tr>
+<td>176</td>
+<td>P1542</td>
+<td>Pedal sensor potentiometer 2 adaptation of the idle end position</td>
+<td>Input analog (0-5V)</td>
+<td>Signal for idle position must be within a specified range. If range is exceeded, fault is set.</td>
+</tr>
+<tr>
+<td>188</td>
+<td>P1132</td>
+<td>Oxygen sensor heater, pre-cat (Bank 1), insufficient</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME internally calculated heater power is checked against predefined diagnostic limits.</td>
+</tr>
+<tr>
+<td>189</td>
+<td>P1133</td>
+<td>Oxygen sensor heater, pre-cat (Bank 2), insufficient</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME internally calculated heater power is checked against predefined diagnostic limits.</td>
+</tr>
+<tr>
+<td>190</td>
+<td>P1186</td>
+<td>Oxygen sensor-heater, post-cat (Bank 1), insufficient</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME internally calculated heater power is checked against predefined diagnostic limits.</td>
+</tr>
+<tr>
+<td>191</td>
+<td>P1187</td>
+<td>Oxygen sensor heater, post-cat (Bank 2), insufficient</td>
+<td>Output digital pulse width (active low)</td>
+<td>DME internally calculated heater power is checked against predefined diagnostic limits.</td>
+</tr>
+<tr>
+<td>197</td>
+<td>MS 43</td>
+<td>Signal range check</td>
+<td>DME internal analog input</td>
+<td></td>
+</tr>
+<tr>
+<td>202</td>
+<td>P0170</td>
+<td>Fuel trim (Bank 1), O2 control limit</td>
+<td>DME internal values logical</td>
+<td>Controller for lambda is too long beyond a min. or a max.</td>
+</tr>
+<tr>
+<td>203</td>
+<td>P0173</td>
+<td>Fuel Trim (Bank 2), O2 control limit</td>
+<td>DME internal values logical</td>
+<td>Controller for lambda is too long beyond a min. or a max.</td>
+</tr>
+<tr>
+<td>204</td>
+<td>P0505</td>
+<td>Idle control system, idle speed not plausible</td>
+<td>DME internal values logical</td>
+<td>Functional check between actual engine speed (RPM) and predetermined RPM exceeds maximum deviation of +200/-100 RPM.</td>
+</tr>
+<tr>
+<td>208</td>
+<td></td>
+<td>EWS, engine speed check not ok</td>
+<td>DME internal test</td>
+<td>Engine speed signal is transferred by EWS to DME. Fault is set if transferred signal is not reflecting engine speed due to input problem in EWS.</td>
+</tr>
+<tr>
+<td>209</td>
+<td></td>
+<td>EWS, content of message</td>
+<td>Input binary stream bit data (0-12V)</td>
+<td>Content of binary message received from EWS invalid.</td>
+</tr>
+<tr>
+<td>210</td>
+<td></td>
+<td>Ignition feedback, faulty (&gt;2 cylinders)</td>
+<td>Input analog timing (100 mV)</td>
+<td>Check for correct signal timing after each ignition has been initiated by feedback signal. If more than two ignition signals are not recognized then there might be a problem in feedback line.</td>
+</tr>
+<tr>
+<td>211</td>
+<td>P1510</td>
+<td>Idle control valve stuck</td>
+<td>DME internal values logical</td>
+<td>Functional check against a calculated value by monitoring flow through air mass meter to determine if idle valve is mechanically stuck open. Tested during closed throttle.</td>
+</tr>
+<tr>
+<td>214</td>
+<td>P0500</td>
+<td>Vehicle speed sensor</td>
+<td>Input digital frequency (0-12V)</td>
+<td>Signal range is checked against predefined diagnostic limits. No vehicle speed is observed after specific time when compared to engine speed and load equivalent to moving vehicle.</td>
+</tr>
+<tr>
+<td>215</td>
+<td>P0136</td>
+<td>Oxygen sensor post-cat (Bank 1), disconnection</td>
+<td>Input analog (0-5V)</td>
+<td>Oxygen sensor signal range is checked to determine if electrical disconnection exist on input line.</td>
+</tr>
+<tr>
+<td>216</td>
+<td>P0136</td>
+<td>Oxygen sensor post-cat (Bank 2), disconnection</td>
+<td>Input analog (0-5V)</td>
+<td>Oxygen sensor signal range is checked to determine if electrical disconnection exist on input line.</td>
+</tr>
+<tr>
+<td>217</td>
+<td>P0505</td>
+<td>CAN time out (EGS1)</td>
+<td>Input digital binary information (0-12V)</td>
+<td>CAN message between DME/EGS was not received within expected time.</td>
+</tr>
+<tr>
+<td>219</td>
+<td></td>
+<td>CAN-chip, bus off</td>
+<td>Input digital binary information (0-12V)</td>
+<td>Hardware test determines if CAN bus is off line. Data transmission is disturbed.</td>
+</tr>
+<tr>
+<td>220</td>
+<td>P1184</td>
+<td>Oxygen sensor post-cat (Bank 1) slow response time</td>
+<td>Input analog (high is lean) (0-5V)</td>
+<td>Checks amount of time oxygen sensor stays in rich or lean state. If it remains there too long in either, fault will set.</td>
+</tr>
+<tr>
+<td>221</td>
+<td>P1185</td>
+<td>Oxygen sensor post-cat (Bank 2) slow response time</td>
+<td>Input analog (high is lean) (0-5V)</td>
+<td>Checks amount of time oxygen sensor stays in rich or lean state. If it remains there too long in either fault will set.</td>
+</tr>
+<tr>
+<td>222</td>
+<td>P0125</td>
+<td>Insufficient coolant temp. to permit closed loop operation</td>
+<td>Input analog (0-5V)</td>
+<td>Comparison of actual coolant temperature against calculated DME value which varies with load signal.</td>
+</tr>
+<tr>
+<td>223</td>
+<td>P1180</td>
+<td>Oxygen sensor post-cat (Bank 1), switching time slow</td>
+<td>Input analog (high is lean) (0-5V)</td>
+<td>Checks amount of time oxygen sensor takes to switch from rich to lean and vice versa. If too long, fault will set.</td>
+</tr>
+<tr>
+<td>224</td>
+<td>P1181</td>
+<td>Oxygen sensor post-cat (Bank 2), switching time slow</td>
+<td>Input analog (high is lean) (0-5V)</td>
+<td>Checks amount of time oxygen sensor takes to switch from rich to lean and vice versa. If too long, fault will set.</td>
+</tr>
+<tr>
+<td>225</td>
+<td>P1192</td>
+<td>Post-cat sensor (Bank 1); trim control</td>
+<td>Input analog (0-5V)</td>
+<td>Rationality check for O2 control adaptation with post catalyst sensor bank 1.</td>
+</tr>
+<tr>
+<td>226</td>
+<td>P0193</td>
+<td>Post-cat sensor (Bank 2); trim control</td>
+<td>Input analog (0-5V)</td>
+<td>Rationality check for O2 control adaptation with post catalyst sensor bank 2.</td>
+</tr>
+<tr>
+<td>227</td>
+<td>P0188</td>
+<td>Fuel trim (Bank 1), O2 control adaptation limit</td>
+<td>DME internal values logical</td>
+<td>Range control of adaptation values.</td>
+</tr>
+<tr>
+<td>228</td>
+<td>P0189</td>
+<td>Fuel trim (Bank 2), O2 control adaptation limit</td>
+<td>DME internal values logical</td>
+<td>Range control of adaptation values.</td>
+</tr>
+<tr>
+<td>229</td>
+<td>P0133</td>
+<td>Oxygen sensor pre-cat (Bank 1), slow response time</td>
+<td>Input analog (high is lean) (0-5V)</td>
+<td>Checks amount of time oxygen sensor takes to switch from rich to lean and vice versa. If too long, fault will set.</td>
+</tr>
+<tr>
+<td>230</td>
+<td>P0153</td>
+<td>Oxygen sensor pre-cat (Bank 2), slow response time</td>
+<td>Input analog (high is lean) (0-5V)</td>
+<td>Checks amount of time oxygen sensor stays in its rich or lean state. If it remains there too long in either fault will set.</td>
+</tr>
+<tr>
+<td>231</td>
+<td>P1178</td>
+<td>Oxygen sensor pre-cat (Bank 1), switch time too slow</td>
+<td>Input analog (high is lean) (0-5V)</td>
+<td>Checks amount of time oxygen sensor takes to switch from rich to lean and vice versa. If it takes too long to switch fault will set.</td>
+</tr>
+<tr>
+<td>232</td>
+<td>P0179</td>
+<td>Oxygen sensor pre-cat (Bank 2), switch time too slow</td>
+<td>Input analog (high is lean) (0-5V)</td>
+<td>Checks amount of time oxygen sensor takes to switch from rich to lean and vice versa. If it takes too long to switch fault will set.</td>
+</tr>
+<tr>
+<td>233</td>
+<td>P0420</td>
+<td>Catalyst efficiency (Bank 1), below threshold</td>
+<td>Input analog (0-5V)</td>
+<td>Compares value of pre-cat oxygen sensor to value of post-cat oxygen sensor to measure oxygen storage capability / efficiency of catalytic converter. Post-cat oxygen sensor must be relatively lean.</td>
+</tr>
+<tr>
+<td>234</td>
+<td>P0430</td>
+<td>Catalyst efficiency (Bank 2), below threshold</td>
+<td>Input analog (0-5V)</td>
+<td>Compares value of pre-cat oxygen sensor to value of post-cat oxygen sensor to measure oxygen storage capability / efficiency of catalytic converter. Post-cat oxygen sensor must be relatively lean.</td>
+</tr>
+<tr>
+<td>235</td>
+<td>P1190</td>
+<td>Pre-cat sensor (Bank 1): trim control</td>
+<td>Input analog (high is rich) (0-1V)</td>
+<td>Rationality check for O2 control adaptation with pre-cat sensor bank 1</td>
+</tr>
+<tr>
+<td>236</td>
+<td>P1191</td>
+<td>Pre-cat sensor (Bank 2): trim control</td>
+<td>Input analog (high is rich) (0-1V)</td>
+<td>Rationality check for O2 control adaptation with pre-cat sensor bank 2</td>
+</tr>
+<tr>
+<td>238</td>
+<td>P0301</td>
+<td>Cyl. 1 misfire detected</td>
+<td>DME internal values logical</td>
+<td>Crankshaft speed/acceleration is monitored by crank sensor. Time for each cylinder combustion is compared against avg. of others. If time for cylinder 1 is longer, fault will set.</td>
+</tr>
+<tr>
+<td>239</td>
+<td>P0302</td>
+<td>Cyl. 2 misfire detected</td>
+<td>DME internal values logical</td>
+<td>Crankshaft speed/acceleration is monitored by crank sensor. Time for each cylinder combustion is compared against avg. of others. If time for cylinder 2 is longer, fault will set.</td>
+</tr>
+<tr>
+<td>240</td>
+<td>P0303</td>
+<td>Cyl. 3 misfire detected</td>
+<td>DME internal values logical</td>
+<td>Crankshaft speed/acceleration is monitored by crank sensor. Time for each cylinder combustion is compared against avg. of others. If time for cylinder 3 is longer, fault will set.</td>
+</tr>
+<tr>
+<td>241</td>
+<td>P0304</td>
+<td>Cyl. 4 misfire detected</td>
+<td>DME internal values logical</td>
+<td>Crankshaft speed/acceleration is monitored by crank sensor. Time for each cylinder combustion is compared against avg. of others. If time for cylinder 4 is longer, fault will set.</td>
+</tr>
+<tr>
+<td>242</td>
+<td>P0305</td>
+<td>Cyl. 5 misfire detected</td>
+<td>DME internal values logical</td>
+<td>Crankshaft speed/acceleration is monitored by crank sensor. Time for each cylinder combustion is compared against avg. of others. If time for cylinder 5 is longer, fault will set.</td>
+</tr>
+<tr>
+<td>243</td>
+<td>P0306</td>
+<td>Cyl. 6 misfire detected</td>
+<td>DME internal values logical</td>
+<td>Crankshaft speed/acceleration is monitored by crank sensor. Time for each cylinder combustion is compared against avg. of others. If time for cylinder 6 is longer, fault will set.</td>
+</tr>
+<tr>
+<td>244</td>
+<td></td>
+<td>Segment timing faulty, flywheel adaptation</td>
+<td>Input analog (0-5V)</td>
+<td>Flywheel segments are monitored during deceleration to establish baseline for misfire calculation. If segments are too long/short (bad flywheel) and exceed limit, fault will be set.</td>
+</tr>
+<tr>
+<td>245</td>
+<td>P1423</td>
+<td>Secondary air injection (Bank 1), flow too low</td>
+<td>Input analog (0-5V)</td>
+<td>Checks to see if oxygen sensor reacts to increase in unmetered airflow generated by secondary air pump operation. Oxygen sensor must sense lean condition or fault will set.</td>
+</tr>
+<tr>
+<td>246</td>
+<td>P1421</td>
+<td>Secondary air injection (Bank 2), flow too low</td>
+<td>Input analog (0-5V)</td>
+<td>Checks to see if oxygen sensor reacts to increase in unmetered airflow generated by secondary air pump operation. Oxygen sensor must sense lean condition or fault will set.</td>
+</tr>
+<tr>
+<td>247</td>
+<td>P1432</td>
+<td>Secondary air valve stuck open</td>
+<td>Input analog (0-5V)</td>
+<td>Checks to see if oxygen sensor reacts to increase in unmetered airflow generated by secondary air pump operation. Oxygen sensor must sense lean condition or fault will set.</td>
+</tr>
+<tr>
+<td>248</td>
+<td>P1184</td>
+<td>Post-cat sensor; signal after decel phase not plausible; (Bank 1)</td>
+<td>Input analog (0-5V)</td>
+<td>Signal is checked for a lean signal in decel and a transition between lean to rich after decel</td>
+</tr>
+<tr>
+<td>249</td>
+<td>P1185</td>
+<td>Post-cat sensor; signal after decel phase not plausible; (Bank 2)</td>
+<td>Input analog (0-5V)</td>
+<td>Signal is checked for a lean signal in decel and a transition between lean to rich after decel</td>
+</tr>
+<tr>
+<td>250</td>
+<td>P0440</td>
+<td>Functional check purge valve</td>
+<td>Input analog (0-5V)</td>
+<td>This functional check looks for reaction of oxygen sensor signal during canister purging. Oxygen sensor, air flow meter and RPM values must react to purging of canister.</td>
+</tr>
+</tbody>
+</table>
+</article></body></html>

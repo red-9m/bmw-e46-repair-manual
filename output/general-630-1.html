@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>General (Lights)</h1>
+<blockquote>
+<p>Source: Bentley <em>BMW 3 Series (E46) 1999–2005 (M3) Repair Manual</em>, section 630-1 (PDF pages 1081–1086 of 1252).</p>
+</blockquote>
+<p>This repair group covers interior and exterior lighting, including repairs to the light switch assembly.</p>
+<h2>Special tools</h2>
+<p>Some special tools may be necessary to install or adjust lights and light fixtures.</p>
+<p><img src="e46_630-1_fig01.jpg" alt="Special tool A: plastic trim prying tool BMW 00 9 321 being used to pry interior trim." /></p>
+<p><img src="e46_630-1_fig02.jpg" alt="Special tool B: foglight/headlight adjusting tool, 4 mm/6 mm Allen (drawing)." /></p>
+<p><strong>Plastic trim prying tool BMW 00 9 321</strong></p>
+<p><strong>Foglight/headlight adjusting tool 4 mm/6 mm Allen</strong></p>
+<h2>Bulb applications</h2>
+<p>For convenience, the bulb applications for E46 cars are listed in [Table a].</p>
+<p>Table a. E46 bulb applications</p>
+<table>
+<thead>
+<tr>
+<th>Location</th>
+<th>Type &amp; rating</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Headlights</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>High beam</td>
+<td>H7 12V 55W</td>
+</tr>
+<tr>
+<td>Low beam (Halogen)</td>
+<td>H7 12 V 55 W</td>
+</tr>
+<tr>
+<td>Low beam (Xenon)</td>
+<td>D2-S</td>
+</tr>
+<tr>
+<td><strong>Foglights</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Front</td>
+<td>HB4</td>
+</tr>
+<tr>
+<td>Rear (Euro only)</td>
+<td>12V 21W</td>
+</tr>
+<tr>
+<td><strong>Turn signal and taillight</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Back-up</td>
+<td>12V 21W</td>
+</tr>
+<tr>
+<td>Brake</td>
+<td>12V 21W</td>
+</tr>
+<tr>
+<td>Brake/taillight</td>
+<td>12V 21/4W</td>
+</tr>
+<tr>
+<td>Licence plate</td>
+<td>12V 5W</td>
+</tr>
+<tr>
+<td>Side turn signal</td>
+<td>W5W</td>
+</tr>
+<tr>
+<td>Third brake light</td>
+<td>LED</td>
+</tr>
+<tr>
+<td>Turn signal (front or rear)</td>
+<td>12V 21W</td>
+</tr>
+<tr>
+<td><strong>Interior lights</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Footwell</td>
+<td>Softlite 5W</td>
+</tr>
+<tr>
+<td>Glove compartment</td>
+<td>Softlite 5 W</td>
+</tr>
+<tr>
+<td>Passenger compartment, front or rear</td>
+<td>Softlite 5W</td>
+</tr>
+<tr>
+<td>Reading, front or rear</td>
+<td>6W</td>
+</tr>
+<tr>
+<td>Trunk or tailgate</td>
+<td>Softlite 10W</td>
+</tr>
+<tr>
+<td>Visor vanity</td>
+<td>Softlite 10W</td>
+</tr>
+</tbody>
+</table>
+<p>Note: Group rows (Headlights, Foglights, Turn signal and taillight, Interior lights) are full-width merged rows in print — rendered as bold rows. Table splits across pages 1081/1082 with repeated header — merged.</p>
+<h2>Light switch center (LSZ)</h2>
+<p>The light switch center (LSZ), mounted in the left side of the dashboard, consists of the following components:</p>
+<p><img src="e46_630-1_fig03.jpg" alt="Light switch center functions diagram — top part of a figure split across a page break: LSZ module labeled &quot;Light switch&quot; connected to two bulb symbols. Continues in next image." /></p>
+<p><img src="e46_630-1_fig04.jpg" alt="Light switch center functions diagram — main part: &quot;Bulb monitoring&quot; and &quot;Bulb activation&quot; paths between the GM V and AGS (Transmission control) modules, the instrument cluster, and a car top view with exterior lights; Check Control callout. Illustration ID: 0021455" /></p>
+<ul>
+<li>Headlight/taillight/running light control switch</li>
+<li>Foglight switch</li>
+<li>Instrument dimmer control</li>
+<li>Light control module</li>
+</ul>
+<p>In addition to normal light control, the LSZ provides the following functions:</p>
+<ul>
+<li>Hot and cold monitoring of the exterior bulbs</li>
+<li>Emergency lighting function</li>
+<li>Short circuit protection</li>
+<li>Redundant storage of mileage and service interval data</li>
+<li>Automatic headlight adjustment (LWR) programmed control (if equipped)</li>
+</ul>
+<h2>Bulb monitoring</h2>
+<p>The light control module monitors the following bulbs in both hot and cold states:</p>
+<ul>
+<li>High/low beams</li>
+<li>Brake lights</li>
+<li>Turn signal lights</li>
+<li>Taillights</li>
+<li>Parking lights</li>
+<li>Side marker lights</li>
+<li>License plate lights</li>
+</ul>
+<p>Hot and cold monitoring of light bulbs allows the LSZ to detect defective bulbs. Hot monitoring checks the continuity of circuits while the lights are switched on. Cold monitoring consists of a brief pulse of current which is too short for the lights to illuminate. If the module detects a defective bulb, a signal is sent to the instrument cluster and Check Control is illuminated with the appropriate warning.</p>
+<p><img src="e46_630-1_fig05.jpg" alt="Lamp monitoring diagram: cold bulb and hot bulb circuits with Monitor arrows and the Check Control warning. Illustration ID: 0021456" /></p>
+<h2>Home lighting</h2>
+<p>This convenience feature provides lighting for the driver and passengers to leave the vehicle and enter their house. The feature is switched on by activating the headlight flasher switch after the lights and ignition are switched OFF. The feature is switched off after the coded time delay or by switching the ignition ON.</p>
+<h2>Redundant data storage</h2>
+<p>The light control module serves as the redundant storage module in parallel with the instrument cluster. This includes all data used for vehicle identification, encoded on the assembly line. In addition the total mileage and service interval data are also stored in the light control module. If either the instrument cluster or light control module has to be replaced, the data is taken from the remaining module and transferred to the replacement unit.</p>
+<p><img src="e46_630-1_fig06.jpg" alt="Redundant data storage diagram: VIN, total mileage and service interval data shown stored in parallel in the LSZ and the instrument cluster; odometer LCD displays &quot;000150 mi 7404 +18.5&quot; with a Tamper warning callout. Illustration ID: 0021266" /></p>
+<h2>Emergency (fail safe) lighting</h2>
+<p>The light control module provides emergency lighting in the event of an electronic module failure. Back up hardware allows the following lighting circuits to function:</p>
+<ul>
+<li>Low beam headlights</li>
+<li>Taillights</li>
+<li>Brake lights</li>
+</ul>
+<p>The headlights and taillights come on as soon as the ignition is switched ON. The brake light operates when the brake pedal is pressed.</p>
+<blockquote>
+<p><strong>WARNING!</strong></p>
+<ul>
+<li>When working on electrical systems, remove the fuse protecting the circuit under repair. See [610 Electrical Component Locations].</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>The headlight and foglight assemblies use halogen bulbs. To ensure the longevity of halogen bulbs, the bulb glass should not be handled. Dirt and skin oils may cause a bulb to fail prematurely. If necessary wipe bulb using a clean cloth dampened with rubbing alcohol. Use only original equipment replacement bulbs. Non-original equipment bulbs may cause false failure readings on the Check Control display.</li>
+<li>To avoid marring car paint or trim, work with plastic prying tools or wrap the tips of tools with tape.</li>
+</ul>
+</blockquote>
+</article></body></html>

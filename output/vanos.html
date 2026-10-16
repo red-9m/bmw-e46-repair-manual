@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>Vanos</h1>
+<blockquote>
+<p>Source: BMW 3 Series (E46) Repair Manual, section 117-5, Camshaft Timing Chain chapter (PDF pages 252–270 of 1252).</p>
+</blockquote>
+<p>The main components of the double VANOS system are:</p>
+<ul>
+<li>Intake and exhaust camshafts with helical spline inserts</li>
+<li>Camshaft sprockets with adjustable gears</li>
+<li>VANOS actuators (two position piston housing with internal/external helical spline cup)</li>
+<li>Three-way solenoid switching valves</li>
+<li>Camshaft position impulse wheels</li>
+<li>Hall effect camshaft position sensors</li>
+</ul>
+<p>Camshaft position is varied based on engine rpm, throttle position signal, intake air and coolant temperature.</p>
+<p>When engine is started, camshafts are in deactivated position:</p>
+<ul>
+<li>Intake camshaft is held in RETARDED position by oil pressure.</li>
+<li>Exhaust camshaft is held in ADVANCED position by preload spring and oil pressure.</li>
+</ul>
+<p><img src="e46_117-5_fig01.jpg" alt="Diagram: VANOS deactivated — intake camshaft held in retarded position by oil pressure, exhaust camshaft held in advanced position; VANOS actuator, engine oil supply, oil supply, VANOS solenoid, ECM, intake and exhaust camshafts labelled. Illustration ID: 0021053" /></p>
+<ul>
+<li>Within 2 - 5 seconds (50 engine revolutions), the ECM begins monitoring and controlling camshaft positions.</li>
+</ul>
+<p>The Double VANOS system allows full variability of camshaft timing up to the limits of the system. When the ECM detects that the camshafts are in optimum position, the solenoids are modulated at approximately 100 - 220 Hz to maintain oil pressure on both sides of the actuator pistons to maintain timing.</p>
+<p>In models with DME MS 43.0 (model year 2001), the engine control module (ECM) detects camshaft position before the engine starts, thereby adjusting camshaft timing immediately upon start-up</p>
+<p><img src="e46_117-5_fig02.jpg" alt="Top half of diagram: VANOS activated — camshafts in advanced/retarded positions under ECM solenoid control. Illustration ID: 0021054" /></p>
+<p><img src="e46_117-5_fig03.jpg" alt="Bottom half of the same diagram: oil supply, ECM and exhaust camshaft labelled." /></p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>BMW does not provide diagnostic information or specifications for the Double VANOS system. VANOS system troubleshooting and diagnostics is best accomplished using a scan tool.</li>
+<li>Diagnostic Trouble Codes (DTCs) pertaining to the VANOS system are listed in [Table a]. See also [OBD On Board Diagnostics] at the back of this manual.</li>
+<li>Elevated oil temperatures can cause VANOS to deactivate. Oil that is too thick (high viscosity) may cause a DTC to be set in the ECM. If VANOS is deactivated (limp-home mode), there will be a noticeable loss of power.</li>
+</ul>
+</blockquote>
+<p><strong>Table a.</strong> VANOS fault codes</p>
+<table>
+<thead>
+<tr>
+<th>BMW code</th>
+<th>P-code</th>
+<th>Fault description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>19</td>
+<td>P1529</td>
+<td>VANOS solenoid valve activation, exhaust</td>
+</tr>
+<tr>
+<td>21</td>
+<td>P1525</td>
+<td>VANOS solenoid valve activation, intake</td>
+</tr>
+<tr>
+<td>103</td>
+<td>P1519</td>
+<td>VANOS faulty reference value intake</td>
+</tr>
+<tr>
+<td>104</td>
+<td>P1520</td>
+<td>VANOS faulty reference value exhaust</td>
+</tr>
+<tr>
+<td>105</td>
+<td>P1522</td>
+<td>VANOS stuck (Bank 1) intake</td>
+</tr>
+<tr>
+<td>106</td>
+<td>P1523</td>
+<td>VANOS stuck (Bank 2) exhaust</td>
+</tr>
+</tbody>
+</table>
+<h2>Double VANOS components</h2>
+<p><img src="e46_117-5_fig04.jpg" alt="Top half of diagram: Double VANOS system overview — VANOS actuators, solenoid valves, camshaft position sensors and impulse wheels, battery (+) terminal 15, KL 15, ECM, primary chain tensioner, oil pressure switch, camshafts and sprockets labelled." /></p>
+<p><img src="e46_117-5_fig05.jpg" alt="Bottom half of the same diagram: oil supply, ECM and exhaust camshaft labelled." /></p>
+<p>VANOS control unit</p>
+<p><img src="e46_117-5_fig06.jpg" alt="Exploded diagram of the VANOS control unit and related parts, with numbered parts 1 - 19." /></p>
+<ol>
+<li>Bolt M6</li>
+<li>Exhaust camshaft position sensor</li>
+<li>Sealing ring</li>
+<li>Camshaft end sealing plug — tighten to 50 Nm (37 ft-lb)</li>
+<li>Camshaft seal cap</li>
+<li>VANOS hydraulic piston set screw — CAUTION: left hand thread — tighten to 10 Nm (89 in-lb)</li>
+<li>Nut M7 — tighten to 14 Nm (10 ft-lb)</li>
+<li>Engine lifting hook</li>
+<li>Stud M7</li>
+<li>Nut M6 — tighten to 10 Nm (89 in-lb)</li>
+<li>Gasket</li>
+<li>Cylinder head</li>
+<li>Sealing ring</li>
+<li>Intake camshaft sensor</li>
+<li>Bolt M6</li>
+<li>VANOS control unit</li>
+<li>Copper sealing ring</li>
+<li>VANOS oil feed line</li>
+<li>Banjo bolt — tighten to 32 Nm (24 ft-lb)</li>
+</ol>
+<h2>VANOS control unit, removing</h2>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>If the Double VANOS control unit is being replaced, camshaft timing must be checked as described later in this group. This procedure requires multiple special tools. Be sure to read the procedures through before beginning the repair.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Working inside trunk, disconnect negative (-) battery cable.</li>
+</ul>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Prior to disconnecting the battery, read the battery disconnection cautions given at the front of this manual on page viii.</li>
+<li>Disconnecting the battery may erase fault code(s) stored in control module memory. Check for fault codes using special BMW diagnostic equipment.</li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<p>Remove complete air filter housing, cylinder head cover, intake camshaft plastic cover and spark plugs, as described earlier in [Camshaft Timing Chains, Removing].</p>
+</li>
+<li>
+<p>Remove banjo bolt from VANOS unit oil pressure line. Use banjo bolt to attach BMW special tool 11 3 450 (compressed air fitting) to VANOS unit.</p>
+</li>
+</ul>
+<p><img src="e46_117-5_fig07.jpg" alt="Banjo bolt removed and BMW special tool 11 3 450 (compressed air fitting) attached to the VANOS unit. Illustration ID: 0021823" /></p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Oil will drain from pressure line. Have a container and rags ready. Do not allow oil to run onto drive belts.</li>
+<li>Cover top of VANOS unit with lint-free shop cloth. Compressed air will force oil to spray out of oil bore on top of unit.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Connect compressed air line (with line pressure set to 2 - 8 bar or 30 - 110 psi) to air fitting.</li>
+<li>With compressed air line connected, turn engine at least twice in direction of rotation until cylinder 1 intake and exhaust camshaft lobes (arrows) face each other.</li>
+</ul>
+<p><img src="e46_117-5_fig08.jpg" alt="Cylinder 1 intake and exhaust camshaft lobes (arrows) facing each other. Illustration ID: 0021870" /></p>
+<ul>
+<li>Remove sealing plug from bore on lower left side of engine block (flywheel end). Secure crankshaft in TDC position with BMW special tool 11 2 300 (arrow).</li>
+</ul>
+<p><img src="e46_117-5_fig09.jpg" alt="Flywheel end of engine block, black arrow pointing to the crankshaft locking tool 11 2 300 installed." /></p>
+<ul>
+<li>Unscrew and remove cylinder head cover studs at rear of cylinder head.</li>
+<li>Secure camshafts in TDC position using BMW special tools 11 3 240 and 11 3 244.</li>
+</ul>
+<p><img src="e46_117-5_fig10.jpg" alt="Camshaft locking tool 11 3 240 and bracket 11 3 244 installed at the rear of the cylinder head. Illustration ID: 0021915" /></p>
+<ul>
+<li>Detach compressed air line, leaving compressed air fitting attached to VANOS unit.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Oil will drain from fittings when air line is removed. Have a container and rags ready. Do not allow oil to run onto drive belts.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Unscrew sealing plugs (arrows) from VANOS unit.</li>
+</ul>
+<p><img src="e46_117-5_fig11.jpg" alt="VANOS unit with black arrows pointing to the sealing plugs. Illustration ID: 0021824" /></p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Oil will drain from plugs when removed. Have a container and rags ready. Do not allow oil to run onto drive belts.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Remove sealing caps from inside VANOS unit with BMW special tool 11 6 170, or with short flat nose pliers.</li>
+</ul>
+<p><img src="e46_117-5_fig12.jpg" alt="Hand pulling a sealing cap straight out of the VANOS unit with pliers. Illustration ID: 0021825" /></p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Additional oil may drain from VANOS unit.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Remove set screws (left hand thread) on ends of intake and exhaust camshaft hydraulic pistons.</li>
+</ul>
+<p><img src="e46_117-5_fig13.jpg" alt="Hand removing a set screw from the end of a camshaft hydraulic piston. Illustration ID: 0021826" /></p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Set screws have left-hand threads. Remove with a clockwise motion.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Disconnect electrical harness connectors from camshaft position sensors and solenoid valves on both exhaust and intake sides of VANOS unit.</li>
+</ul>
+<p><img src="e46_117-5_fig14.jpg" alt="Hand disconnecting an electrical harness connector on the VANOS unit, white arrows pointing to the connectors. Illustration ID: 0021873" /></p>
+<ul>
+<li>Remove VANOS unit:
+<ul>
+<li>Remove fasteners from engine support eye.</li>
+<li>Remove VANOS mounting nuts (arrows) from cylinder head. Slide VANOS unit and metal gasket off.</li>
+</ul>
+</li>
+</ul>
+<p><img src="e46_117-5_fig15.jpg" alt="VANOS unit with black arrows pointing to the mounting nuts and engine support eye fasteners. Illustration ID: 0022002" /></p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Do not crank or turn over engine with VANOS unit removed. Piston/valve interference is possible.</li>
+</ul>
+</blockquote>
+<h2>VANOS control unit, installing</h2>
+<ul>
+<li>Clean contact edges of cylinder head face and VANOS unit and apply a thin coat of sealing compound (3-Bond® 1209 or equivalent) to surfaces.</li>
+</ul>
+<p><img src="e46_117-5_fig16.jpg" alt="Top of cylinder head at the VANOS unit: A — locating dowel, B — dowel sleeve. Illustration ID: 0021911" /></p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Make sure all gasket material is removed from face of cylinder head. Clean sealing face and keep free of oil. If any foreign material is present on the sealing surface, the camshaft timing will be incorrect.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Check locating dowel (A) and dowel sleeve (B) at top of cylinder head for damage or incorrect installation.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>If the Double VANOS control unit is being replaced, be sure to check and adjust camshaft timing as described later in this group.</li>
+<li>If work being carried out has no effect on camshaft timing, it is not necessary to recheck the timing. It is recommended however that the VANOS operation be checked using a compatible scan tool.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Using new gasket, install VANOS unit to cylinder head.</li>
+<li>Reinstall engine support eye.</li>
+</ul>
+<p>Tightening torque</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VANOS unit to cylinder head, M6 nut</td>
+<td>10 Nm (89 in-lb)</td>
+</tr>
+<tr>
+<td>VANOS unit to cylinder head, M7 nut</td>
+<td>14 Nm (10 ft-lb)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Insert and tighten down VANOS hydraulic piston set screws on intake and exhaust camshafts.</li>
+</ul>
+<p><img src="e46_117-5_fig17.jpg" alt="Hand tightening a VANOS hydraulic piston set screw in the splined shaft." /></p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Set screws have left hand thread. Tighten counterclockwise.</li>
+</ul>
+</blockquote>
+<p>Tightening torque</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hydraulic piston to splined shaft M6 set screw</td>
+<td>10 Nm (89 in-lb)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Replace sealing caps inside VANOS unit with BMW special tool 11 6 170, or short flat nosed pliers.</li>
+</ul>
+<p><img src="e46_117-5_fig18.jpg" alt="Sealing caps inside the VANOS unit being replaced using BMW special tool 11 6 170. Illustration ID: 0021824" /></p>
+<ul>
+<li>Insert and secure VANOS sealing plugs (arrows), using new sealing O-rings.</li>
+</ul>
+<p><img src="e46_117-5_fig19.jpg" alt="VANOS unit with black arrows pointing to the sealing plugs with new sealing O-rings. Illustration ID: 0021769" /></p>
+<p>Tightening torque</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sealing plug to VANOS unit</td>
+<td>50 Nm (37 ft-lb)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Remove compressed air fitting from VANOS unit.</li>
+<li>Fit VANOS oil line banjo bolt with new seals. Attach oil line to VANOS unit.</li>
+</ul>
+<p>Tightening torque</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oil line to VANOS unit (banjo bolt)</td>
+<td>32 Nm (24 ft-lb)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Attach electrical harness connectors to camshaft position sensors and VANOS solenoid valves.</li>
+<li>Remove BMW special locking tools from rear of cylinder head.</li>
+<li>Remove BMW special locking tool from flywheel and replace dust guard.</li>
+<li>Install intake camshaft plastic baffle and then install cylinder head cover.
+<ul>
+<li>Check for correct seating of half-moon seals (A) in back of cylinder head cover.</li>
+<li>Use a small amount of 3-Bond® 1209 or equivalent sealant at corners (B) of half-moon cutouts.</li>
+<li>Similarly, seat gasket and seal corners in front of cylinder head, at VANOS unit.</li>
+</ul>
+</li>
+</ul>
+<p><img src="e46_117-5_fig20.jpg" alt="Line drawing: cylinder head cover with half-moon seals (A) and sealant corners (B) at the VANOS unit. Illustration ID: 0021075" /></p>
+<p>Tightening torque</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cylinder head cover to cylinder head (M6)</td>
+<td>10 Nm (89 in-lb)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Remainder of installation is reverse of removal.</li>
+</ul>
+<p>Tightening torques</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Radiator fan (viscous clutch) to coolant pump</td>
+<td>40 Nm (30 ft-lb)</td>
+</tr>
+<tr>
+<td>Spark plug to cylinder head</td>
+<td>25 Nm (18 ft-lb)</td>
+</tr>
+</tbody>
+</table>
+<h2>Camshaft timing, adjusting</h2>
+<ul>
+<li>
+<p>Use this procedure to check and, if necessary, adjust camshaft timing. This procedure assumes that the cylinder head cover and intake camshaft plastic baffle have been removed as described under [Camshaft Timing Chains, Removing]. Also, be sure the cooling fan behind the radiator and the spark plugs have been removed.</p>
+</li>
+<li>
+<p>Remove primary camshaft chain tensioner cylinder (arrow).</p>
+</li>
+</ul>
+<p><img src="e46_117-5_fig21.jpg" alt="Primary camshaft chain tensioner cylinder, white arrow pointing to it. Illustration ID: 0021078" /></p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Primary camshaft chain tensioning piston is under spring pressure.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Insert BMW special tool 11 4 220 in cylinder head and bring adjustment screw into contact with tensioning rail.</li>
+</ul>
+<p><img src="e46_117-5_fig22.jpg" alt="Line drawing: BMW special tool 11 4 220 inserted in the cylinder head with its adjustment screw contacting the tensioning rail. Illustration ID: 0021063" /></p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>BMW special tool 11 4 220 is a dummy primary chain tensioner and simulates the function of the tensioner.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Preload primary chain tensioner rail: Tighten adjusting screw on BMW special tool 11 4 220.</li>
+</ul>
+<p><img src="e46_117-5_fig23.jpg" alt="Hand tightening the adjusting screw of BMW special tool 11 4 220 to preload the primary chain tensioner rail. Illustration ID: 0021733" /></p>
+<p>Tightening torque</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary chain tensioner preload</td>
+<td>0.7 Nm (6 in-lb)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Unscrew oil pressure pipe from VANOS unit. Remove banjo bolt from oil pressure line and install BMW special tool 11 3 450.</li>
+</ul>
+<p><img src="e46_117-5_fig24.jpg" alt="Banjo bolt removed and BMW special tool 11 3 450 (compressed air fitting) attached to the VANOS control unit. Illustration ID: 0021823" /></p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Cover top of VANOS unit with lint-free shop cloth. Attachment of compressed air line will force oil to spray out of bore.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Connect compressed air line to air fitting. Apply air pressure set to 2 - 8 bar (30 - 110 psi).</li>
+<li>With compressed air line connected, turn engine at least twice in direction of rotation until cylinder 1 intake and exhaust camshaft lobes (arrows) face each other.</li>
+</ul>
+<p><img src="e46_117-5_fig25.jpg" alt="Cylinder 1 intake and exhaust camshaft lobes (arrows) facing each other. Illustration ID: 0021870" /></p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Do not rotate engine counterclockwise to reach the top dead center position. Instead, complete another two complete rotations.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Remove sealing plug from bore on lower left side of engine block near flywheel. Secure crankshaft in TDC position with BMW special tool 11 2 300 (arrow).</li>
+</ul>
+<p><img src="e46_117-5_fig26.jpg" alt="Top half of a photo: flywheel end of engine block, black arrow pointing to the crankshaft locking tool 11 2 300 installed." /></p>
+<p><img src="e46_117-5_fig27.jpg" alt="Bottom half of the same photo: crankshaft locked in TDC position." /></p>
+<ul>
+<li>Unscrew and remove cylinder head cover studs at rear of cylinder head.</li>
+<li>Place BMW special tool 11 3 240 over camshafts ends and measure clearance of tool to cylinder head surface.</li>
+</ul>
+<p><img src="e46_117-5_fig28.jpg" alt="BMW special tool 11 3 240 placed over the camshaft ends: A — exhaust side of the tool, B — intake side of the tool. Illustration ID: 0021941" /></p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>If the exhaust side of the tool (A) is not flush with the head, retime the camshafts as described below.</li>
+<li>Due to flexible sprocket design, VANOS unit tolerances and play in the VANOS splines, when the camshaft timing is set correctly, the intake side of special tool 11 3 240 (B) may be up to 1 mm (0.04 in) above the surface of the cylinder head. This is normal. Reassemble engine. Otherwise, retime the engine as described below.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Remove Double VANOS unit as described earlier.</li>
+<li>Press down on secondary chain tensioner and lock into place using BMW special tool 11 3 292 or equivalent.</li>
+</ul>
+<p><img src="e46_117-5_fig29.jpg" alt="Secondary chain tensioner pressed down and locked with BMW special tool 11 3 292. Illustration ID: 0021773" /></p>
+<ul>
+<li>Make sure primary chain tensioner dummy tool (special tool 11 4 220) is installed in side of cylinder head and just touching tensioning rail. Do not preload chain yet.</li>
+<li>Loosen intake camshaft sprocket mounting nuts (arrows) by 1 turn.</li>
+</ul>
+<p><img src="e46_117-5_fig30.jpg" alt="Top half of a photo: intake camshaft sprocket with FRONT mark, arrows pointing to the mounting nuts loosened by 1 turn." /></p>
+<p><img src="e46_117-5_fig31.jpg" alt="Bottom half of the same photo: mounting nuts loosened. Illustration ID: 0021935" /></p>
+<ul>
+<li>Loosen exhaust camshaft sprocket mounting bolts (A) 1 turn.</li>
+<li>Loosen exhaust camshaft impulse wheel mounting nuts (B) 2 turns.</li>
+</ul>
+<p><img src="e46_117-5_fig32.jpg" alt="Exhaust camshaft sprocket: A — sprocket mounting bolts, B — impulse wheel mounting nuts. Illustration ID: 0021926" /></p>
+<ul>
+<li>Slide out intake camshaft splined shaft until approx. 1 mm (0.04 in) of splines (arrows) can be seen.</li>
+</ul>
+<p><img src="e46_117-5_fig33.jpg" alt="Intake camshaft splined shaft slid out with approx. 1 mm (0.04 in) of splines visible (arrows). Illustration ID: 0021933" /></p>
+<ul>
+<li>Pull out exhaust camshaft splined shaft to stop.</li>
+</ul>
+<p><img src="e46_117-5_fig34.jpg" alt="Hand pulling the exhaust camshaft splined shaft out to the stop. Illustration ID: 0021733" /></p>
+<ul>
+<li>Make sure camshafts are secured in TDC position using BMW special tools 11 3 240 and 11 3 244.</li>
+<li>Preload primary chain tensioning rail: Tighten adjusting screw on BMW special tool 11 4 220.</li>
+</ul>
+<p><img src="e46_117-5_fig35.jpg" alt="Hand tightening the adjusting screw of BMW special tool 11 4 220 to preload the primary chain tensioning rail. Illustration ID: 0021933a" /></p>
+<p>Tightening torque</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary chain tensioner preload</td>
+<td>0.7 Nm (6 in-lb)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Preload exhaust camshaft spring plate by pressing on impulse wheel. Tighten mounting nuts (arrows) by hand. Do not tighten fully.</li>
+</ul>
+<p><img src="e46_117-5_fig36.jpg" alt="Hand pressing on the impulse wheel while tightening the mounting nuts (arrows) of the exhaust camshaft spring plate by hand. Illustration ID: 0021935a" /></p>
+<ul>
+<li>Install BMW special tool 11 6 150 (VANOS setup bracket) to front of cylinder head timing case. Tighten nuts (arrows) by hand, and then tighten down uniformly until special tool is in full contact with cylinder head.</li>
+</ul>
+<p><img src="e46_117-5_fig37.jpg" alt="BMW special tool 11 6 150 (VANOS setup bracket) installed at the front of the cylinder head timing case, arrows pointing to its nuts." /></p>
+<p><img src="e46_117-5_fig38.jpg" alt="Top half of a photo: sprocket assemblies with mounting screws (A) and nuts (B) being pretightened to approx. 5 Nm (44 in-lb)." /></p>
+<p><img src="e46_117-5_fig39.jpg" alt="Bottom half of the same photo: screws and nuts torqued down to final specification. Illustration ID: 0021935a" /></p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Make sure all gasket material is removed from face of cylinder head. Clean sealing face and keep free of oil. If any foreign material is present on the sealing surface, the camshaft timing will be incorrect.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Secure camshaft impulse sprockets and wheels:
+<ul>
+<li>Pretighten Torx screws (A) on exhaust camshaft impulse wheel to approx. 5 Nm (44 in-lb).</li>
+<li>Pretighten mounting nuts (B) on exhaust and intake sprocket assemblies to approx. 5 Nm (44 in-lb).</li>
+<li>Torque down Torx screws (A) and nuts (B) to final specifications.</li>
+</ul>
+</li>
+</ul>
+<p>Tightening torques</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sprocket assembly to camshaft initial torque</td>
+<td>5 Nm (44 in-lb)</td>
+</tr>
+<tr>
+<td>Sprocket assembly to camshaft, M7 Torx screw (A)</td>
+<td>20 Nm (15 ft-lb)</td>
+</tr>
+<tr>
+<td>Sprocket assembly to camshaft, M6 mounting nut (B)</td>
+<td>10 Nm (89 in-lb)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Remove flywheel locking tool from transmission bellhousing so that crankshaft is no longer locked.</li>
+<li>Remove camshaft locking tools from rear of cylinder head.</li>
+<li>Crank engine over twice by hand in direction of rotation until cylinder 1 intake and exhaust camshaft lobes face each other again.</li>
+<li>Secure crankshaft with BMW special tool 11 2 300.</li>
+<li>Place BMW special tool 11 3 240 over camshaft ends and measure clearance of tool to cylinder head surface.</li>
+</ul>
+<p><img src="e46_117-5_fig40.jpg" alt="Top half of a photo: BMW special tool 11 3 240 placed over the camshaft ends, A — exhaust side gap, B — intake side of the tool." /></p>
+<p><img src="e46_117-5_fig41.jpg" alt="Bottom half of the same photo: tool seated on the cylinder head. Illustration ID: 0021941" /></p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>If the exhaust side of the tool (A) is not flush with the head, camshaft timing is incorrect. Repeat camshaft timing procedure.</li>
+<li>Due to flexible sprocket design, VANOS unit tolerances and play in the VANOS splines, when the camshaft timing is set correctly, the intake side of special tool 11 3 240 (B) may be up to 1 mm (0.04 in) above the surface of the cylinder head. This is normal. Otherwise, repeat camshaft timing procedure.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Remove camshaft locking tools from rear of camshafts.</li>
+<li>Remove BMW special tool 11 4 220 (dummy primary chain tensioner). Reinstall primary chain tensioner.</li>
+</ul>
+<p>Tightening torque</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary chain tensioner cylinder to cylinder head</td>
+<td>70 Nm (52 ft-lb)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Remove flywheel locking tool from transmission bellhousing. Reinstall sealing plug.</li>
+<li>Remove VANOS setup bracket from front of cylinder head.</li>
+<li>Install VANOS control unit as described earlier in this group.</li>
+<li>Remove compressed air fitting (special tool 11 3 450) from VANOS unit.</li>
+<li>Fit VANOS oil line banjo bolt with new seals. Attach oil line to VANOS unit.</li>
+</ul>
+<p>Tightening torque</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oil line to VANOS unit (banjo bolt)</td>
+<td>32 Nm (24 ft-lb)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Remainder of engine assembly is reverse of disassembly.</li>
+</ul>
+<p>Tightening torques</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Radiator cooling fan (viscous clutch) to coolant pump</td>
+<td>40 Nm (30 ft-lb)</td>
+</tr>
+<tr>
+<td>Cylinder head cover to cylinder head</td>
+<td>10 Nm (89 in-lb)</td>
+</tr>
+<tr>
+<td>Spark plug to cylinder head</td>
+<td>25 Nm (18 ft-lb)</td>
+</tr>
+</tbody>
+</table>
+</article></body></html>

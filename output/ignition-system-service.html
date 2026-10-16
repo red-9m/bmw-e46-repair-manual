@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #0d1117; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1>Ignition System Service</h1>
+<blockquote>
+<p>Source: BMW 3 Series (E46) Repair Manual, section 120-2, Ignition System chapter (PDF pages 308–317 of 1252).</p>
+</blockquote>
+<h2>Ignition firing order</h2>
+<p>Each ignition coil is mounted above the corresponding spark plug. Cylinder 1 is at the front of the engine.</p>
+<p><img src="e46_120-2_fig01.jpg" alt="Valve cover with six individual ignition coils, cylinders numbered 6 through 1. Illustration ID: 0022018c" /></p>
+<p>Ignition firing order</p>
+<table>
+<thead>
+<tr>
+<th>M52 TU/M54 engine</th>
+<th>1-5-3-6-2-4</th>
+</tr>
+</thead>
+</table>
+<h2>Disabling ignition system</h2>
+<p>The ignition system operates in a lethal voltage range and should therefore be disabled any time engine service or repair work is being done that requires the ignition to be switched on.</p>
+<p>The engine management system can be disabled by removing the DME main relay (arrow). The relay is located in the electronics box (E-box) in the left rear of the engine compartment.</p>
+<p><img src="e46_120-2_fig02.jpg" alt="Electronics box (E-box) with relays, arrow at DME main relay. Illustration ID: 0021391c" /></p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Relay locations may vary. Use care when identifying relays. The main relay has a large (4 mm²) red wire at terminal 30 and a large (4 mm²) red/white wire at terminal 87. See [610 Electrical Component Locations].</li>
+</ul>
+</blockquote>
+<h2>Checking for spark</h2>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>If a spark test is done incorrectly, damage to the Engine Control Module (ECM) or the ignition coils may result.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Spark plug replacement is covered in [020 Maintenance].</li>
+</ul>
+</blockquote>
+<p>Checking for spark is difficult on engines with distributorless ignition systems.</p>
+<p>Try removing the spark plugs and inspecting for differences between them. A poor-firing plug may be wet with fuel and/or black and sooty, but not always. If a coil is not operating, the engine management system will electrically disable the fuel injector to that cylinder. The key is to look for differences between cylinders.</p>
+<h2>Ignition coil assembly, testing and replacing</h2>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Use a digital multimeter for the following tests.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Remove interior ventilation microfilter.</li>
+</ul>
+<p><img src="e46_120-2_fig03.jpg" alt="Hand removing interior ventilation microfilter from cowl at base of windshield. Illustration ID: 0021792" /></p>
+<ul>
+<li>Remove housing for microfilter for interior ventilation.
+<ul>
+<li>Open wiring harness loom (A) and remove wires.</li>
+<li>Unfasten screws (B) and remove lower microfilter housing.</li>
+</ul>
+</li>
+</ul>
+<p><img src="e46_120-2_fig04.jpg" alt="Lower microfilter housing at cowl, arrows at its mounting screws (B)." /></p>
+<ul>
+<li>Remove plastic engine cover from top of valve cover by prying off bolt covers and removing cover mounting bolts.</li>
+</ul>
+<p><img src="e46_120-2_fig05.jpg" alt="Valve cover with plastic engine cover removed, arrow (A) at bolt cover. Illustration ID: 0021314" /></p>
+<ul>
+<li>Disconnect harness connector from coil. Connect multimeter between terminal 15 (+) in connector and ground.
+<ul>
+<li>Turn ignition on and check for battery voltage.</li>
+<li>If battery voltage is not present, check wire between terminal 15 and ignition switch. See [Electrical Wiring Diagrams].</li>
+</ul>
+</li>
+</ul>
+<p><img src="e46_120-2_fig06.jpg" alt="Diagram: ignition coil harness connector with terminals 1, 4a and 15. Drawing number 11502" /></p>
+<p><img src="e46_120-2_fig07.jpg" alt="Hand disconnecting harness connector and lifting ignition coil from valve cover. Illustration ID: 0021750" /></p>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>The wiring to terminal 15 (+) of the coil (via the ignition switch) is not fuse protected. Use care when testing this circuit.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Turn ignition off.</li>
+<li>Remove coil and inspect coil housing for hairline cracks or leaking casting material. A leaky ignition coil may indicate a faulty Engine Control Module (ECM). Check ECM before installing a new coil.</li>
+</ul>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Note location of coil ground straps before coil removal; reinstall in the same location.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Use a multimeter to test:
+<ul>
+<li>Coil primary resistance at coil terminals</li>
+<li>Spark plug connector resistance</li>
+</ul>
+</li>
+<li>Compare results to specification in [Table e].</li>
+</ul>
+<p>Table e. Ignition coil resistance</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Terminals</th>
+<th>Resistance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coil primary</td>
+<td>1 (-) and 15 (+)</td>
+<td>approx. 0.8 Ω</td>
+</tr>
+<tr>
+<td>Coil secondary</td>
+<td></td>
+<td>N.A.</td>
+</tr>
+<tr>
+<td>Spark plug connector, Bosch</td>
+<td></td>
+<td>1 kΩ 20%</td>
+</tr>
+<tr>
+<td>Beru</td>
+<td></td>
+<td>1.8 kΩ 20%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Replace ignition coil or spark plug connector if resistance readings do not meet specifications.</li>
+<li>Remove ignition coil to be tested.</li>
+<li>Install BMW special tool 12 7 030 (A) on coil to be tested.</li>
+<li>Connect ground jumper between coil mounting point and engine ground point (B).</li>
+<li>Clip scope high pick-up lead (C) around ignition lead.</li>
+<li>Start engine.</li>
+</ul>
+<p><img src="e46_120-2_fig08.jpg" alt="Ignition coil test setup: BMW special tool 12 7 030 on coil (A), ground jumper between coil mounting point and engine ground (B), scope pick-up lead on ignition lead (C). Illustration ID: 0022137" /></p>
+<ul>
+<li>Compare scope pattern with diagrams in [Basic troubleshooting principles].</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>When replacing ignition coils, ensure that the replacements are from the same manufacturer with the same part/code numbers. If individual coils with the correct specifications are not available, all coils should be replaced.</li>
+</ul>
+</blockquote>
+<h2>Crankshaft speed sensor, replacing</h2>
+<p>The crankshaft speed sensor is mounted in the left rear side of the cylinder block below the starter. The sensor reads a toothed pulse wheel (arrow) mounted to the end of the crankshaft.</p>
+<p><img src="e46_120-2_fig09.jpg" alt="Line drawing: end of crankshaft with toothed pulse wheel, arrow at pulse wheel. Illustration ID: 0012728" /></p>
+<p>If the Engine Control Module (ECM) does not receive a signal from the crankshaft speed sensor during cranking, the engine will not start.</p>
+<p>If the OBD II system misfire detection protocol detects a catalyst damaging fault due to a malfunction in crankshaft speed sensor components, the Check Engine light (Malfunction Indicator Light or MIL) will be illuminated.</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>If the crankshaft speed sensor pulse wheel is damaged, the engine will have to be disassembled down to the crankshaft to replace the wheel.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Make certain ignition has been turned off.</li>
+<li>Raise car and support in a safe manner.</li>
+</ul>
+<blockquote>
+<p><strong>WARNING!</strong></p>
+<ul>
+<li>Make sure the car is stable and well supported at all times. Use a professional automotive lift or jack stands designed for the purpose. A floor jack is not adequate support.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Remove under-engine splash guards.</li>
+<li>Working just underneath starter:
+<ul>
+<li>Cut off wire tie securing crankshaft speed sensor harness connector (arrow) to sensor.</li>
+<li>Disconnect harness connector.</li>
+</ul>
+</li>
+</ul>
+<p><img src="e46_120-2_fig10.jpg" alt="Crankshaft speed sensor harness connector below starter, arrow at connector and wire tie. Illustration ID: 0022131" /></p>
+<ul>
+<li>Remove sensor mounting screw (arrow) and remove sensor from cylinder block.</li>
+</ul>
+<p><img src="e46_120-2_fig11.jpg" alt="Crankshaft speed sensor in cylinder block below starter, arrow at mounting screw. Illustration ID: 0022500c" /></p>
+<ul>
+<li>Installation is reverse of removal, noting the following:
+<ul>
+<li>Use a new O-ring when installing sensor.</li>
+<li>Be sure wiring is rerouted in same orientation.</li>
+<li>Secure sensor using new wire ties.</li>
+</ul>
+</li>
+<li>Use scan tool to read out and clear ECM fault memory.</li>
+</ul>
+<h2>Camshaft position sensors</h2>
+<p>The camshaft position sensors are used by the engine management system for VANOS control, sequential fuel injection and knock control.</p>
+<h3>Intake camshaft position sensor, replacing</h3>
+<ul>
+<li>Make certain ignition has been turned off.</li>
+<li>Remove housing for the microfilter for interior ventilation as shown earlier.</li>
+<li>Remove plastic cover from above fuel injectors by prying off bolt covers and removing cover mounting bolts.</li>
+<li>Remove complete air filter housing:
+<ul>
+<li>Disconnect electrical harness connector on mass air flow sensor (B).</li>
+<li>Detach vacuum line at intake boot (A).</li>
+<li>Remove filter housing mounting screws (D).</li>
+<li>Loosen hose clamp at intake boot and detach air duct connections (C).</li>
+<li>Disconnect cold air duct tube (E).</li>
+</ul>
+</li>
+</ul>
+<p><img src="e46_120-2_fig12.jpg" alt="Air filter housing area with labels: vacuum line at intake boot (A), mass air flow sensor connector (B), air duct connections (C), filter housing mounting screws (D), cold air duct tube (E). Illustration ID: 0021596" /></p>
+<ul>
+<li>Disconnect harness connector from VANOS solenoid and unscrew solenoid from VANOS control unit. Be prepared with shop rags to catch oil released from VANOS unit.</li>
+<li>Remove camshaft sensor (arrow) from left front of cylinder head, next to top of oil filter housing.</li>
+</ul>
+<p><img src="e46_120-2_fig13.jpg" alt="Intake camshaft position sensor at left front of cylinder head, arrow at sensor. Illustration ID: 0022138" /></p>
+<ul>
+<li>Disconnect camshaft sensor harness from under intake manifold. Prior to removal, attach a stiff piece of wire to the harness connector end to preserve proper routing of harness for reinstallation.</li>
+<li>Installation is reverse of removal.
+<ul>
+<li>Use new O-rings when installing sensor and solenoid.</li>
+<li>Be sure wiring is rerouted in same orientation.</li>
+</ul>
+</li>
+<li>Use scan tool to read out and clear ECM fault memory.</li>
+</ul>
+<p>Tightening torques</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intake camshaft sensor to cylinder head</td>
+<td>5 Nm (3.5 ft-lb)</td>
+</tr>
+<tr>
+<td>VANOS solenoid to VANOS control unit</td>
+<td>30 Nm (22 ft-lb)</td>
+</tr>
+</tbody>
+</table>
+<h3>Exhaust camshaft position sensor, replacing</h3>
+<ul>
+<li>Make certain ignition has been turned off.</li>
+<li>Working at front of engine on exhaust (right) side, detach exhaust camshaft position sensor electrical harness connector (arrow).</li>
+</ul>
+<p><img src="e46_120-2_fig14.jpg" alt="Exhaust camshaft position sensor at front right of cylinder head, arrow at electrical harness connector. Illustration ID: 0021299" /></p>
+<ul>
+<li>Remove camshaft sensor from right front of cylinder head.</li>
+<li>Installation is reverse of removal.
+<ul>
+<li>Use a new O-ring when installing sensor.</li>
+<li>Be sure wiring is rerouted in same orientation.</li>
+</ul>
+</li>
+<li>Use scan tool to read out and clear ECM fault memory.</li>
+</ul>
+<p>Tightening torque</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exhaust camshaft sensor to cylinder head</td>
+<td>5 Nm (3.5 ft-lb)</td>
+</tr>
+</tbody>
+</table>
+<h2>Knock sensors, replacing</h2>
+<p>The knock sensors are bolted to the left side of the cylinder block under the intake manifold.</p>
+<ul>
+<li>Remove intake manifold as described in [113 Cylinder Head Removal and Installation].</li>
+<li>Disconnect knock sensor electrical harness connector (arrow) on left side of engine cylinder block.</li>
+</ul>
+<p><img src="e46_120-2_fig15.jpg" alt="Top half of photo: left side of engine with knock sensor mounting bolt callout (A). Split across PDF pages 316–317." /></p>
+<p><img src="e46_120-2_fig16.jpg" alt="Bottom half of the same photo: knock sensor harness connector, arrow at connector, mounting bolts (A) at left. Illustration ID: 0021539" /></p>
+<ul>
+<li>Remove knock sensor mounting bolts (A) on side of cylinder block. Remove sensors.</li>
+</ul>
+<blockquote>
+<p><strong>CAUTION!</strong></p>
+<ul>
+<li>Note the installed angle of the knock sensor on the block before removing it. Reinstall the sensor in the same position. Be sure to use a torque wrench when tightening the sensor mounting bolt.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Clean knock sensor contact surface on engine block and sensor (arrows) before installing knock sensor.</li>
+</ul>
+<p><img src="e46_120-2_fig17.jpg" alt="Hand holding knock sensor, arrows at contact surface on sensor and on engine block. Illustration ID: 0021539" /></p>
+<p>Tightening torque</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tightening torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Knock sensor to cylinder block</td>
+<td>20 Nm (15 ft. lbs.)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Use scan tool to read out and clear ECM fault memory.</li>
+</ul>
+</article></body></html>
